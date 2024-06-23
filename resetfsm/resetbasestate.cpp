@@ -3,3 +3,13 @@
 //
 
 #include "resetbasestate.h"
+
+#include <iostream>
+
+#include "resetidle.h"
+
+void ResetBaseState::enterViaPseudoStart() {
+    std::cout << "Reset Fsm Initial Transition taken" << std::endl;
+    new(this) ResetIdle;
+    enterByDefaultEntryPoint();
+}

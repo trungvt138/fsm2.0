@@ -6,6 +6,8 @@
 
 #include <iostream>
 
+#include "mainfsm.h"
+
 void EStoppFSM::enterViaPortE1() {
     entry();
     estoppsubmachine->enterViaPortE1();
@@ -33,35 +35,49 @@ void EStoppFSM::exit() {
     action->red2_Off();
 }
 
+void EStoppFSM::handleDefaultExit(const TriggerProcessingState &processing_state) {
+    if (processing_state == TriggerProcessingState::endstatereached) {
+        estoppsubmachine->exit();
+        leavingState();
+        new(this) MainFsm;
+        enterByDefaultEntryPoint();
+    }
+}
 
 void EStoppFSM::ss_t_est1_pressed() {
     std::cout << "EStoppFsm: ss_t_est1_pressed called" << std::endl;
-    estoppsubmachine->ss_t_est1_pressed();
+    TriggerProcessingState processing_state = estoppsubmachine->ss_t_est1_pressed();
+    handleDefaultExit(processing_state);
 }
 
 void EStoppFSM::ss_t_est2_pressed() {
     std::cout << "EStoppFsm: ss_t_est2_pressed called" << std::endl;
-    estoppsubmachine->ss_t_est2_pressed();
+    TriggerProcessingState processing_state = estoppsubmachine->ss_t_est2_pressed();
+    handleDefaultExit(processing_state);
 }
 
 void EStoppFSM::ss_t_est1_unpressed() {
     std::cout << "EStoppFsm: ss_t_est1_unpressed called" << std::endl;
-    estoppsubmachine->ss_t_est1_unpressed();
+    TriggerProcessingState processing_state = estoppsubmachine->ss_t_est1_unpressed();
+    handleDefaultExit(processing_state);
 }
 
 void EStoppFSM::ss_t_est2_unpressed() {
     std::cout << "EStoppFsm: ss_t_est2_unpressed called" << std::endl;
-    estoppsubmachine->ss_t_est2_unpressed();
+    TriggerProcessingState processing_state = estoppsubmachine->ss_t_est2_unpressed();
+    handleDefaultExit(processing_state);
 }
 
 void EStoppFSM::connection_lost() {
     std::cout << "EStoppFsm: connection_lost called" << std::endl;
-    estoppsubmachine->connection_lost();
+    TriggerProcessingState processing_state = estoppsubmachine->connection_lost();
+    handleDefaultExit(processing_state);
 }
 
 void EStoppFSM::connection_back() {
     std::cout << "EStoppFsm: connection_back called" << std::endl;
-    estoppsubmachine->connection_back();
+    TriggerProcessingState processing_state = estoppsubmachine->connection_back();
+    handleDefaultExit(processing_state);
 }
 
 void EStoppFSM::showState() {

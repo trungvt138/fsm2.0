@@ -38,6 +38,7 @@ public:
     virtual void enterViaPortE1(){};
     virtual void enterViaPortE2(){};
     virtual void enterViaPortCL(){};
+    virtual void handleDefaultExit(const TriggerProcessingState &handled) {};
 
     // entry/exit-actions
     virtual void entry(){};
@@ -56,6 +57,8 @@ public:
     virtual void connection_back() {};
     virtual void ss_t_est1_unpressed() {};
     virtual void ss_t_est2_unpressed() {};
+    virtual void ss_t_rst1_pressed() {};
+    virtual void ss_t_rst2_pressed() {};
 
     virtual void showState() {};
 };

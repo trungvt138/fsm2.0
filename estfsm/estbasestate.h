@@ -31,6 +31,7 @@ public:
     virtual bool isPseudoEndState(){return false;};
 
     virtual void enterByDefaultEntryPoint(){entry();};
+    virtual TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled);
 
     virtual void leavingState(){exit();};
 
@@ -47,7 +48,8 @@ public:
     virtual TriggerProcessingState ss_t_est1_unpressed() {return TriggerProcessingState::pending;};
     virtual TriggerProcessingState ss_t_est2_unpressed() {return TriggerProcessingState::pending;};
     virtual TriggerProcessingState connection_back() {return TriggerProcessingState::pending;};
-
+    virtual TriggerProcessingState ss_t_rst1_pressed() {return TriggerProcessingState::pending;};
+    virtual TriggerProcessingState ss_t_rst2_pressed() {return TriggerProcessingState::pending;};
 
     virtual void showState() {};
 };

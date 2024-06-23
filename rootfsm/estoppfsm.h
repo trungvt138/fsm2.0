@@ -12,6 +12,8 @@ public:
     void entry() override;
     void exit() override;
 
+    void handleDefaultExit(const TriggerProcessingState &handled) override;
+
     void ss_t_est1_pressed() override;
     void ss_t_est2_pressed() override;
     void connection_lost() override;

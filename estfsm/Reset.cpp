@@ -12,6 +12,13 @@
 #include "Connection_Lost.h"
 #include "EStop1_pressed.h"
 #include "EStop2_pressed.h"
+#include "estpseudoendstate.h"
+
+void Reset::enterByDefaultEntryPoint() {
+    entry();
+    subfsm->enterViaPseudoStart();
+}
+
 
 TriggerProcessingState Reset::ss_t_est1_pressed() {
     std::cout << "Reset: ss_t_est1_pressed called" << std::endl;
@@ -39,20 +46,29 @@ TriggerProcessingState Reset::connection_lost() {
 
 TriggerProcessingState Reset::handleDefaultExit() {
     TriggerProcessingState processing_state = TriggerProcessingState::pending;
-    return
+    if (subfsm->isPseudoEndState()) {
+        leavingState();
+        new(this) EstPseudoEndState;
+        enterByDefaultEntryPoint();
+        processing_state = TriggerProcessingState::consumed;
+    }
+    return processing_state;
 }
 
-
-void Reset::ss_t_rst1_pressed() {
+TriggerProcessingState Reset::ss_t_rst1_pressed() {
     std::cout << "Reset: ss_t_rst1_pressed called" << std::endl;
-    subfsm->
+    TriggerProcessingState processing_state = subfsm->ss_t_rst1_pressed();
+    return processing_state;
 }
 
-void Reset::ss_t_rst2_pressed() {
+TriggerProcessingState Reset::ss_t_rst2_pressed() {
     std::cout << "Reset: ss_t_rst2_pressed called" << std::endl;
+    TriggerProcessingState processing_state = subfsm->ss_t_rst2_pressed();
+    return processing_state;
 }
 
 
 void Reset::showState() {
-    std::cout << "State: Reset" << std::endl;
+    std::cout << "EstFsm: Reset" << std::endl;
+    subfsm->showState();
 }

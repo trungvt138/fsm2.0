@@ -35,4 +35,11 @@ add_executable(fsm2_0 main.cpp
         estfsm/Reset.cpp
         resetfsm/resetbasestate.cpp
         resetfsm/resetbasestate.h
-        resetfsm/resetpseudostartstate.h)
+        resetfsm/resetpseudostartstate.h
+        estfsm/estpseudoendstate.h
+        resetfsm/Wait_For_Reset1.cpp
+        resetfsm/Wait_For_Reset1.h
+        resetfsm/Wait_For_Reset2.cpp
+        resetfsm/Wait_For_Reset2.h
+        resetfsm/resetidle.cpp
+        resetfsm/resetidle.h)

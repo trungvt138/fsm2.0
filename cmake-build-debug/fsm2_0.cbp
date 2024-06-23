@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="fsm2_0"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fsm2_0">
+				<Option output="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/fsm2_0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 fsm2_0"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fsm2_0/fast">
+				<Option output="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/fsm2_0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 fsm2_0/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/actions.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/actions.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/context.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/context.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/contextdata.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/contextdata.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Connection_Lost.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Connection_Lost.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_CL.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_CL.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_EST2.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_EST2.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST2_and_CL.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST2_and_CL.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop1_pressed.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop1_pressed.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop2_pressed.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop2_pressed.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Reset.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Reset.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estpseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/main.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/calibration_state.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/calibration_state.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/idle.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/idle.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/mainbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/mainbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_state.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_state.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset1.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset1.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset2.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset2.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetidle.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetidle.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetpseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/basestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/basestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/estoppfsm.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/estoppfsm.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/mainfsm.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/mainfsm.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/pseudostartstate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/pseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

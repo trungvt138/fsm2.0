@@ -26,6 +26,7 @@ public:
     virtual bool isPseudoEndState(){return false;};
 
     virtual void enterByDefaultEntryPoint(){entry();};
+    virtual void enterViaPseudoStart();
 
     virtual void leavingState(){exit();};
 

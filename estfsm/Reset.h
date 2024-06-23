@@ -19,8 +19,8 @@ public:
     TriggerProcessingState ss_t_est2_pressed() override;
     TriggerProcessingState connection_lost() override;
 
-    void ss_t_rst1_pressed();
-    void ss_t_rst2_pressed();
+    TriggerProcessingState ss_t_rst1_pressed() override;
+    TriggerProcessingState ss_t_rst2_pressed() override;
 
     void showState() override;
 };

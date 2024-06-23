@@ -5,11 +5,21 @@
  *      Author: infwnj843
  */
 
-#ifndef SRC_FSM_SIMPLE_ESTFSM_ESTPSEUDOENDSTATE_H_
-#define SRC_FSM_SIMPLE_ESTFSM_ESTPSEUDOENDSTATE_H_
+#ifndef EST_PSEUDOENDSTATE_H
+#define EST_PSEUDOENDSTATE_H
+#include <iostream>
+
+#include "estbasestate.h"
+
+class EstPseudoEndState : public EstBaseState {
+public:
+    bool isPseudoEndState() override {return true;};
+
+    void showState() override {
+        std::cout << "State : EStFsm Pseudo End State" << std::endl;
+      }
+};
 
 
 
-
-
-#endif /* SRC_FSM_SIMPLE_ESTFSM_ESTPSEUDOENDSTATE_H_ */
+#endif /* EST_PSEUDOENDSTATE_H */
