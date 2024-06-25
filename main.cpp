@@ -6,13 +6,9 @@
 
 #include "actions.h"
 #include "context.h"
-#include <cstdlib>
-
-
-
 
 int main(int argc, char** argv) {
-    Actions *action = new Actions();
+    auto *action = new Actions();
     Context fsmA(action);
     // fsmA.showState();
     // fsmA.ss_t_str_longpressed();
@@ -31,6 +27,13 @@ int main(int argc, char** argv) {
     fsmA.showState();
     fsmA.ss_t_est1_pressed();
     fsmA.showState();
-
+    fsmA.ss_t_est1_unpressed();
+    fsmA.showState();
+    fsmA.ss_t_est2_unpressed();
+    fsmA.showState();
+    fsmA.ss_t_rst1_pressed();
+    fsmA.showState();
+    fsmA.ss_t_rst2_pressed();
+    fsmA.showState();
 }
 

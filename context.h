@@ -15,7 +15,7 @@ private:
     Actions *action;
     ContextData data;
 public:
-    Context(Actions *shared_action);
+    explicit Context(Actions *shared_action);
     virtual ~Context();
 
     void ss_t_str_longpressed();
@@ -30,6 +30,8 @@ public:
     void ss_t_est1_unpressed();
     void ss_t_est2_unpressed();
     void connection_back();
+    void ss_t_rst1_pressed();
+    void ss_t_rst2_pressed();
 
     void showState();
 };

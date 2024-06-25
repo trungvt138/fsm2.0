@@ -20,6 +20,8 @@ public:
     void connection_back() override;
     void ss_t_est1_unpressed() override;
     void ss_t_est2_unpressed() override;
+    void ss_t_rst1_pressed() override;
+    void ss_t_rst2_pressed() override;
 
     void enterViaPortE1() override;
     void enterViaPortE2() override;

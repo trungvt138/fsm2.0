@@ -5,8 +5,8 @@
  *      Author: infwnj843
  */
 
-#ifndef SRC_FSM_SIMPLE_ESTFSM_ESTOP1_PRESSED_H_
-#define SRC_FSM_SIMPLE_ESTFSM_ESTOP1_PRESSED_H_
+#ifndef EST1_AND_CL_H
+#define EST1_AND_CL_H
 
 
 #include "estbasestate.h"
@@ -18,6 +18,6 @@ public:
     void showState() override;
 };
 
-#endif //SRC_FSM_SIMPLE_ESTFSM_ESTOP1_PRESSED_H_
+#endif //EST1_AND_CL_H
 
 

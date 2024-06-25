@@ -50,21 +50,21 @@ TriggerProcessingState Reset::handleDefaultExit() {
         leavingState();
         new(this) EstPseudoEndState;
         enterByDefaultEntryPoint();
-        processing_state = TriggerProcessingState::consumed;
+        processing_state = TriggerProcessingState::endstatereached;
     }
     return processing_state;
 }
 
 TriggerProcessingState Reset::ss_t_rst1_pressed() {
     std::cout << "Reset: ss_t_rst1_pressed called" << std::endl;
-    TriggerProcessingState processing_state = subfsm->ss_t_rst1_pressed();
-    return processing_state;
+    subfsm->ss_t_rst1_pressed();
+    return handleDefaultExit();
 }
 
 TriggerProcessingState Reset::ss_t_rst2_pressed() {
     std::cout << "Reset: ss_t_rst2_pressed called" << std::endl;
-    TriggerProcessingState processing_state = subfsm->ss_t_rst2_pressed();
-    return processing_state;
+    subfsm->ss_t_rst2_pressed();
+    return handleDefaultExit();
 }
 
 

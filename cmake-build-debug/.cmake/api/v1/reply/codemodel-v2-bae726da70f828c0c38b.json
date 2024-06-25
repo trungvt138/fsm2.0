@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "fsm2_0::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-fsm2_0-Debug-19b9fa08c1288d3fb58b.json",
+					"jsonFile" : "target-fsm2_0-Debug-56b722936953074ae025.json",
 					"name" : "fsm2_0",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug",
-		"source" : "C:/Users/trung/CLionProjects/fsm2.0"
+		"build" : "/Users/trungdam/CLionProjects/fsm2.0/cmake-build-debug",
+		"source" : "/Users/trungdam/CLionProjects/fsm2.0"
 	},
 	"version" : 
 	{

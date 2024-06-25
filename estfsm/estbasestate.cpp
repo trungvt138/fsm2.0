@@ -31,3 +31,7 @@ void EstBaseState::enterViaPortCL() {
     new(this) Connection_Lost;
 }
 
+TriggerProcessingState EstBaseState::handleDefaultExit(const TriggerProcessingState &handled) {
+    return TriggerProcessingState::pending;
+}
+

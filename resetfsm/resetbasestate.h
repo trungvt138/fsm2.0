@@ -7,7 +7,7 @@
 
 #include "../subcommon/triggerprocessingstate.h"
 #include "../actions.h"
-#include "../context.h"
+#include "../contextdata.h"
 
 class ResetBaseState {
 protected:
@@ -15,8 +15,6 @@ protected:
     Actions *action;
 
 public:
-    virtual ~ResetBaseState()() = default;
-
     virtual void initSubStateMachines(){};
 
     void setData(ContextData *data){this->data = data;};

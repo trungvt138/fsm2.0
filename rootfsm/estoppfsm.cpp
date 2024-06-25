@@ -80,6 +80,18 @@ void EStoppFSM::connection_back() {
     handleDefaultExit(processing_state);
 }
 
+void EStoppFSM::ss_t_rst1_pressed() {
+    std::cout << "EStoppFsm: ss_t_rst1_pressed called" << std::endl;
+    TriggerProcessingState processing_state = estoppsubmachine->ss_t_rst1_pressed();
+    handleDefaultExit(processing_state);
+}
+
+void EStoppFSM::ss_t_rst2_pressed() {
+    std::cout << "EStoppFsm: ss_t_rst2_pressed called" << std::endl;
+    TriggerProcessingState processing_state = estoppsubmachine->ss_t_rst2_pressed();
+    handleDefaultExit(processing_state);
+}
+
 void EStoppFSM::showState() {
     std::cout << "State: EStoppFsm" << std::endl;
     estoppsubmachine->showState();

@@ -5,8 +5,8 @@
  *      Author: infwnj843
  */
 
-#ifndef SRC_FSMSIMPLE_ESTFSM_ESTBASESTATE_H_
-#define SRC_FSMSIMPLE_ESTFSM_ESTBASESTATE_H_
+#ifndef ESTBASESTATE_H
+#define ESTBASESTATE_H
 
 
 #include "../contextdata.h"
@@ -24,8 +24,8 @@ public:
 
     virtual void initSubStateMachines();
 
-    void setData(ContextData *data){this->data = data;};
-    void setAction(Actions *action){this->action = action;};
+    void setData(ContextData *data);
+    void setAction(Actions *action);
 
     virtual bool isPseudoStartState(){return false;};
     virtual bool isPseudoEndState(){return false;};
@@ -56,4 +56,4 @@ public:
 
 
 
-#endif /* SRC_FSMSIMPLE_ESTFSM_ESTBASESTATE_H_ */
+#endif /* ESTBASESTATE_H */

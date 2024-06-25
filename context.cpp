@@ -73,6 +73,14 @@ void Context::connection_lost() {
     state->connection_lost();
 }
 
+void Context::ss_t_rst1_pressed() {
+    state->ss_t_rst1_pressed();
+}
+
+void Context::ss_t_rst2_pressed() {
+    state->ss_t_rst2_pressed();
+}
+
 void Context::showState() {
     state->showState();
 }

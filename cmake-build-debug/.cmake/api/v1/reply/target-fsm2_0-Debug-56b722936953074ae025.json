@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "fsm2_0.exe"
-		},
-		{
-			"path" : "fsm2_0.pdb"
+			"path" : "fsm2_0"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
 				}
 			],
 			"language" : "CXX",
@@ -92,16 +89,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "fsm2_0",
-	"nameOnDisk" : "fsm2_0.exe",
+	"nameOnDisk" : "fsm2_0",
 	"paths" : 
 	{
 		"build" : ".",
@@ -156,7 +149,8 @@
 				31,
 				33,
 				35,
-				37
+				37,
+				38
 			]
 		}
 	],
@@ -375,6 +369,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "resetfsm/resetidle.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "resetfsm/resetpseudoendstate.h",
 			"sourceGroupIndex" : 1
 		}
 	],

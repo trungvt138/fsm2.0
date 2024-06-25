@@ -7,7 +7,6 @@
 #include "mainfsm.h"
 
 #include "../estfsm/estpseudostartstate.h"
-#include "estoppfsm.h"
 
 #include "basestate.h"
 
