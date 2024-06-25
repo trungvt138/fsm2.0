@@ -13,10 +13,11 @@ class MainBaseState {
 protected:
     ContextData *data;
     Actions *action;
+
 public:
     virtual ~MainBaseState() = default;
 
-    virtual void initSubStateMachines(){};
+    virtual void initSubStateMachines();
 
     void setData(ContextData *data){this->data = data;};
     void setAction(Actions *action){this->action = action;};

@@ -11,7 +11,6 @@ class WS_State : public MainBaseState {
 public:
     void entry() override;
     void exit() override;
-
     TriggerProcessingState ss_t_stp_pressed() override;
 
     //TODO: These three methods must be renamed!!!

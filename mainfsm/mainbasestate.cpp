@@ -15,5 +15,9 @@ void MainBaseState::enterViaPseudoStart() {
     enterByDefaultEntryPoint();
 }
 
+void MainBaseState::initSubStateMachines() {
+
+}
+
 
 

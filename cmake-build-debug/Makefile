@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\trung\CLionProjects\fsm2.0
+CMAKE_SOURCE_DIR = Z:\profile.V6\fsm2.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug
+CMAKE_BINARY_DIR = Z:\profile.V6\fsm2.0\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug\CMakeFiles C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start Z:\profile.V6\fsm2.0\cmake-build-debug\CMakeFiles Z:\profile.V6\fsm2.0\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start Z:\profile.V6\fsm2.0\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -728,6 +728,30 @@ rootfsm/pseudostartstate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/pseudostartstate.cpp.s
 .PHONY : rootfsm/pseudostartstate.cpp.s
 
+ws_fsm/wsbasestate.obj: ws_fsm/wsbasestate.cpp.obj
+.PHONY : ws_fsm/wsbasestate.obj
+
+# target to build an object file
+ws_fsm/wsbasestate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/ws_fsm/wsbasestate.cpp.obj
+.PHONY : ws_fsm/wsbasestate.cpp.obj
+
+ws_fsm/wsbasestate.i: ws_fsm/wsbasestate.cpp.i
+.PHONY : ws_fsm/wsbasestate.i
+
+# target to preprocess a source file
+ws_fsm/wsbasestate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/ws_fsm/wsbasestate.cpp.i
+.PHONY : ws_fsm/wsbasestate.cpp.i
+
+ws_fsm/wsbasestate.s: ws_fsm/wsbasestate.cpp.s
+.PHONY : ws_fsm/wsbasestate.s
+
+# target to generate assembly for a file
+ws_fsm/wsbasestate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/ws_fsm/wsbasestate.cpp.s
+.PHONY : ws_fsm/wsbasestate.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -812,6 +836,9 @@ help:
 	@echo ... rootfsm/pseudostartstate.obj
 	@echo ... rootfsm/pseudostartstate.i
 	@echo ... rootfsm/pseudostartstate.s
+	@echo ... ws_fsm/wsbasestate.obj
+	@echo ... ws_fsm/wsbasestate.i
+	@echo ... ws_fsm/wsbasestate.s
 .PHONY : help
 
 
