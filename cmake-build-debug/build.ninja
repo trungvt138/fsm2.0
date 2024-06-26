@@ -199,6 +199,24 @@ build CMakeFiles/fsm2_0.dir/resetfsm/resetidle.cpp.o: CXX_COMPILER__fsm2_0_unsca
   OBJECT_DIR = CMakeFiles/fsm2_0.dir
   OBJECT_FILE_DIR = CMakeFiles/fsm2_0.dir/resetfsm
 
+build CMakeFiles/fsm2_0.dir/wsfsm/wsbasestate.cpp.o: CXX_COMPILER__fsm2_0_unscanned_Debug /Users/trungdam/CLionProjects/fsm2.0/wsfsm/wsbasestate.cpp || cmake_object_order_depends_target_fsm2_0
+  DEP_FILE = CMakeFiles/fsm2_0.dir/wsfsm/wsbasestate.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/fsm2_0.dir
+  OBJECT_FILE_DIR = CMakeFiles/fsm2_0.dir/wsfsm
+
+build CMakeFiles/fsm2_0.dir/wsfsm/wsidle.cpp.o: CXX_COMPILER__fsm2_0_unscanned_Debug /Users/trungdam/CLionProjects/fsm2.0/wsfsm/wsidle.cpp || cmake_object_order_depends_target_fsm2_0
+  DEP_FILE = CMakeFiles/fsm2_0.dir/wsfsm/wsidle.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/fsm2_0.dir
+  OBJECT_FILE_DIR = CMakeFiles/fsm2_0.dir/wsfsm
+
+build CMakeFiles/fsm2_0.dir/wsfsm/wsoperationstate.cpp.o: CXX_COMPILER__fsm2_0_unscanned_Debug /Users/trungdam/CLionProjects/fsm2.0/wsfsm/wsoperationstate.cpp || cmake_object_order_depends_target_fsm2_0
+  DEP_FILE = CMakeFiles/fsm2_0.dir/wsfsm/wsoperationstate.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/fsm2_0.dir
+  OBJECT_FILE_DIR = CMakeFiles/fsm2_0.dir/wsfsm
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target fsm2_0
@@ -207,7 +225,7 @@ build CMakeFiles/fsm2_0.dir/resetfsm/resetidle.cpp.o: CXX_COMPILER__fsm2_0_unsca
 #############################################
 # Link the executable fsm2_0
 
-build fsm2_0: CXX_EXECUTABLE_LINKER__fsm2_0_Debug CMakeFiles/fsm2_0.dir/main.cpp.o CMakeFiles/fsm2_0.dir/contextdata.cpp.o CMakeFiles/fsm2_0.dir/context.cpp.o CMakeFiles/fsm2_0.dir/actions.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/basestate.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/estoppfsm.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/mainfsm.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/pseudostartstate.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/mainbasestate.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/ws_state.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/idle.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/error_state.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/calibration_state.cpp.o CMakeFiles/fsm2_0.dir/estfsm/estbasestate.cpp.o CMakeFiles/fsm2_0.dir/estfsm/Connection_Lost.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EStop1_pressed.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EStop2_pressed.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EST2_and_CL.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EST1_and_CL.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EST1_and_EST2.cpp.o CMakeFiles/fsm2_0.dir/estfsm/Reset.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/resetbasestate.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/Wait_For_Reset1.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/Wait_For_Reset2.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/resetidle.cpp.o
+build fsm2_0: CXX_EXECUTABLE_LINKER__fsm2_0_Debug CMakeFiles/fsm2_0.dir/main.cpp.o CMakeFiles/fsm2_0.dir/contextdata.cpp.o CMakeFiles/fsm2_0.dir/context.cpp.o CMakeFiles/fsm2_0.dir/actions.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/basestate.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/estoppfsm.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/mainfsm.cpp.o CMakeFiles/fsm2_0.dir/rootfsm/pseudostartstate.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/mainbasestate.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/ws_state.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/idle.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/error_state.cpp.o CMakeFiles/fsm2_0.dir/mainfsm/calibration_state.cpp.o CMakeFiles/fsm2_0.dir/estfsm/estbasestate.cpp.o CMakeFiles/fsm2_0.dir/estfsm/Connection_Lost.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EStop1_pressed.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EStop2_pressed.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EST2_and_CL.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EST1_and_CL.cpp.o CMakeFiles/fsm2_0.dir/estfsm/EST1_and_EST2.cpp.o CMakeFiles/fsm2_0.dir/estfsm/Reset.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/resetbasestate.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/Wait_For_Reset1.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/Wait_For_Reset2.cpp.o CMakeFiles/fsm2_0.dir/resetfsm/resetidle.cpp.o CMakeFiles/fsm2_0.dir/wsfsm/wsbasestate.cpp.o CMakeFiles/fsm2_0.dir/wsfsm/wsidle.cpp.o CMakeFiles/fsm2_0.dir/wsfsm/wsoperationstate.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/fsm2_0.dir
   POST_BUILD = :

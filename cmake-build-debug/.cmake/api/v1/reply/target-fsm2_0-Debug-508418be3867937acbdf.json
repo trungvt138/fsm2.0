@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "fsm2_0.exe"
-		},
-		{
-			"path" : "fsm2_0.pdb"
+			"path" : "fsm2_0"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
 				}
 			],
 			"language" : "CXX",
@@ -77,7 +74,9 @@
 				32,
 				34,
 				36,
-				39
+				39,
+				42,
+				44
 			]
 		}
 	],
@@ -93,16 +92,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "fsm2_0",
-	"nameOnDisk" : "fsm2_0.exe",
+	"nameOnDisk" : "fsm2_0",
 	"paths" : 
 	{
 		"build" : ".",
@@ -139,7 +134,9 @@
 				32,
 				34,
 				36,
-				39
+				39,
+				42,
+				44
 			]
 		},
 		{
@@ -160,7 +157,10 @@
 				35,
 				37,
 				38,
-				40
+				40,
+				41,
+				43,
+				45
 			]
 		}
 	],
@@ -389,12 +389,39 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ws_fsm/wsbasestate.cpp",
+			"path" : "wsfsm/wsbasestate.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "ws_fsm/wsbasestate.h",
+			"path" : "wsfsm/wsbasestate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "wsfsm/wspseudostartstate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "wsfsm/wsidle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "wsfsm/wsidle.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "wsfsm/wsoperationstate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "wsfsm/wsoperationstate.h",
 			"sourceGroupIndex" : 1
 		}
 	],

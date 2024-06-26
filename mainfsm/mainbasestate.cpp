@@ -7,6 +7,7 @@
 #include <iostream>
 
 #include "idle.h"
+#include "../wsfsm/wspseudostartstate.h"
 
 
 void MainBaseState::enterViaPseudoStart() {
@@ -16,7 +17,8 @@ void MainBaseState::enterViaPseudoStart() {
 }
 
 void MainBaseState::initSubStateMachines() {
-
+    wsfsm = new WSPseudoStartState();
+    wsfsm->initSubStateMachines();
 }
 
 

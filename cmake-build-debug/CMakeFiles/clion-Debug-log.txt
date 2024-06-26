@@ -1,13 +1,4 @@
-"C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S Z:\profile.V6\fsm2.0 -B Z:\profile.V6\fsm2.0\cmake-build-debug
-CMake Deprecation Warning:
-  Support for "Extra Generators" like
-
-    CodeBlocks
-
-  is deprecated and will be removed from a future version of CMake.  IDEs may
-  use the cmake-file-api(7) to view CMake-generated project build trees.
-
-
--- Configuring done (0.3s)
--- Generating done (0.7s)
--- Build files have been written to: Z:/profile.V6/fsm2.0/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/trungdam/CLionProjects/fsm2.0 -B /Users/trungdam/CLionProjects/fsm2.0/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/trungdam/CLionProjects/fsm2.0/cmake-build-debug

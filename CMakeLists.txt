@@ -44,5 +44,10 @@ add_executable(fsm2_0 main.cpp
         resetfsm/resetidle.cpp
         resetfsm/resetidle.h
         resetfsm/resetpseudoendstate.h
-        ws_fsm/wsbasestate.cpp
-        ws_fsm/wsbasestate.h)
+        wsfsm/wsbasestate.cpp
+        wsfsm/wsbasestate.h
+        wsfsm/wspseudostartstate.h
+        wsfsm/wsidle.cpp
+        wsfsm/wsidle.h
+        wsfsm/wsoperationstate.cpp
+        wsfsm/wsoperationstate.h)

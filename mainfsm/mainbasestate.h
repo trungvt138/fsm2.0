@@ -8,12 +8,13 @@
 #include "../contextdata.h"
 #include "../actions.h"
 #include "../subcommon/triggerprocessingstate.h"
+#include "../wsfsm/wsbasestate.h"
 
 class MainBaseState {
 protected:
     ContextData *data;
     Actions *action;
-
+    WSBaseState *wsfsm;
 public:
     virtual ~MainBaseState() = default;
 
