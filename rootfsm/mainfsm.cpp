@@ -163,6 +163,52 @@ void MainFsm::slide2_free() {
     mainsubmachine->slide2_free();
 }
 
+void MainFsm::unwanted_ws() {
+    cout << "MainFsm: unwanted_ws called" << endl;
+    mainsubmachine->unwanted_ws();
+}
+
+void MainFsm::right_order() {
+    cout << "MainFsm: right_order called" << endl;
+    mainsubmachine->right_order();
+}
+
+void MainFsm::height_calibration() {
+    cout << "MainFsm: height_calibration called" << endl;
+    mainsubmachine->height_calibration();
+}
+
+
+void MainFsm::connection_back() {
+    cout << "MainFsm: connection_back called" << endl;
+    mainsubmachine->connection_back();
+}
+
+void MainFsm::ws_gone() {
+    cout << "MainFsm: ws_gone called" << endl;
+    mainsubmachine->ws_gone();
+}
+
+void MainFsm::height_high() {
+    cout << "MainFsm: height_high called" << endl;
+    mainsubmachine->height_high();
+}
+
+void MainFsm::height_flat() {
+    cout << "MainFsm: height_flat called" << endl;
+    mainsubmachine->height_flat();
+}
+
+void MainFsm::height_hole() {
+    cout << "MainFsm: height_hole called" << endl;
+    mainsubmachine->height_hole();
+}
+
+void MainFsm::height_band() {
+    cout << "MainFsm: height_band called" << endl;
+    mainsubmachine->height_band();
+}
+
 void MainFsm::ss_t_est1_pressed() {
     cout << "MainFsm: ss_t_est1_pressed called" << endl;
     TriggerProcessingState processing_state = mainsubmachine->ss_t_est1_pressed();

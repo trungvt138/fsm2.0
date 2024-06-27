@@ -48,5 +48,26 @@ int main(int argc, char** argv) {
     //Enter WS State
     fsmA.ss_t_rst1_pressed();
     fsmA.showState();
+
+    //Enter Measuring Height
+    fsmA.height_calibration();
+    fsmA.showState();
+
+    //Enter Metal Detector
+    fsmA.height_calibration();
+    fsmA.showState();
+
+    //Enter Sorting
+    fsmA.ss_ls_srt1_interrupted();
+    fsmA.showState();
+
+    //Enter Transfering
+    fsmA.unwanted_ws();
+    fsmA.showState();
+
+    //Enter Waiting Remove
+    fsmA.ss_ls_end1_interrupted();
+    fsmA.showState();
+
 }
 

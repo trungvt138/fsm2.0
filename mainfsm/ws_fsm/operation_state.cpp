@@ -415,24 +415,63 @@ TriggerProcessingState Operation_State::ws_sorted_FBA2() {
     return processingstate;
 }
 
+TriggerProcessingState Operation_State::slide1_free() {
+    std::cout << "Operation_State::slide1_free called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->slide1_free();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::slide2_free() {
+    std::cout << "Operation_State::slide2_free called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->slide2_free();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::right_order() {
+    std::cout << "Operation_State::right_order called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->right_order();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::unwanted_ws() {
+    std::cout << "Operation_State::unwanted_ws called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->unwanted_ws();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_calibration() {
+    std::cout << "Operation_State::height_calibration called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_calibration();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
 
 //for other fsm
 
-TriggerProcessingState Operation_State::ws_missing() {
-    std::cout << "WS_State: ws_missing_received called" << std::endl;
-    leavingState();
-    new(this) Error_State;
-    enterByDefaultEntryPoint();
-    return TriggerProcessingState::consumed;
-}
-
-TriggerProcessingState Operation_State::ws_false_placement() {
-    std::cout << "WS_State: ws_false_placement_received called" << std::endl;
-    leavingState();
-    new(this) Error_State;
-    enterByDefaultEntryPoint();
-    return TriggerProcessingState::consumed;
-}
+// TriggerProcessingState Operation_State::ws_missing() {
+//     std::cout << "WS_State: ws_missing_received called" << std::endl;
+//     leavingState();
+//     new(this) Error_State;
+//     enterByDefaultEntryPoint();
+//     return TriggerProcessingState::consumed;
+// }
+//
+// TriggerProcessingState Operation_State::ws_false_placement() {
+//     std::cout << "WS_State: ws_false_placement_received called" << std::endl;
+//     leavingState();
+//     new(this) Error_State;
+//     enterByDefaultEntryPoint();
+//     return TriggerProcessingState::consumed;
+// }
 
 
 void Operation_State::showState() {

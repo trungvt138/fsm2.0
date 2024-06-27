@@ -55,6 +55,16 @@ int ContextData::checkFBA2Counter() {
     return ws_FBA2;
 }
 
+//TODO: implement this method!
+bool ContextData::checkSlide1Full() {
+    return true;
+}
+
+//TODO: implement this method!
+bool ContextData::checkSlide2Full() {
+    return true;
+}
+
 
 void ContextData::show() const {
     std::cout << "Error counter: " << errorCounter << std::endl;

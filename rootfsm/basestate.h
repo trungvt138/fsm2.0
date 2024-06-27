@@ -82,6 +82,14 @@ public:
     virtual void both_slide_full(){};
     virtual void slide1_free(){};
     virtual void slide2_free(){};
+    virtual void unwanted_ws(){};
+    virtual void right_order(){};
+    virtual void height_calibration(){};
+    virtual void ws_gone() {};
+    virtual void height_high() {};
+    virtual void height_flat() {};
+    virtual void height_hole() {};
+    virtual void height_band() {};
 
     virtual void showState() {};
 };

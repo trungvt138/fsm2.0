@@ -14,7 +14,7 @@ class WSPseudoStartState : public wsbasestate {
 public:
 	bool isPseudoStartState() override {return true;};
 
-    void enterViaDeepHistory(){};
+    //void enterViaDeepHistory(){};
 
     void showState() override {std::cout << "State: WS Pseudo Start State" << std::endl;};
 };

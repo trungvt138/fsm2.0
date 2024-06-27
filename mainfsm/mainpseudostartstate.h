@@ -2,8 +2,8 @@
 // Created by trung on 01/06/2024.
 //
 
-#ifndef OPPSEUDOSTARTSTATE_H
-#define OPPSEUDOSTARTSTATE_H
+#ifndef MAINPSEUDOSTARTSTATE_H
+#define MAINPSEUDOSTARTSTATE_H
 #include <iostream>
 
 #include "mainbasestate.h"
@@ -17,4 +17,4 @@ public:
     }
 };
 
-#endif //OPPSEUDOSTARTSTATE_H
+#endif //MAINPSEUDOSTARTSTATE_H

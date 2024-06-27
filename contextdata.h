@@ -32,6 +32,8 @@ public:
     int checkFBA1Counter();
     int checkFBA2Counter();
     bool checkFBA1();
+    bool checkSlide1Full();
+    bool checkSlide2Full();
     //    WSData::Type updateWSData() const {return type;}
 
 

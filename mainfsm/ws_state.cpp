@@ -466,6 +466,41 @@ TriggerProcessingState WS_State::ws_false_placement() {
     return TriggerProcessingState::consumed;
 }
 
+TriggerProcessingState WS_State::unwanted_ws() {
+    std::cout << "WS_State: unwanted_ws called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->unwanted_ws();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::slide1_free() {
+    std::cout << "WS_State: slide1_free called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->slide1_free();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::slide2_free() {
+    std::cout << "WS_State: slide2_free called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->slide2_free();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::right_order() {
+    std::cout << "WS_State: right_order called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->right_order();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::height_calibration() {
+    std::cout << "WS_State: height_calibration called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->height_calibration();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
 TriggerProcessingState WS_State::both_slide_full() {
     std::cout << "WS_State: both_slide_full_received called" << std::endl;
     TriggerProcessingState processing_state = wsstatemachine->both_slide_full();

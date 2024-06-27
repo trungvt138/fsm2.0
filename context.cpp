@@ -165,6 +165,38 @@ void Context::slide2_free() {
     state->slide2_free();
 }
 
+void Context::right_order() {
+    state->right_order();
+}
+
+void Context::unwanted_ws() {
+    state->unwanted_ws();
+}
+
+void Context::height_calibration() {
+    state->height_calibration();
+}
+
+void Context::height_high() {
+    state->height_high();
+}
+
+void Context::height_flat() {
+    state->height_flat();
+}
+
+void Context::height_hole() {
+    state->height_hole();
+}
+
+void Context::height_band() {
+    state->height_band();
+}
+
+// void Context::ss_ls_end2_interrupted() {
+//     state->ss_ls_end2_interrupted();
+// }
+
 
 void Context::showState() {
     state->showState();

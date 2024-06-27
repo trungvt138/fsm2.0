@@ -16,11 +16,11 @@ public:
     void showState() override;
     void handleDefaultExit(const TriggerProcessingState &handled) override;
 
-	TriggerProcessingState ss_ls_str1_interrupted()override;
-	TriggerProcessingState ss_ls_str2_interrupted()override;
-	TriggerProcessingState right_order(); //override;
-	TriggerProcessingState unwanted_ws(); //override;
-	TriggerProcessingState both_slide_full()override;
+	TriggerProcessingState ss_ls_srt1_interrupted()override;
+	TriggerProcessingState ss_ls_srt2_interrupted()override;
+	TriggerProcessingState right_order() override;
+	TriggerProcessingState unwanted_ws() override;
+	//TriggerProcessingState both_slide_full()override;
 };
 
 #endif /* SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_SORTING_H_ */

@@ -2,8 +2,8 @@
 // Created by trung on 31/05/2024.
 //
 
-#ifndef OPBASESTATE_H
-#define OPBASESTATE_H
+#ifndef MAINBASESTATE_H
+#define MAINBASESTATE_H
 
 #include "../contextdata.h"
 #include "../actions.h"
@@ -123,6 +123,12 @@ public:
 
     virtual TriggerProcessingState slide1_free() {return TriggerProcessingState::pending;};
     virtual TriggerProcessingState slide2_free() {return TriggerProcessingState::pending;};
+    virtual TriggerProcessingState unwanted_ws() {return TriggerProcessingState::pending;};
+    virtual TriggerProcessingState right_order() {return TriggerProcessingState::pending;};
+
+
+    virtual TriggerProcessingState ws_gone() { return TriggerProcessingState::pending; }
+
 
     virtual void showState() {};
 };

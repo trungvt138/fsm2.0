@@ -19,7 +19,7 @@ void Height_Measurement::entry() {
 void Height_Measurement::handleDefaultExit(const TriggerProcessingState &processingstate) {
     // Alternative: Check sub state machine is in endstate, maybe saver.
     if (processingstate == TriggerProcessingState::endstatereached) {
-        // leavingState();         // not needed, as sub-state machine cannot act anymore.
+        leavingState();         // not needed, as sub-state machine cannot act anymore.
     	hmstatemachine->exit();   // just call own exit.
         new(this) Metal_Detector;
         enterByDefaultEntryPoint();
@@ -29,7 +29,7 @@ void Height_Measurement::handleDefaultExit(const TriggerProcessingState &process
 TriggerProcessingState Height_Measurement::height_calibration() {
     TriggerProcessingState processingstate = hmstatemachine->height_calibration();
     handleDefaultExit(processingstate);
-    return processingstate;
+    return TriggerProcessingState::consumed;
 }
 
 TriggerProcessingState Height_Measurement::height_band() {

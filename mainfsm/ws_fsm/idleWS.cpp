@@ -11,7 +11,7 @@
 
 void idleWS::entry() {
 //    action->entered_WSIdle();
-    std::cout << "entered WSIdle" << std::endl;
+    //std::cout << "entered WSIdle" << std::endl;
 }
 
 TriggerProcessingState idleWS::ss_ls_str1_interrupted() {

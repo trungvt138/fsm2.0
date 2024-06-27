@@ -10,7 +10,7 @@
 #include "Sorting.h"
 
 void Metal_Detector::entry() {
-    std::cout << "Metal_Detector Entry" << std::endl;
+    //std::cout << "Metal_Detector Entry" << std::endl;
 //    action->entered_Operation_State();
 }
 
@@ -51,5 +51,5 @@ TriggerProcessingState Metal_Detector::ss_ms2_erkannt(){
 }
 
 void Metal_Detector::showState() {
-    std::cout << "  Metal_Detector: Operation State" << std::endl;
+    std::cout << "  Operation_State Fsm: Metal_Detector State" << std::endl;
 }

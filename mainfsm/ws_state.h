@@ -84,6 +84,11 @@ public:
     //TriggerProcessingState ss_t_str2_longpressed() override;
     TriggerProcessingState ss_t_str2_shortpressed() override;
     TriggerProcessingState ws_sorted_FBA2() override;
+    TriggerProcessingState slide1_free() override;
+    TriggerProcessingState slide2_free() override;
+    TriggerProcessingState right_order() override;
+    TriggerProcessingState unwanted_ws() override;
+    TriggerProcessingState height_calibration() override;
 
     //TODO: These three methods must be renamed!!!
     TriggerProcessingState ws_missing() override;

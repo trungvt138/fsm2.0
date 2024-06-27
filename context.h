@@ -57,6 +57,35 @@ public:
     void ss_t_str1_pressed();
     void slide1_free();
     void slide2_free();
+    void right_order();
+    void unwanted_ws();
+    void height_calibration();
+
+    void ss_ls_str2_continuous();
+    void ss_ls_str2_interrupted();
+    void lightbarrier_height2_continuous();
+    void lightbarrier_height2_interrupted();
+    void height_ok2_active();
+    void height_ok2_unactive();
+    void ss_ls_srt2_continuous();
+    void ss_ls_srt2_interrupted();
+    void ss_ms2_erkannt();
+    void ss_ms2_fall();
+    void switch2_open();
+    void switch2_unopen();
+    void ss_ls_sli2_rise();
+    void ss_ls_sli2_full();
+    void ss_ls_end2_continuous();
+    void ss_ls_end2_interrupted();
+    void ss_t_str2_unpressed();
+    void ss_t_stp2_unpressed();
+    void ss_t_str2_pressed();
+
+    void ws_gone();
+    void height_high();
+    void height_flat();
+    void height_hole();
+    void height_band();
 };
 
 

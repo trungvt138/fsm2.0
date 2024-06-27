@@ -9,6 +9,7 @@ enum class TriggerProcessingState {
     consumed,
     pending,
     endstatereached,
+    ws_transfered_reached
 };
 
 #endif //TRIGGERPROCESSINGSTATE_H

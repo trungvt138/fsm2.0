@@ -67,6 +67,21 @@ public:
 
     void slide2_free() override;
 
+    void unwanted_ws() override;
+
+    void right_order() override;
+
+    void height_calibration() override;
+
+
+    // Group 3
+    void connection_back() override;
+    void ws_gone() override;
+    void height_high() override;
+    void height_flat() override;
+    void height_hole() override;
+    void height_band() override;
+
     void showState() override;
 };
 

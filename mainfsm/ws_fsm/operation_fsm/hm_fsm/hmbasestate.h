@@ -17,7 +17,7 @@ using namespace std;
 
 class HMBaseState {
 protected:
-    ContextData *data;
+	ContextData *data;
     Actions *action;
 
 public:

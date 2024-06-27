@@ -146,4 +146,11 @@ add_executable(fsm2_0 main.cpp
         mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.h
         mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.cpp
         mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.h
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.cpp
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.h
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.cpp
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.h
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.cpp
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.h
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudoendstate.h
 )
