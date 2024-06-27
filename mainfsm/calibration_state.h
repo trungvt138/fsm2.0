@@ -11,7 +11,8 @@ class Calibration_State : public MainBaseState {
 public:
     void entry() override;
     void exit() override;
-    TriggerProcessingState ss_t_str_shortpressed() override;
+    TriggerProcessingState ss_t_str1_shortpressed() override;
+    TriggerProcessingState ss_t_str2_shortpressed() override;
     void showState() override;
 };
 

@@ -31,6 +31,7 @@ public:
     virtual bool isPseudoEndState() {return false;};
 
     virtual void enterByDefaultEntryPoint(){entry();};
+    virtual void enterByDeepHistoryEntryPoint(){entry();};
 
     virtual void leavingState(){exit();};
 
@@ -45,20 +46,42 @@ public:
     virtual void exit(){};
 
     // Trigger
-    virtual void ss_t_str_longpressed() {};
-    virtual void ss_t_str_shortpressed() {};
-    virtual void ss_t_stp_pressed() {};
-    virtual void ws_false_placement() {};
-    virtual void ws_gone() {};
-    virtual void both_slide_full() {}
     virtual void ss_t_est1_pressed() {};
     virtual void ss_t_est2_pressed() {};
-    virtual void connection_lost() {};
     virtual void connection_back() {};
     virtual void ss_t_est1_unpressed() {};
     virtual void ss_t_est2_unpressed() {};
+
+    virtual void ss_ls_str1_continuous() {};
+    virtual void ss_ls_str1_interrupted() {};
+    virtual void lightbarrier_height1_continuous() {};
+    virtual void lightbarrier_height1_interrupted() {};
+    virtual void height_ok1_active() {};
+    virtual void height_ok1_unactive() {};
+    virtual void ss_ls_srt1_continuous() {};
+    virtual void ss_ls_srt1_interrupted() {};
+    virtual void ss_ms1_erkannt() {};
+    virtual void ss_ms1_fall() {};
+    virtual void switch1_open() {};
+    virtual void switch1_unopen() {};
+    virtual void ss_ls_sli1_rise() {};
+    virtual void ss_ls_sli1_full() {};
+    virtual void ss_ls_end1_continuous() {};
+    virtual void ss_ls_end1_interrupted() {};
+    virtual void ss_t_stp1_pressed() {};
+    virtual void ss_t_stp2_pressed() {};
     virtual void ss_t_rst1_pressed() {};
     virtual void ss_t_rst2_pressed() {};
+    virtual void ss_t_str1_longpressed() {};
+    virtual void ss_t_str1_shortpressed() {};
+    virtual void ss_t_str2_longpressed() {};
+    virtual void ss_t_str2_shortpressed() {};
+    virtual void ws_missing(){};
+    virtual void ws_false_placement(){};
+    virtual void connection_lost(){};
+    virtual void both_slide_full(){};
+    virtual void slide1_free(){};
+    virtual void slide2_free(){};
 
     virtual void showState() {};
 };

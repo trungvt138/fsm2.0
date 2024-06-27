@@ -24,20 +24,32 @@ Context::~Context() {
 }
 
 // forward all events
-void Context::ss_t_str_longpressed() {
-    state->ss_t_str_longpressed();
+void Context::ss_t_str1_longpressed() {
+    state->ss_t_str1_longpressed();
 }
 
-void Context::ss_t_str_shortpressed() {
-    state->ss_t_str_shortpressed();
+void Context::ss_t_str1_shortpressed() {
+    state->ss_t_str1_shortpressed();
 }
 
-void Context::ss_t_stp_pressed() {
-    state->ss_t_stp_pressed();
+void Context::ss_t_stp1_pressed() {
+    state->ss_t_stp1_pressed();
 }
 
-void Context::ws_gone() {
-    state->ws_gone();
+void Context::ss_t_str2_longpressed() {
+    state->ss_t_str2_longpressed();
+}
+
+void Context::ss_t_str2_shortpressed() {
+    state->ss_t_str2_shortpressed();
+}
+
+void Context::ss_t_stp2_pressed() {
+    state->ss_t_stp2_pressed();
+}
+
+void Context::ws_missing() {
+    state->ws_missing();
 }
 
 void Context::both_slide_full() {
@@ -80,6 +92,79 @@ void Context::ss_t_rst1_pressed() {
 void Context::ss_t_rst2_pressed() {
     state->ss_t_rst2_pressed();
 }
+
+void Context::height_ok1_active() {
+    state->height_ok1_active();
+}
+
+void Context::height_ok1_unactive() {
+    state->height_ok1_unactive();
+}
+
+void Context::lightbarrier_height1_continuous() {
+    state->lightbarrier_height1_continuous();
+}
+
+void Context::lightbarrier_height1_interrupted() {
+    state->lightbarrier_height1_interrupted();
+}
+
+void Context::ss_ls_end1_continuous() {
+    state->ss_ls_end1_continuous();
+}
+
+void Context::ss_ls_end1_interrupted() {
+    state->ss_ls_end1_interrupted();
+}
+
+void Context::ss_ls_sli1_full() {
+    state->ss_ls_sli1_full();
+}
+
+void Context::ss_ls_sli1_rise() {
+    state->ss_ls_sli1_rise();
+}
+
+void Context::ss_ls_str1_continuous() {
+    state->ss_ls_str1_continuous();
+}
+
+void Context::ss_ls_str1_interrupted() {
+    state->ss_ls_str1_interrupted();
+}
+
+void Context::ss_ls_srt1_continuous() {
+    state->ss_ls_srt1_continuous();
+}
+
+void Context::ss_ls_srt1_interrupted() {
+    state->ss_ls_srt1_interrupted();
+}
+
+void Context::ss_ms1_erkannt() {
+    state->ss_ms1_erkannt();
+}
+
+void Context::ss_ms1_fall() {
+    state->ss_ms1_fall();
+}
+
+void Context::switch1_open() {
+    state->switch1_open();
+}
+
+void Context::switch1_unopen() {
+    state->switch1_unopen();
+}
+
+void Context::slide1_free() {
+    state->slide1_free();
+}
+
+void Context::slide2_free() {
+    state->slide2_free();
+}
+
 
 void Context::showState() {
     state->showState();

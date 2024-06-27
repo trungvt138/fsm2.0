@@ -3,12 +3,26 @@
 //
 
 #include "mainbasestate.h"
-
-#include <iostream>
-
 #include "idle.h"
-#include "../wsfsm/wspseudostartstate.h"
+#include "ws_fsm/wspseudostartstate.h"
 
+
+void MainBaseState::initSubStateMachines(){
+    wsstatemachine = new WSPseudoStartState();
+    wsstatemachine->initSubStateMachines();
+    errorsubmachine = new ErrorBaseState();
+    errorsubmachine->initSubStateMachines();
+}
+
+void MainBaseState::setData(ContextData *data){
+    this->data = data;
+    wsstatemachine->setData(data);
+}
+
+void MainBaseState::setAction(Actions *action){
+    this->action = action;
+    wsstatemachine->setAction(action);
+}
 
 void MainBaseState::enterViaPseudoStart() {
     std::cout << "MainFsm Initial Trasition taken" << std::endl;
@@ -16,10 +30,7 @@ void MainBaseState::enterViaPseudoStart() {
     enterByDefaultEntryPoint();
 }
 
-void MainBaseState::initSubStateMachines() {
-    wsfsm = new WSPseudoStartState();
-    wsfsm->initSubStateMachines();
+void MainBaseState::enterViaDeepHistory() {
+    enterByDeepHistoryEntryPoint();
 }
-
-
 
