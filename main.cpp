@@ -29,53 +29,64 @@ int main(int argc, char** argv) {
     fsmA.ss_ls_str1_interrupted();
     fsmA.showState();
 
-    //Enter Height Measurement
-    fsmA.ss_ls_str1_continuous();
+    //Enter Idle
+    fsmA.ss_t_stp1_pressed();
     fsmA.showState();
 
-    //Enter Error Via Both Slide Full
-    fsmA.both_slide_full();
+    //Enter Transport
+    fsmA.ss_t_str1_shortpressed();
     fsmA.showState();
 
-    //Enter Slide 1 Emptied
-    fsmA.slide1_free();
-    fsmA.showState();
-
-    //Enter Anstehend Quittiert
-    fsmA.slide2_free();
-    fsmA.showState();
-
-    //Enter WS State
-    fsmA.ss_t_rst1_pressed();
-    fsmA.showState();
-
-    //Enter Measuring Height
-    fsmA.height_calibration();
-    fsmA.showState();
-
-    //Enter WS_High
-    fsmA.height_flat();
-    fsmA.showState();
-
-    //Enter Metal Detector
-    fsmA.height_band();
-    fsmA.showState();
-
-    // //Enter Metal Detector
+    //
+    // //Enter Height Measurement
+    // fsmA.ss_ls_str1_continuous();
+    // fsmA.showState();
+    //
+    // //Enter Error Via Both Slide Full
+    // fsmA.both_slide_full();
+    // fsmA.showState();
+    //
+    // //Enter Slide 1 Emptied
+    // fsmA.slide1_free();
+    // fsmA.showState();
+    //
+    // //Enter Anstehend Quittiert
+    // fsmA.slide2_free();
+    // fsmA.showState();
+    //
+    // //Enter WS State
+    // fsmA.ss_t_rst1_pressed();
+    // fsmA.showState();
+    //
+    // //Enter Measuring Height
     // fsmA.height_calibration();
     // fsmA.showState();
     //
-    //Enter Sorting
-    fsmA.ss_ls_srt1_interrupted();
-    fsmA.showState();
+    // //Enter WS_High
+    // fsmA.height_flat();
+    // fsmA.showState();
+    //
+    // //Enter Metal Detector
+    // fsmA.height_band();
+    // fsmA.showState();
+    //
+    // // //Enter Metal Detector
+    // // fsmA.height_calibration();
+    // // fsmA.showState();
+    // //
+    // //Enter Sorting
+    // fsmA.ss_ls_srt1_interrupted();
+    // fsmA.showState();
+    //
+    // //Enter Error State via ws_gone Port
+    // fsmA.ws_missing();
+    // fsmA.showState();
+    //
+    // //Enter Sorting via Deep History
+    // fsmA.ss_t_rst1_pressed();
+    // fsmA.showState();
 
-    //Enter Error State via ws_gone Port
-    fsmA.ws_missing();
-    fsmA.showState();
 
-    //Enter Sorting via Deep History
-    fsmA.ss_t_rst1_pressed();
-    fsmA.showState();
     // //Enter Transfering
     // fsmA.unwanted_ws();
     // fsmA.showState();

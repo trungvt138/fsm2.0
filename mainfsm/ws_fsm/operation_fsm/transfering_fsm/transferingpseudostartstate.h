@@ -11,7 +11,7 @@ class TransferingPseudoStartState : public TransferingBaseState {
 public:
     bool isPseudoStartState() override {return true;};
 
-    //void enterViaDeepHistory() override { enterViaPseudoStart();};
+    void enterViaDeepHistory() override { enterViaPseudoStart();};
 
     void showState() override {std::cout << "State: Transfering Pseudo Start State" << std::endl;}; // Just for illustration!
 

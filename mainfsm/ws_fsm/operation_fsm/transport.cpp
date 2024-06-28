@@ -53,6 +53,6 @@ TriggerProcessingState transport::ws_sorted_FBA1(){
 }
 
 void transport::showState() {
-	std::cout << "OperationFsm: Transport";
+	std::cout << "OperationFsm: Transport" << std::endl;;
 }
 

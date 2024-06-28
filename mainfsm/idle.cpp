@@ -28,7 +28,7 @@ TriggerProcessingState Idle::ss_t_str1_shortpressed() {
     leavingState();
 
     new(this) WS_State;
-    enterByDefaultEntryPoint();
+    enterByDeepHistoryEntryPoint();
     return TriggerProcessingState::consumed;
 }
 
@@ -46,7 +46,7 @@ TriggerProcessingState Idle::ss_t_str2_shortpressed() {
     leavingState();
 
     new(this) WS_State;
-    enterByDefaultEntryPoint();
+    enterByDeepHistoryEntryPoint();
     return TriggerProcessingState::consumed;
 }
 
