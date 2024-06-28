@@ -1,5 +1,5 @@
 /*
- * wait_free_slide2.cpp
+* wait_free_slide2.cpp
  *
  *  Created on: 24.06.2024
  *      Author: maxge

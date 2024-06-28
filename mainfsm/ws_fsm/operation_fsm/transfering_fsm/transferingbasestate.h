@@ -34,6 +34,7 @@ public:
     virtual void entry(){};
     virtual void exit(){};
 
+
     virtual void handleDefaultExit(const TriggerProcessingState &handled) {};
 
     virtual TriggerProcessingState ss_ls_end1_interrupted(){return TriggerProcessingState::pending;};

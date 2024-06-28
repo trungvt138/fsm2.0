@@ -8,6 +8,7 @@
 #ifndef SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_HM_FSM_HMBASESTATE_H_
 #define SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_HM_FSM_HMBASESTATE_H_
 
+
 #include "../../../../contextdata.h"
 #include "../../../../actions.h"
 #include "../../../../subcommon/triggerprocessingstate.h"
@@ -17,11 +18,11 @@ using namespace std;
 
 class HMBaseState {
 protected:
-	ContextData *data;
+    ContextData *data;
     Actions *action;
 
 public:
-
+    virtual ~HMBaseState()= default;
 	void initSubStateMachines(){};
 	void setData(ContextData *data);
 	void setAction(Actions *action);
@@ -115,6 +116,7 @@ public:
 
 
     virtual void showState() {};
+
 
 };
 

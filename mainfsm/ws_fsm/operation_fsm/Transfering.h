@@ -11,7 +11,7 @@
 #include "opbasestate.h"
 
 
-class Transfering : opbasestate {
+class Transfering : public opbasestate {
 public:
 
     void entry() override;
@@ -19,7 +19,10 @@ public:
 
     TriggerProcessingState ss_ls_end1_interrupted() override;
     TriggerProcessingState ss_ls_end2_interrupted() override;
+
     TriggerProcessingState ss_ls_str2_interrupted() override;
+
+
     TriggerProcessingState ws_sorted(); //override;
     TriggerProcessingState ss_ls_end2_continuous() override;
 

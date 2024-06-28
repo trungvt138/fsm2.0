@@ -1,5 +1,5 @@
 /*
- * anstehend_quittiert.h
+* anstehend_quittiert.h
  *
  *  Created on: 24.06.2024
  *      Author: maxge

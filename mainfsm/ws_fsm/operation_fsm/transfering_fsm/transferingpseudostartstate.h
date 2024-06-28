@@ -5,6 +5,7 @@
 #ifndef TRANSFERINGPSEUDOSTARTSTATE_H
 #define TRANSFERINGPSEUDOSTARTSTATE_H
 #include "transferingbasestate.h"
+#include <iostream>
 
 class TransferingPseudoStartState : public TransferingBaseState {
 public:

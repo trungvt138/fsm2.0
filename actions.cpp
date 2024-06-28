@@ -45,7 +45,6 @@ void Actions::ak_fbm1_right_off(){
 void Actions::ak_fbm2_right_off(){
     cout << "  Action ak_fbm2_right_off called" << endl;
 }
-
 void Actions::ak_l_glb1_on(){
     cout << "  Action ak_l_glb1_on called" << endl;
 }
@@ -119,7 +118,6 @@ void Actions::ak_l_glb2_blink_fast(){
 void Actions::ak_l_rot1_blink_fast(){
     cout << "  Action ak_l_rot1_blink_fast called" << endl;
 }
-
 void Actions::ak_l_rot1_blink_slow(){
     cout << "  Action ak_l_rot1_blink_slow called" << endl;
 }
@@ -133,11 +131,30 @@ void Actions::ak_fbm1_right_on() {
     cout << "  Action ak_fbm1_right_on called" << endl;
 }
 
+void Actions::start_calibration() {
+    cout << "  Action start_calibration called" << endl;
+}
 
-void Actions::entered_Operation_State() {}
-void Actions::entered_Calibration_State(){}
-void Actions::entered_Error_State(){}
-void Actions::entered_Idle(){}
-void Actions::entered_WS_State(){}
-void Actions::enteredMainFSM(){};
-void Actions::enteredEStoppFSM(){};
+void Actions::stop_calibration() {
+    cout << "  Action stop_calibration called" << endl;
+}
+
+void Actions::sample_band_start() {
+    cout << "  Action sample_band_start called" << endl;
+}
+
+void Actions::sample_band_stop() {
+    cout << "  Action sample_band_stop called" << endl;
+}
+
+void Actions::sample_high_start() {
+    cout << "  Action sample_high_start called" << endl;
+}
+
+void Actions::sample_hole_start() {
+    cout << "  Action sample_hole_start called" << endl;
+}
+
+void Actions::sample_flat_start() {
+    cout << "  Action sample_flat_start called" << endl;
+}

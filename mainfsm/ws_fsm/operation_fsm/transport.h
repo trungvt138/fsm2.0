@@ -11,7 +11,7 @@
 #include "opbasestate.h"
 
 
-class transport : opbasestate {
+class transport : public opbasestate {
 public:
 
     void entry() override;

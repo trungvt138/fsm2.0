@@ -1,7 +1,7 @@
 /*
  * oppseudostartstate.h
  *
- *  Created on: 24.06.2024
+ *  Created on: 26.06.2024
  *      Author: infwur761
  */
 
@@ -9,13 +9,12 @@
 #define SRC_FSMSIMPLE_MAINFSM_OPERATION_FSM_OPPSEUDOSTARTSTATE_H_
 #include "opbasestate.h"
 
-class oppseudostartstate : public opbasestate {
+class OpPseudoStartState : public opbasestate {
 public:
     bool isPseudoStartState() override {return true;};
 
-    //void enterViaDeepHistory() override { enterViaPseudoStart();};
 
     void showState() override {std::cout << "State: OP Start State" << std::endl;}; // Just for illustration!
 };
 
-#endif /* SRC_FSMSIMPLE_MAINFSM_OPERATION_FSM_OPPSEUDOSTARTSTATE_H_ */
+#endif /* SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_OPPSEUDOSTARTSTATE_H_ */

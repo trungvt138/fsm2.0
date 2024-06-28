@@ -6,6 +6,7 @@
  */
 
 #include "metal_detector.h"
+#include "Sorting.h"
 
 #include "Sorting.h"
 
@@ -15,38 +16,42 @@ void Metal_Detector::entry() {
 }
 
 TriggerProcessingState Metal_Detector::ss_ls_srt1_interrupted(){
-	if (this->data->checkFBA1()){}
-	action->ak_fbm1_slow_off();
-//	updateWSData(nonmetal);
-	new(this) Sorting;
-	enterByDefaultEntryPoint();
+	if (this->data->checkFBA1()){
+		action->ak_fbm1_slow_off();
+//		updateWSData(nonmetal);
+		new(this) Sorting;
+		enterByDefaultEntryPoint();
+	}
 	return TriggerProcessingState::consumed;
 }
 
 TriggerProcessingState Metal_Detector::ss_ls_srt2_interrupted(){
-	if (this->data->checkFBA1() == false){}
-	action->ak_fbm2_slow_off();
-//	updateWSData(nonmetal);
-	new(this) Sorting;
-	enterByDefaultEntryPoint();
+	if (this->data->checkFBA1() == false){
+		action->ak_fbm2_slow_off();
+//		updateWSData(nonmetal);
+		new(this) Sorting;
+		enterByDefaultEntryPoint();
+	}
 	return TriggerProcessingState::consumed;
 }
 
 TriggerProcessingState Metal_Detector::ss_ms1_erkannt(){
-	if (this->data->checkFBA1()){}
-	action->ak_fbm1_slow_off();
-//	updateWSData(metal);
-	new(this) Sorting;
-	enterByDefaultEntryPoint();
+	if (this->data->checkFBA1()){
+		action->ak_fbm1_slow_off();
+//		updateWSData(metal);
+		new(this) Sorting;
+		enterByDefaultEntryPoint();
+	}
 	return TriggerProcessingState::consumed;
 }
 
 TriggerProcessingState Metal_Detector::ss_ms2_erkannt(){
-	if (this->data->checkFBA1() == false){}
-	action->ak_fbm2_slow_off();
-//	updateWSData(metal);
-	new(this) Sorting;
-	enterByDefaultEntryPoint();
+	if (this->data->checkFBA1() == false){
+		action->ak_fbm2_slow_off();
+//		updateWSData(metal);
+		new(this) Sorting;
+		enterByDefaultEntryPoint();
+	}
 	return TriggerProcessingState::consumed;
 }
 

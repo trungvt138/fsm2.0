@@ -2,7 +2,7 @@
 // Created by trung on 07/06/2024.
 //
 
-#include "../mainfsm/error_state.h"
+#include "error_state.h"
 
 #include <iostream>
 
@@ -75,6 +75,8 @@ TriggerProcessingState Error_State::slide2_free() {
 	TriggerProcessingState processingstate = errorsubmachine->slide2_free();
 	handleDefaultExit(processingstate);
 	return TriggerProcessingState::consumed;
+
+
 }
 
 void Error_State::showState() {

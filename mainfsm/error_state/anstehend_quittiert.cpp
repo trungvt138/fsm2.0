@@ -1,5 +1,5 @@
 /*
- * anstehend_quittiert.cpp
+* anstehend_quittiert.cpp
  *
  *  Created on: 24.06.2024
  *      Author: maxge

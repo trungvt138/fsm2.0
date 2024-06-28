@@ -1,5 +1,5 @@
 /*
- * Slide1_Emptied.cpp
+* Slide1_Emptied.cpp
  *
  *  Created on: 25.06.2024
  *      Author: maxge

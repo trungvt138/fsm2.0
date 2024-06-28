@@ -6,6 +6,7 @@
  */
 
 #include "transport.h"
+#include "height_measurement.h"
 
 #include "height_measurement.h"
 #include "oppseudoendstate.h"

@@ -1,5 +1,5 @@
 /*
- * Slide1_Emptied.h
+* Slide1_Emptied.h
  *
  *  Created on: 25.06.2024
  *      Author: maxge
@@ -12,7 +12,7 @@
 
 class Slide1_Emptied : public BothSlideFullBaseState {
 public:
-	TriggerProcessingState slide2_free() override;
+    TriggerProcessingState slide2_free() override;
 
     void showState() override;
 };

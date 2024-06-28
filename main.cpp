@@ -53,24 +53,28 @@ int main(int argc, char** argv) {
     fsmA.height_calibration();
     fsmA.showState();
 
-    //Enter Metal Detector
-    fsmA.height_calibration();
+    //Enter WS_High
+    fsmA.height_high();
     fsmA.showState();
-
-    //Enter Sorting
-    fsmA.ss_ls_srt1_interrupted();
-    fsmA.showState();
-
-    //Enter Transfering
-    fsmA.unwanted_ws();
-    fsmA.showState();
-
-    //Enter Waiting Remove
-    fsmA.ss_ls_end1_interrupted();
-    fsmA.showState();
-
-    //Enter WS Idle
-    // fsmA.ss_ls_end2_continuous();
+    // //Enter Metal Detector
+    // fsmA.height_calibration();
     // fsmA.showState();
+    //
+    // //Enter Sorting
+    // fsmA.ss_ls_srt1_interrupted();
+    // fsmA.showState();
+    //
+    // //Enter Transfering
+    // fsmA.unwanted_ws();
+    // fsmA.showState();
+    //
+    // //Enter WSIdle
+    // fsmA.ss_ls_srt1_interrupted();
+    // fsmA.showState();
+    //
+    // //Enter Estop via E1
+    // fsmA.ss_t_est1_pressed();
+    // fsmA.showState();
+
 }
 

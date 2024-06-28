@@ -11,22 +11,28 @@
 #include "../mainfsm/ws_fsm/wsbasestate.h"
 
 #include <iostream>
-
-#include "error_state/errorbasestate.h"
 using namespace std;
+
+#include "../calibrationfsm/calibrationbasestate.h"
+#include "error_state/errorbasestate.h"
 
 
 class MainBaseState {
 protected:
     ContextData *data;
     Actions *action;
+
     wsbasestate *wsstatemachine;
+    CalibrationBaseState *calibrationsubmachine;
     ErrorBaseState *errorsubmachine;
+
+
 
 public:
     virtual ~MainBaseState() {
-        delete wsstatemachine;
-        delete errorsubmachine;
+    	delete wsstatemachine;
+    	delete errorsubmachine;
+    	delete calibrationsubmachine;
     }
     virtual void initSubStateMachines();
 
@@ -80,6 +86,7 @@ public:
     virtual TriggerProcessingState ss_t_str1_pressed() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState ws_sorted_FBA1() { return TriggerProcessingState::pending; }
 
+
     // Group 2
     virtual TriggerProcessingState ss_ls_str2_continuous() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState ss_ls_str2_interrupted() { return TriggerProcessingState::pending; }
@@ -115,6 +122,7 @@ public:
     virtual TriggerProcessingState connection_lost() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState connection_back() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState ws_missing() { return TriggerProcessingState::pending; }
+    virtual TriggerProcessingState ws_gone() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState height_high() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState height_flat() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState height_calibration() { return TriggerProcessingState::pending; }
@@ -127,12 +135,9 @@ public:
     virtual TriggerProcessingState right_order() {return TriggerProcessingState::pending;};
 
 
-    virtual TriggerProcessingState ws_gone() { return TriggerProcessingState::pending; }
-
-
     virtual void showState() {};
 };
 
 
 
-#endif //OPBASESTATE_H
+#endif //MAINBASESTATE_H

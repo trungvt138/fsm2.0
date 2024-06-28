@@ -4,37 +4,28 @@
 
 #ifndef CONTEXT_H
 #define CONTEXT_H
+
 #include "actions.h"
 #include "contextdata.h"
 #include "rootfsm/basestate.h"
 
-class Context {
+class Context{
 private:
     BaseState *state;
     Actions *action;
     ContextData data;
+
+
 public:
-    explicit Context(Actions *shared_action);
+
+    Context(Actions *shared_action);
     virtual ~Context();
 
-    void ss_t_str1_longpressed();
-    void ss_t_str1_shortpressed();
-    void ss_t_stp1_pressed();
-    void ss_t_str2_longpressed();
-    void ss_t_str2_shortpressed();
-    void ss_t_stp2_pressed();
-    void ws_false_placement();
-    void ws_missing();
-    void both_slide_full();
-    void ss_t_est1_pressed();
     void ss_t_est2_pressed();
-    void connection_lost();
-    void ss_t_est1_unpressed();
     void ss_t_est2_unpressed();
-    void connection_back();
-    void ss_t_rst1_pressed();
-    void ss_t_rst2_pressed();
+
     void showState();
+
     void ss_ls_str1_continuous();
     void ss_ls_str1_interrupted();
     void lightbarrier_height1_continuous();
@@ -53,13 +44,14 @@ public:
     void ss_ls_end1_interrupted();
     void ss_t_str1_unpressed();
     void ss_t_stp1_unpressed();
+    void ss_t_stp1_pressed();
+    void ss_t_rst1_pressed();
     void ss_t_rst1_unpressed();
+    void ss_t_est1_unpressed();
+    void ss_t_est1_pressed();
+    void ss_t_str1_longpressed();
+    void ss_t_str1_shortpressed();
     void ss_t_str1_pressed();
-    void slide1_free();
-    void slide2_free();
-    void right_order();
-    void unwanted_ws();
-    void height_calibration();
 
     void ss_ls_str2_continuous();
     void ss_ls_str2_interrupted();
@@ -79,16 +71,30 @@ public:
     void ss_ls_end2_interrupted();
     void ss_t_str2_unpressed();
     void ss_t_stp2_unpressed();
+    void ss_t_stp2_pressed();
+    void ss_t_rst2_pressed();
+    void ss_t_rst2_unpressed();
+    void ss_t_str2_longpressed();
+    void ss_t_str2_shortpressed();
     void ss_t_str2_pressed();
 
+    void ws_missing();
+    void both_slide_full();
+    void ws_false_placement();
+    void connection_lost();
+    void connection_back();
     void ws_gone();
     void height_high();
     void height_flat();
+    void height_calibration();
     void height_hole();
     void height_band();
+
+    void slide1_free();
+    void slide2_free();
+    void right_order();
+    void unwanted_ws();
 };
-
-
 
 
 

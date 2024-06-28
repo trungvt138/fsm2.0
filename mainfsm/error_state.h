@@ -2,8 +2,9 @@
 // Created by trung on 07/06/2024.
 //
 
-#ifndef OPSORT_H
-#define OPSORT_H
+#ifndef ERROR_STATE_H
+#define ERROR_STATE_H
+
 #include "mainbasestate.h"
 
 
@@ -26,4 +27,4 @@ public:
     void showState() override;
 };
 
-#endif //OPSORT_H
+#endif //ERROR_STATE_H

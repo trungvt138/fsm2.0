@@ -209,6 +209,136 @@ void MainFsm::height_band() {
     mainsubmachine->height_band();
 }
 
+void MainFsm::ss_t_str1_unpressed() {
+    cout << "MainFsm: ss_t_str1_unpressed called" << endl;
+    mainsubmachine->ss_t_str1_unpressed();
+}
+
+void MainFsm::ss_t_stp1_unpressed() {
+    cout << "MainFsm: ss_t_stp1_unpressed called" << endl;
+    mainsubmachine->ss_t_stp1_unpressed();
+}
+
+void MainFsm::ss_t_rst1_unpressed() {
+    cout << "MainFsm: ss_t_rst1_unpressed called" << endl;
+    mainsubmachine->ss_t_rst1_unpressed();
+}
+
+void MainFsm::ss_t_est1_unpressed() {
+    cout << "MainFsm: ss_t_est1_unpressed called" << endl;
+    mainsubmachine->ss_t_est1_unpressed();
+}
+
+void MainFsm::ss_t_str1_pressed() {
+    cout << "MainFsm: ss_t_str1_pressed called" << endl;
+    mainsubmachine->ss_t_str1_pressed();
+}
+
+void MainFsm::ss_ls_str2_continuous() {
+    cout << "MainFsm: ss_ls_str2_continuous called" << endl;
+    mainsubmachine->ss_ls_str2_continuous();
+}
+
+void MainFsm::ss_ls_str2_interrupted() {
+    cout << "MainFsm: ss_ls_str2_interrupted called" << endl;
+    mainsubmachine->ss_ls_str2_interrupted();
+}
+
+void MainFsm::lightbarrier_height2_continuous() {
+    cout << "MainFsm: lightbarrier_height2_continuous called" << endl;
+    mainsubmachine->lightbarrier_height2_continuous();
+}
+
+void MainFsm::lightbarrier_height2_interrupted() {
+    cout << "MainFsm: lightbarrier_height2_interrupted called" << endl;
+    mainsubmachine->lightbarrier_height2_interrupted();
+}
+
+void MainFsm::height_ok2_active() {
+    cout << "MainFsm: height_ok2_active called" << endl;
+    mainsubmachine->height_ok2_active();
+}
+
+void MainFsm::height_ok2_unactive() {
+    cout << "MainFsm: height_ok2_unactive called" << endl;
+    mainsubmachine->height_ok2_unactive();
+}
+
+void MainFsm::ss_ls_srt2_continuous() {
+    cout << "MainFsm: ss_ls_srt2_continuous called" << endl;
+    mainsubmachine->ss_ls_srt2_continuous();
+}
+
+void MainFsm::ss_ls_srt2_interrupted() {
+    cout << "MainFsm: ss_ls_srt2_interrupted called" << endl;
+    mainsubmachine->ss_ls_srt2_interrupted();
+}
+
+void MainFsm::ss_ms2_erkannt() {
+    cout << "MainFsm: ss_ms2_erkannt called" << endl;
+    mainsubmachine->ss_ms2_erkannt();
+}
+
+void MainFsm::ss_ms2_fall() {
+    cout << "MainFsm: ss_ms2_fall called" << endl;
+    mainsubmachine->ss_ms2_fall();
+}
+
+void MainFsm::switch2_open() {
+    cout << "MainFsm: switch2_open called" << endl;
+    mainsubmachine->switch2_open();
+}
+
+void MainFsm::switch2_unopen() {
+    cout << "MainFsm: switch2_unopen called" << endl;
+    mainsubmachine->switch2_unopen();
+}
+
+void MainFsm::ss_ls_sli2_rise() {
+    cout << "MainFsm: ss_ls_sli2_rise called" << endl;
+    mainsubmachine->ss_ls_sli2_rise();
+}
+
+void MainFsm::ss_ls_sli2_full() {
+    cout << "MainFsm: ss_ls_sli2_full called" << endl;
+    mainsubmachine->ss_ls_sli2_full();
+}
+
+void MainFsm::ss_ls_end2_continuous() {
+    cout << "MainFsm: ss_ls_end2_continuous called" << endl;
+    mainsubmachine->ss_ls_end2_continuous();
+}
+
+void MainFsm::ss_ls_end2_interrupted() {
+    cout << "MainFsm: ss_ls_end2_interrupted called" << endl;
+    mainsubmachine->ss_ls_end2_interrupted();
+}
+
+void MainFsm::ss_t_str2_unpressed() {
+    cout << "MainFsm: ss_t_str2_unpressed called" << endl;
+    mainsubmachine->ss_t_str2_unpressed();
+}
+
+void MainFsm::ss_t_stp2_unpressed() {
+    cout << "MainFsm: ss_t_stp2_unpressed called" << endl;
+    mainsubmachine->ss_t_stp2_unpressed();
+}
+
+void MainFsm::ss_t_rst2_unpressed() {
+    cout << "MainFsm: ss_t_rst2_unpressed called" << endl;
+    mainsubmachine->ss_t_rst2_unpressed();
+}
+
+void MainFsm::ss_t_est2_unpressed() {
+    cout << "MainFsm: ss_t_est2_unpressed called" << endl;
+    mainsubmachine->ss_t_est2_unpressed();
+}
+
+void MainFsm::ss_t_str2_pressed() {
+    cout << "MainFsm: ss_t_str2_pressed called" << endl;
+    mainsubmachine->ss_t_str2_pressed();
+}
+
 void MainFsm::ss_t_est1_pressed() {
     cout << "MainFsm: ss_t_est1_pressed called" << endl;
     TriggerProcessingState processing_state = mainsubmachine->ss_t_est1_pressed();

@@ -1,5 +1,5 @@
 /*
- * hmbasestate.cpp
+* hmbasestate.cpp
  *
  *  Created on: 25.06.2024
  *      Author: infwur761
@@ -20,15 +20,10 @@ void HMBaseState::setData(ContextData *data){
 }
 
 void HMBaseState::setAction(Actions *action){
-	this->action = action;
+    this->action = action;
 }
 
 void HMBaseState::enterViaDeepHistory() {
     enterByDeepHistoryEntryPoint();
 }
-
-
-// TriggerProcessingState HMBaseState::handleDefaultExit(const TriggerProcessingState &handled) {
-//     return TriggerProcessingState::pending;
-// };
 

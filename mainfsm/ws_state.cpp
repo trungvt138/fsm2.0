@@ -14,6 +14,8 @@ void WS_State::entry() {
     action->entered_WS_State();
     action->ak_l_grn1_on();
     action->ak_l_grn2_on();
+
+    //action->entered_WS_State();
 }
 
 
@@ -497,6 +499,13 @@ TriggerProcessingState WS_State::right_order() {
 TriggerProcessingState WS_State::height_calibration() {
     std::cout << "WS_State: height_calibration called" << std::endl;
     TriggerProcessingState processingstate = wsstatemachine->height_calibration();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::height_high() {
+    std::cout << "WS_State: height_high called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->height_high();
     handleDefaultExit(processingstate);
     return TriggerProcessingState::consumed;
 }

@@ -10,10 +10,10 @@
 #include "../../../contextdata.h"
 #include "../../../actions.h"
 #include "../../../subcommon/triggerprocessingstate.h"
+#include "hm_fsm/hmbasestate.h"
+#include "sorting_fsm/sortingbasestate.h"
+#include "transfering_fsm/transferingbasestate.h"
 #include <iostream>
-#include "../../ws_fsm/operation_fsm/hm_fsm/hmbasestate.h"
-#include "../../ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.h"
-#include "../../ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.h"
 
 using namespace std;
 
@@ -32,6 +32,10 @@ public:
 		delete sortingstatemachine;
 		delete transferingstatemachine;
 	}
+
+
+
+
 	void setData(ContextData *data);
 	void setAction(Actions *action);
 
@@ -124,6 +128,7 @@ public:
 	virtual TriggerProcessingState right_order() { return TriggerProcessingState::pending; }
 	virtual TriggerProcessingState unwanted_ws() { return TriggerProcessingState::pending; }
     virtual void showState() {};
+
 
 };
 

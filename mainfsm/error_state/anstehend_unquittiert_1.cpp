@@ -1,5 +1,5 @@
 /*
- * anstehend_unquittiert_1.cpp
+* anstehend_unquittiert_1.cpp
  *
  *  Created on: 24.06.2024
  *      Author: maxge
@@ -11,7 +11,7 @@
 #include <iostream>
 
 void Anstehend_Unquittiert_1::entry() {
-//TODO: AK_L_ROT_BLINK_FAST
+	//TODO: AK_L_ROT_BLINK_FAST
 }
 
 TriggerProcessingState Anstehend_Unquittiert_1::ss_t_rst1_pressed() {

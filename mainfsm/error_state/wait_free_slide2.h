@@ -1,5 +1,5 @@
 /*
- * wait_free_slide2.h
+* wait_free_slide2.h
  *
  *  Created on: 24.06.2024
  *      Author: maxge

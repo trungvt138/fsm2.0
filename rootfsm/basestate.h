@@ -46,12 +46,6 @@ public:
     virtual void exit(){};
 
     // Trigger
-    virtual void ss_t_est1_pressed() {};
-    virtual void ss_t_est2_pressed() {};
-    virtual void connection_back() {};
-    virtual void ss_t_est1_unpressed() {};
-    virtual void ss_t_est2_unpressed() {};
-
     virtual void ss_ls_str1_continuous() {};
     virtual void ss_ls_str1_interrupted() {};
     virtual void lightbarrier_height1_continuous() {};
@@ -68,28 +62,63 @@ public:
     virtual void ss_ls_sli1_full() {};
     virtual void ss_ls_end1_continuous() {};
     virtual void ss_ls_end1_interrupted() {};
+    virtual void ss_t_str1_unpressed() {};
+    virtual void ss_t_stp1_unpressed() {};
     virtual void ss_t_stp1_pressed() {};
-    virtual void ss_t_stp2_pressed() {};
     virtual void ss_t_rst1_pressed() {};
-    virtual void ss_t_rst2_pressed() {};
+    virtual void ss_t_rst1_unpressed() {};
+    virtual void ss_t_est1_unpressed() {};
+    virtual void ss_t_est1_pressed() {};
     virtual void ss_t_str1_longpressed() {};
     virtual void ss_t_str1_shortpressed() {};
+    virtual void ss_t_str1_pressed() {};
+
+    // Group 2
+    virtual void ss_ls_str2_continuous() {};
+    virtual void ss_ls_str2_interrupted() {};
+    virtual void lightbarrier_height2_continuous() {};
+    virtual void lightbarrier_height2_interrupted() {};
+    virtual void height_ok2_active() {};
+    virtual void height_ok2_unactive() {};
+    virtual void ss_ls_srt2_continuous() {};
+    virtual void ss_ls_srt2_interrupted() {};
+    virtual void ss_ms2_erkannt() {};
+    virtual void ss_ms2_fall() {};
+    virtual void switch2_open() {};
+    virtual void switch2_unopen() {};
+    virtual void ss_ls_sli2_rise() {};
+    virtual void ss_ls_sli2_full() {};
+    virtual void ss_ls_end2_continuous() {};
+    virtual void ss_ls_end2_interrupted() {};
+    virtual void ss_t_str2_unpressed() {};
+    virtual void ss_t_stp2_unpressed() {};
+    virtual void ss_t_stp2_pressed() {};
+    virtual void ss_t_rst2_pressed() {};
+    virtual void ss_t_rst2_unpressed() {};
+    virtual void ss_t_est2_unpressed() {};
+    virtual void ss_t_est2_pressed() {};
     virtual void ss_t_str2_longpressed() {};
     virtual void ss_t_str2_shortpressed() {};
-    virtual void ws_missing(){};
-    virtual void ws_false_placement(){};
-    virtual void connection_lost(){};
-    virtual void both_slide_full(){};
+    virtual void ss_t_str2_pressed() {};
+
+    // Group 3
+    virtual void ws_missing() {};
+    virtual void both_slide_full() {};
+    virtual void ws_false_placement() {};
+    virtual void connection_lost() {};
+    virtual void connection_back() {};
+    virtual void ws_gone() {};
+    virtual void height_high() {};
+    virtual void height_flat() {};
+    virtual void height_calibration() {};
+    virtual void height_hole() {};
+    virtual void height_band() {};
+
+
     virtual void slide1_free(){};
     virtual void slide2_free(){};
     virtual void unwanted_ws(){};
     virtual void right_order(){};
-    virtual void height_calibration(){};
-    virtual void ws_gone() {};
-    virtual void height_high() {};
-    virtual void height_flat() {};
-    virtual void height_hole() {};
-    virtual void height_band() {};
 
     virtual void showState() {};
 };

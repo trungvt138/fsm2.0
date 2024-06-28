@@ -11,7 +11,7 @@
 
 
 void Transfering::entry() {
-   // std::cout << "Transfering Entry" << std::endl;
+    std::cout << "Transfering Entry" << std::endl;
     //action->entered_Calibration_State();
     transferingstatemachine->enterViaPseudoStart();
 }
@@ -20,8 +20,8 @@ void Transfering::entry() {
 void Transfering::handleDefaultExit(const TriggerProcessingState &processingstate) {
     // Alternative: Check sub state machine is in endstate, maybe saver.
     if (processingstate == TriggerProcessingState::endstatereached) {
-        leavingState();         // not needed, as sub-state machine cannot act anymore.
-    	hmstatemachine->exit();   // just call own exit.
+        //leavingState();         // not needed, as sub-state machine cannot act anymore.
+        transferingstatemachine->exit();   // just call own exit.
         new(this) OpPseudoEndState;
         enterByDefaultEntryPoint();
     }

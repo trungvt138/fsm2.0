@@ -18,7 +18,7 @@ void wsbasestate::enterViaPseudoStart() {
 }
 
 void wsbasestate::initSubStateMachines(){
-    opstatemachine = new oppseudostartstate();
+    opstatemachine = new OpPseudoStartState();
     opstatemachine->initSubStateMachines();
 }
 
@@ -38,6 +38,7 @@ void wsbasestate::enterViaDeepHistory() {
     enterByDeepHistoryEntryPoint();
 }
 
-// TriggerProcessingState wsbasestate::handleDefaultExit(const TriggerProcessingState &handled) {
-//     return TriggerProcessingState::pending;
-// };
+//TriggerProcessingState wsbasestate::handleDefaultExit(const TriggerProcessingState &handled) {
+//    return TriggerProcessingState::pending;
+//};
+
