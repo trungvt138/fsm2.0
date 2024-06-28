@@ -69,5 +69,8 @@ int main(int argc, char** argv) {
     fsmA.ss_ls_end1_interrupted();
     fsmA.showState();
 
+    //Enter WS Idle
+    // fsmA.ss_ls_end2_continuous();
+    // fsmA.showState();
 }
 
