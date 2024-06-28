@@ -12,6 +12,8 @@
 
 void Anstehend_Unquittiert_1::entry() {
 	//TODO: AK_L_ROT_BLINK_FAST
+	action->ak_l_rot1_blink_fast();
+	action->ak_l_rot2_blink_fast();
 }
 
 TriggerProcessingState Anstehend_Unquittiert_1::ss_t_rst1_pressed() {

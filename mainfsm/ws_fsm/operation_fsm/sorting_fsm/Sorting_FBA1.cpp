@@ -10,14 +10,15 @@
 #include <iostream>
 
 #include "sortingpseudoendstate.h"
+#include "ws_sorted_port.h"
 
 TriggerProcessingState Sorting_FBA1::ss_ls_srt1_interrupted() {
 	std::cout << "Sorting_FBA1: ss_ls_srt1_interrupted" << std::endl;
 	//TODO: AK_AWF_WCH1_ON
 	//		WS_SORTED_FBA1
 	leavingState();
-	new(this) SortingPseudoEndState;
-	return TriggerProcessingState::endstatereached;
+	new(this) WS_Sorted_Port;
+	return TriggerProcessingState::ws_sorted_reached;
 }
 
 void Sorting_FBA1::showState() {

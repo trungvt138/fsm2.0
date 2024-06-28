@@ -19,8 +19,8 @@ TriggerProcessingState Sorting_FBA2::ss_ls_srt2_interrupted() {
 	//TODO: AK_AWF_WCH2_ON
 	//		WS_SORTED_FBA2
 	leavingState();
-	new(this) SortingPseudoEndState;
-	return TriggerProcessingState::endstatereached;
+	new(this) WS_Sorted_Port;
+	return TriggerProcessingState::ws_sorted_reached;
 }
 
 void Sorting_FBA2::showState() {

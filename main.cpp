@@ -54,16 +54,28 @@ int main(int argc, char** argv) {
     fsmA.showState();
 
     //Enter WS_High
-    fsmA.height_high();
+    fsmA.height_flat();
     fsmA.showState();
+
+    //Enter Metal Detector
+    fsmA.height_band();
+    fsmA.showState();
+
     // //Enter Metal Detector
     // fsmA.height_calibration();
     // fsmA.showState();
     //
-    // //Enter Sorting
-    // fsmA.ss_ls_srt1_interrupted();
-    // fsmA.showState();
-    //
+    //Enter Sorting
+    fsmA.ss_ls_srt1_interrupted();
+    fsmA.showState();
+
+    //Enter Error State via ws_gone Port
+    fsmA.ws_missing();
+    fsmA.showState();
+
+    //Enter Sorting via Deep History
+    fsmA.ss_t_rst1_pressed();
+    fsmA.showState();
     // //Enter Transfering
     // fsmA.unwanted_ws();
     // fsmA.showState();

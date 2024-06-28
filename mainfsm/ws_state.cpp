@@ -452,21 +452,7 @@ TriggerProcessingState WS_State::ss_t_stp1_pressed() {
     return TriggerProcessingState::consumed;
 }
 
-TriggerProcessingState WS_State::ws_missing() {
-    std::cout << "WS_State: ws_missing_received called" << std::endl;
-    leavingState();
-    new(this) Error_State;
-    //enterByWsGonePoint();
-    return TriggerProcessingState::consumed;
-}
 
-TriggerProcessingState WS_State::ws_false_placement() {
-    std::cout << "WS_State: ws_false_placement_received called" << std::endl;
-    leavingState();
-    new(this) Error_State;
-    //enterByFalsePlacementPoint();
-    return TriggerProcessingState::consumed;
-}
 
 TriggerProcessingState WS_State::unwanted_ws() {
     std::cout << "WS_State: unwanted_ws called" << std::endl;
@@ -510,6 +496,27 @@ TriggerProcessingState WS_State::height_high() {
     return TriggerProcessingState::consumed;
 }
 
+TriggerProcessingState WS_State::height_flat() {
+    std::cout << "WS_State: height_flat called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->height_flat();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::height_hole() {
+    std::cout << "WS_State: height_hole called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->height_hole();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::height_band() {
+    std::cout << "WS_State: height_band called" << std::endl;
+    TriggerProcessingState processingstate = wsstatemachine->height_band();
+    handleDefaultExit(processingstate);
+    return TriggerProcessingState::consumed;
+}
+
 TriggerProcessingState WS_State::both_slide_full() {
     std::cout << "WS_State: both_slide_full_received called" << std::endl;
     TriggerProcessingState processing_state = wsstatemachine->both_slide_full();
@@ -518,6 +525,29 @@ TriggerProcessingState WS_State::both_slide_full() {
         leavingState();
         new(this) Error_State;
         enterByBothSlideFullPoint();
+    }
+    return TriggerProcessingState::consumed;
+}
+TriggerProcessingState WS_State::ws_missing() {
+    std::cout << "WS_State: ws_missing_received called" << std::endl;
+    TriggerProcessingState processing_state = wsstatemachine->ws_missing();
+    if (processing_state == TriggerProcessingState::pending) {
+        wsstatemachine->exit();
+        leavingState();
+        new(this) Error_State;
+        enterByWsGonePoint();
+    }
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState WS_State::ws_false_placement() {
+    std::cout << "WS_State: ws_false_placement_received called" << std::endl;
+    TriggerProcessingState processing_state = wsstatemachine->ws_false_placement();
+    if (processing_state == TriggerProcessingState::pending) {
+        wsstatemachine->exit();
+        leavingState();
+        new(this) Error_State;
+        enterByFalsePlacementPoint();
     }
     return TriggerProcessingState::consumed;
 }

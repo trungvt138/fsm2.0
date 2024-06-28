@@ -455,6 +455,38 @@ TriggerProcessingState Operation_State::height_calibration() {
     return processingstate;
 }
 
+TriggerProcessingState Operation_State::height_high() {
+    std::cout << "Operation_State::height_high called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_high();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_flat() {
+    std::cout << "Operation_State::height_flat called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_flat();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_hole() {
+    std::cout << "Operation_State::height_hole called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_hole();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_band() {
+    std::cout << "Operation_State::height_band called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_band();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
 //for other fsm
 
 // TriggerProcessingState Operation_State::ws_missing() {

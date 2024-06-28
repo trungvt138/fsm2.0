@@ -88,9 +88,12 @@ public:
     TriggerProcessingState slide2_free() override;
     TriggerProcessingState right_order() override;
     TriggerProcessingState unwanted_ws() override;
+
     TriggerProcessingState height_calibration() override;
     TriggerProcessingState height_high() override;
-
+    TriggerProcessingState height_flat() override;
+    TriggerProcessingState height_hole() override;
+    TriggerProcessingState height_band() override;
 
     //TODO: These three methods must be renamed!!!
     TriggerProcessingState ws_missing() override;

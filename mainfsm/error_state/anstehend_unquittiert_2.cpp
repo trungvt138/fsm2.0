@@ -12,8 +12,9 @@
 #include <iostream>
 
 void Anstehend_Unquittiert_2::entry() {
-	//TODO: AK_L_ROT_BLINK_FAST
 	//TODO: Reset order (if right order)
+	action->ak_l_rot1_blink_fast();
+	action->ak_l_rot2_blink_fast();
 }
 
 TriggerProcessingState Anstehend_Unquittiert_2::ss_t_rst1_pressed() {

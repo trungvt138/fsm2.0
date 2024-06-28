@@ -35,7 +35,7 @@ TriggerProcessingState Height_Measurement::height_calibration() {
 TriggerProcessingState Height_Measurement::height_band() {
     TriggerProcessingState processingstate = hmstatemachine->height_band();
     handleDefaultExit(processingstate);
-    return processingstate;
+    return TriggerProcessingState::consumed;
 }
 
 TriggerProcessingState Height_Measurement::height_flat() {
