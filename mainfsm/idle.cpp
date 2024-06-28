@@ -14,8 +14,8 @@ void Idle::entry() {
 }
 
 
-TriggerProcessingState Idle::ss_t_str_longpressed() {
-    std::cout << "Idle: ss_t_str_longpressed called" << std::endl;
+TriggerProcessingState Idle::ss_t_str1_longpressed() {
+    std::cout << "Idle: ss_t_str1_longpressed called" << std::endl;
     leavingState();
 
     new(this) Calibration_State;
@@ -23,8 +23,26 @@ TriggerProcessingState Idle::ss_t_str_longpressed() {
     return TriggerProcessingState::consumed;
 }
 
-TriggerProcessingState Idle::ss_t_str_shortpressed() {
-    std::cout << "Idle: ss_t_str_shortpressed called" << std::endl;
+TriggerProcessingState Idle::ss_t_str1_shortpressed() {
+    std::cout << "Idle: ss_t_str1_shortpressed called" << std::endl;
+    leavingState();
+
+    new(this) WS_State;
+    enterByDefaultEntryPoint();
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState Idle::ss_t_str2_longpressed() {
+    std::cout << "Idle: ss_t_str2_longpressed called" << std::endl;
+    leavingState();
+
+    new(this) Calibration_State;
+    enterByDefaultEntryPoint();
+    return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState Idle::ss_t_str2_shortpressed() {
+    std::cout << "Idle: ss_t_str2_shortpressed called" << std::endl;
     leavingState();
 
     new(this) WS_State;

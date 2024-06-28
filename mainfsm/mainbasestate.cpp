@@ -3,10 +3,10 @@
 //
 
 #include "mainbasestate.h"
-
-#include <iostream>
-
 #include "idle.h"
+#include "ws_fsm/wspseudostartstate.h"
+
+
 
 
 void MainBaseState::enterViaPseudoStart() {
@@ -15,5 +15,31 @@ void MainBaseState::enterViaPseudoStart() {
     enterByDefaultEntryPoint();
 }
 
+void MainBaseState::initSubStateMachines() {
+	errorsubmachine = new ErrorBaseState();
+	errorsubmachine->initSubStateMachines();
 
+    wsstatemachine = new WSPseudoStartState();
+    wsstatemachine->initSubStateMachines();
 
+    calibrationsubmachine = new CalibrationBaseState();
+    calibrationsubmachine->initSubStateMachines();
+}
+
+void MainBaseState::setAction(Actions *action) {
+	this->action = action;
+	errorsubmachine->setAction(action);
+    wsstatemachine->setAction(action);
+    calibrationsubmachine->setAction(action);
+}
+
+void MainBaseState::setData(ContextData *data) {
+	this->data = data;
+	errorsubmachine->setData(data);
+	wsstatemachine->setData(data);
+    calibrationsubmachine->setData(data);
+}
+
+void MainBaseState::enterViaDeepHistory() {
+	enterByDeepHistoryEntryPoint();
+}

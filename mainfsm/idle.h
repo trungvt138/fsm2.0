@@ -11,8 +11,10 @@ class Idle : public MainBaseState {
 public:
     void entry() override;
 
-    TriggerProcessingState ss_t_str_longpressed() override;
-    TriggerProcessingState ss_t_str_shortpressed() override;
+    TriggerProcessingState ss_t_str1_longpressed() override;
+    TriggerProcessingState ss_t_str1_shortpressed() override;
+    TriggerProcessingState ss_t_str2_longpressed() override;
+    TriggerProcessingState ss_t_str2_shortpressed() override;
 
     void showState() override;
 };

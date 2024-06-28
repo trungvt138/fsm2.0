@@ -24,15 +24,15 @@ void EStoppFSM::enterViaPortCL() {
 }
 
 void EStoppFSM::entry() {
-    action->motor1_Off();
-    action->motor2_Off();
-    action->red1_On();
-    action->red2_On();
+    action->ak_fbm1_right_off();
+    action->ak_fbm2_right_off();
+    action->ak_l_rot1_on();
+    action->ak_l_rot2_on();
 }
 
 void EStoppFSM::exit() {
-    action->red1_Off();
-    action->red2_Off();
+    action->ak_l_rot1_off();
+    action->ak_l_rot2_off();
 }
 
 void EStoppFSM::handleDefaultExit(const TriggerProcessingState &processing_state) {
