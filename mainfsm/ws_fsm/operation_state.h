@@ -22,7 +22,7 @@ public:
 	void leavingState() override {exit();};
 	void enterViaPseudoStart() override {};
 
-
+	void resetDeepHistory() override;
 	void entry() override;
 	void exit() override;
 

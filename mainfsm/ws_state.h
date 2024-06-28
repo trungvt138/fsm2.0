@@ -16,7 +16,9 @@ public:
 
     void enterByDefaultEntryPoint() override;
 
-     void enterByDeepHistoryEntryPoint() override;
+    void enterByDeepHistoryEntryPoint() override;
+
+    void resetDeepHistory() override;
 
     void handleDefaultExit(const TriggerProcessingState &handled) override{};
 

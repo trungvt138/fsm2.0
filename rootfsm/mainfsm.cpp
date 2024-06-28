@@ -343,6 +343,7 @@ void MainFsm::ss_t_est1_pressed() {
     cout << "MainFsm: ss_t_est1_pressed called" << endl;
     TriggerProcessingState processing_state = mainsubmachine->ss_t_est1_pressed();
     if (processing_state == TriggerProcessingState::pending) {
+        mainsubmachine->resetDeepHistory();
         mainsubmachine->exit();
         leavingState();
         new(this) EStoppFSM;

@@ -34,6 +34,10 @@ void WS_State::enterByDeepHistoryEntryPoint(){
     wsstatemachine->enterViaDeepHistory();
 }
 
+void WS_State::resetDeepHistory() {
+    wsstatemachine->resetDeepHistory();
+}
+
 
 //estop
 

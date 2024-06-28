@@ -22,6 +22,13 @@ void Operation_State::exit() {
     action->ak_l_grn2_off();
 }
 
+void Operation_State::resetDeepHistory() {
+    leavingState();
+    opstatemachine->exit();
+    new(this) idleWS;
+    enterByDefaultEntryPoint();
+}
+
 void Operation_State::handleDefaultExit(const TriggerProcessingState &processingstate) {
     if (processingstate == TriggerProcessingState::endstatereached) {
         // leavingState();         // not needed, as sub-state machine cannot act anymore.

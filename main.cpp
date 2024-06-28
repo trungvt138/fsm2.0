@@ -29,11 +29,15 @@ int main(int argc, char** argv) {
     fsmA.ss_ls_str1_interrupted();
     fsmA.showState();
 
-    //Enter Idle
-    fsmA.ss_t_stp1_pressed();
+    //Enter EStop1
+    fsmA.ss_t_est1_pressed();
     fsmA.showState();
 
-    //Enter Transport
+    fsmA.ss_t_est1_unpressed();
+    fsmA.ss_t_rst1_pressed();
+    fsmA.ss_t_rst2_pressed();
+
+    //Enter WS Idle
     fsmA.ss_t_str1_shortpressed();
     fsmA.showState();
 
