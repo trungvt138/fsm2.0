@@ -42,6 +42,7 @@ public:
 	virtual void enterViaPseudoStart();
 	virtual void enterViaDeepHistory();
 
+	virtual void resetDeepHistory(){};
 	virtual void entry(){};
 	virtual void exit(){};
 

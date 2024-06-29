@@ -13,6 +13,7 @@ class OpPseudoStartState : public opbasestate {
 public:
     bool isPseudoStartState() override {return true;};
 
+    void enterViaDeepHistory() override {enterViaPseudoStart();};
 
     void showState() override {std::cout << "State: OP Start State" << std::endl;}; // Just for illustration!
 };

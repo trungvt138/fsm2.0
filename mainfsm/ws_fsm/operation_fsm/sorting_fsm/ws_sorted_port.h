@@ -10,6 +10,7 @@
 #include "sortingbasestate.h"
 
 class WS_Sorted_Port : public SortingBaseState {
+public:
 
 };
 

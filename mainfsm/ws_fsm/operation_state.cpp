@@ -22,6 +22,13 @@ void Operation_State::exit() {
     action->ak_l_grn2_off();
 }
 
+void Operation_State::resetDeepHistory() {
+    leavingState();
+    opstatemachine->exit();
+    new(this) idleWS;
+    enterByDefaultEntryPoint();
+}
+
 void Operation_State::handleDefaultExit(const TriggerProcessingState &processingstate) {
     if (processingstate == TriggerProcessingState::endstatereached) {
         // leavingState();         // not needed, as sub-state machine cannot act anymore.
@@ -451,6 +458,38 @@ TriggerProcessingState Operation_State::height_calibration() {
     std::cout << "Operation_State::height_calibration called" << std::endl;
 
     TriggerProcessingState processingstate = opstatemachine->height_calibration();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_high() {
+    std::cout << "Operation_State::height_high called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_high();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_flat() {
+    std::cout << "Operation_State::height_flat called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_flat();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_hole() {
+    std::cout << "Operation_State::height_hole called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_hole();
+    handleDefaultExit(processingstate);
+    return processingstate;
+}
+
+TriggerProcessingState Operation_State::height_band() {
+    std::cout << "Operation_State::height_band called" << std::endl;
+
+    TriggerProcessingState processingstate = opstatemachine->height_band();
     handleDefaultExit(processingstate);
     return processingstate;
 }

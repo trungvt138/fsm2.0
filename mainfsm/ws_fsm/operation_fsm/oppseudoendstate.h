@@ -13,9 +13,9 @@
 
 class OpPseudoEndState : public opbasestate {
 public:
-    virtual bool isPseudoEndState() override {return true;};
+    bool isPseudoEndState() override {return true;};
 
-    //void enterViaDeepHistory() override { enterViaPseudoStart();};
+    void enterViaDeepHistory() override { enterViaPseudoStart();};
 
     void showState() override {std::cout << "State: OP End State" << std::endl;}; // Just for illustration!
 };

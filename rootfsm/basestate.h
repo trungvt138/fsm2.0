@@ -41,6 +41,8 @@ public:
     virtual void enterViaPortCL(){};
     virtual void handleDefaultExit(const TriggerProcessingState &handled) {};
 
+    virtual void resetDeepHistory(){};
+
     // entry/exit-actions
     virtual void entry(){};
     virtual void exit(){};

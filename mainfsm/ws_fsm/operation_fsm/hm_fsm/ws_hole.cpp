@@ -23,6 +23,6 @@ TriggerProcessingState WS_Hole::height_high(){
 
 
 void WS_Hole::showState() {
-    std::cout << "  WS_Hole: HS State" << std::endl;
+    std::cout << "  Height_Measurement Fsm: WS_Hole State" << std::endl;
 }
 

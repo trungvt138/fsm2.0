@@ -14,7 +14,7 @@ class HMPseudoEndState : public HMBaseState {
 public:
     bool isPseudoEndState() override {return true;};
 
-//    void enterViaDeepHistory() override { enterViaPseudoStart();};
+    void enterViaDeepHistory() override { enterViaPseudoStart();};
 
     void showState() override {std::cout << "State: HM End State" << std::endl;}; // Just for illustration!
 

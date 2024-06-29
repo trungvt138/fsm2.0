@@ -12,6 +12,7 @@
 
 class Anstehend_Unquittiert : public BothSlideFullBaseState {
 public:
+	void entry() override;
 	TriggerProcessingState slide1_free() override;
 	TriggerProcessingState slide2_free() override;
 	void showState() override;

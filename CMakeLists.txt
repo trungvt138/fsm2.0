@@ -214,4 +214,5 @@ add_executable(fsm2_0 main.cpp
         calibrationfsm/Wait_Measurement_WS_High.cpp
         calibrationfsm/Wait_Measurement_WS_High.h
         calibrationfsm/Wait_Measurement_WS_Hole.cpp
-        calibrationfsm/Wait_Measurement_WS_Hole.h)
+        calibrationfsm/Wait_Measurement_WS_Hole.h
+        )

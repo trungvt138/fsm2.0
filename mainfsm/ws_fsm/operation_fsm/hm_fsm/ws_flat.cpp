@@ -25,7 +25,7 @@ TriggerProcessingState WS_Flat::height_band(){
 
 
 void WS_Flat::showState() {
-    std::cout << "  WS_Flat: HS State" << std::endl;
+    std::cout << "  Height_Measurement Fsm: WS_Flat State" << std::endl;
 }
 
 

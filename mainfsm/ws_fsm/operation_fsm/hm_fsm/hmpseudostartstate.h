@@ -26,6 +26,8 @@ class HMPseudoStartState : public HMBaseState {
 public:
     bool isPseudoStartState() override {return true;};
 
+    void enterViaDeepHistory() override {enterViaPseudoStart();};
+
     void showState() override {std::cout << "State: HM Start State" << std::endl;}; // Just for illustration!
 };
 

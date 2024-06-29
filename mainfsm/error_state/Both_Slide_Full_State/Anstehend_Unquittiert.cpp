@@ -11,6 +11,11 @@
 #include "Slide2_Emptied.h"
 using namespace std;
 
+void Anstehend_Unquittiert::entry() {
+	action->ak_l_rot1_blink_fast();
+	action->ak_l_rot2_blink_fast();
+}
+
 TriggerProcessingState Anstehend_Unquittiert::slide1_free() {
 	cout << "Anstehend_Unquittiert::slide1_free called" << endl;
 	leavingState();

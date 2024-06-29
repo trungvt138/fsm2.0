@@ -13,11 +13,12 @@
 void Anstehend_Quittiert::entry() {
 	std::cout << "Anstehend_Quittiert::entry called" << std::endl;
 
+	//TODO: needs to be fixed
 	//if FSM1
-	//action->red1_On();
+	action->ak_l_rot1_on();
 
 	//if FSM2
-	//action->red2_On();
+	action->ak_l_rot2_on();
 
 }
 

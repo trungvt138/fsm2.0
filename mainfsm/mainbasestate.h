@@ -52,6 +52,8 @@ public:
     virtual void enterByBothSlideFullPoint() {};
     virtual void enterByFalsePlacementPoint() {};
 
+    virtual void resetDeepHistory(){};
+
     virtual void entry(){};
     virtual void exit(){};
 
