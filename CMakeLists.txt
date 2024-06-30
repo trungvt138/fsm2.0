@@ -215,4 +215,17 @@ add_executable(fsm2_0 main.cpp
         calibrationfsm/Wait_Measurement_WS_High.h
         calibrationfsm/Wait_Measurement_WS_Hole.cpp
         calibrationfsm/Wait_Measurement_WS_Hole.h
-        )
+        checkslidefsm/checkslidebasestate.cpp
+        checkslidefsm/checkslidebasestate.h
+        checkslidefsm/checkslidepseudostartstate.h
+        checkslidefsm/Slide_Free.cpp
+        checkslidefsm/Slide_Free.h
+        checkslidefsm/Slide_Check.cpp
+        checkslidefsm/Slide_Check.h
+        checkslidefsm/Slide_Full.cpp
+        checkslidefsm/Slide_Full.h
+        checkslidefsm/Both_Full.cpp
+        checkslidefsm/Both_Full.h
+        rootfsm/checkslidefsm.cpp
+        rootfsm/checkslidefsm.h
+)

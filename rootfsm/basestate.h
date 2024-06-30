@@ -122,6 +122,8 @@ public:
     virtual void unwanted_ws(){};
     virtual void right_order(){};
 
+    virtual void after1s(){};
+
     virtual void showState() {};
 };
 

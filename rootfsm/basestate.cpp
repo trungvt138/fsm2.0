@@ -17,19 +17,21 @@ void BaseState::initSubStateMachines() {
     mainsubmachine = new MainPseudoStartState();
     mainsubmachine->initSubStateMachines();
 
+
+
     estoppsubmachine = new EstBaseState();
     estoppsubmachine->initSubStateMachines();
 }
 
 void BaseState::setData(ContextData *data){
     this->data = data;
-    // estoppsubmachine->setData(data);
+    estoppsubmachine->setData(data);
     mainsubmachine->setData(data);
 }
 
 void BaseState::setAction(Actions *action){
     this->action = action;
-    // estoppsubmachine->setAction(action);
+    estoppsubmachine->setAction(action);
     mainsubmachine->setAction(action);
 }
 
