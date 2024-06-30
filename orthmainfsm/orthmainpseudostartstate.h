@@ -4,10 +4,10 @@
 
 #ifndef ORTHMAINPSEUDOSTARTSTATE_H
 #define ORTHMAINPSEUDOSTARTSTATE_H
+#include "orthmainbasestate.h"
 
 
-
-class orthmainpseudostartstate {
+class OrthMainPseudoStartState : public OrthMainBaseState {
 
 };
 

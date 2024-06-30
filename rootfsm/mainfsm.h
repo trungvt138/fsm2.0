@@ -36,7 +36,6 @@ public:
     void ss_t_stp1_pressed() override;
     void ss_t_rst1_pressed() override;
     void ss_t_rst1_unpressed() override;
-    void ss_t_est1_unpressed() override;
     void ss_t_est1_pressed() override;
     void ss_t_str1_longpressed() override;
     void ss_t_str1_shortpressed() override;
@@ -75,7 +74,6 @@ public:
     void both_slide_full() override;
     void ws_false_placement() override;
     void connection_lost() override;
-    void connection_back() override;
     void ws_gone() override;
     void height_high() override;
     void height_flat() override;

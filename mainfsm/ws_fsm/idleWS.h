@@ -10,7 +10,7 @@
 
 #include "wsbasestate.h"
 
-class idleWS : public wsbasestate  {
+class idleWS : public WSBaseState  {
 public:
 	void entry() override;
 

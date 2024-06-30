@@ -15,14 +15,14 @@
 #include <iostream>
 using namespace std;
 
-class wsbasestate {
+class WSBaseState {
 protected:
     ContextData *data;
     Actions *action;
     opbasestate *opstatemachine;
 
 public:
-	virtual ~wsbasestate(){
+	virtual ~WSBaseState(){
 		delete opstatemachine;
 	}
 

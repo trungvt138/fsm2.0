@@ -10,7 +10,7 @@
 #include "../mainfsm/calibration_state.h"
 
 void Idle::entry() {
-    action->entered_Idle();
+    showState();
 }
 
 
