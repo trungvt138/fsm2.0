@@ -9,7 +9,7 @@
 #define SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_SORTING_H_
 #include "opbasestate.h"
 
-class Sorting : public opbasestate {
+class Sorting : public OpBaseState {
 public:
     void entry() override;
     void exit() override {};

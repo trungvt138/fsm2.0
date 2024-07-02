@@ -81,7 +81,7 @@ TriggerProcessingState Sorting::unwanted_ws() {
 // }
 
 void Sorting::showState() {
-    std::cout << "  Operation_State Fsm: Sorting State" << std::endl;
+    std::cout << "        OperationFsm: Sorting State" << std::endl;
     sortingstatemachine->showState();
 }
 

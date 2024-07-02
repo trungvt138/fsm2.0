@@ -12,7 +12,7 @@
 #include "transferingidle.h"
 
 void TransferingBaseState::enterViaPseudoStart() {
-    std::cout << "Transfering Fsm Initial Transition taken" << std::endl;
+    std::cout << "          TransferingFsm Initial Transition taken" << std::endl;
     new(this) TransferingIdle;
     enterByDefaultEntryPoint();
 }

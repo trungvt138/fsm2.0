@@ -69,6 +69,6 @@ TriggerProcessingState Reset::ss_t_rst2_pressed() {
 
 
 void Reset::showState() {
-    std::cout << "EstFsm: Reset" << std::endl;
+    std::cout << "  EstFsm: Reset" << std::endl;
     subfsm->showState();
 }

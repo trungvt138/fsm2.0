@@ -9,7 +9,7 @@
 #define SRC_FSMSIMPLE_MAINFSM_OPERATION_FSM_OPPSEUDOSTARTSTATE_H_
 #include "opbasestate.h"
 
-class OpPseudoStartState : public opbasestate {
+class OpPseudoStartState : public OpBaseState {
 public:
     bool isPseudoStartState() override {return true;};
 

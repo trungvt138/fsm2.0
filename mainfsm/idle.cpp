@@ -51,7 +51,7 @@ TriggerProcessingState Idle::ss_t_str2_shortpressed() {
 }
 
 void Idle::showState() {
-    std::cout << "MainFsm: Idle" << std::endl;
+    std::cout << "    MainFsm: Idle" << std::endl;
 }
 
 

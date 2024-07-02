@@ -1,5 +1,5 @@
 /*
- * idleWS.h
+ * WSIdle.h
  *
  *  Created on: 24.06.2024
  *      Author: infwur761
@@ -10,7 +10,7 @@
 
 #include "wsbasestate.h"
 
-class idleWS : public WSBaseState  {
+class WSIdle : public WSBaseState  {
 public:
 	void entry() override;
 

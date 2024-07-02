@@ -23,5 +23,5 @@ TriggerProcessingState Waiting_Remove::ss_ls_end2_continuous() {
 }
 
 void Waiting_Remove::showState() {
-    cout << "Tranfering Fsm: Waiting_Remove State";
+    cout << "          Tranfering Fsm: Waiting_Remove State";
 }

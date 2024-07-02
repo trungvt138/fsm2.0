@@ -63,7 +63,7 @@ void Height_Measurement::enterByDeepHistoryEntryPoint() {
 
 
 void Height_Measurement::showState() {
-    std::cout << "  Operation_State Fsm: Height_Measurement State" << std::endl;
+    std::cout << "        OperationFsm: Height_Measurement State" << std::endl;
     hmstatemachine->showState();
 }
 

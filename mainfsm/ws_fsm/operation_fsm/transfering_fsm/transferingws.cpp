@@ -12,6 +12,8 @@ void TransferingWS::entry() {
 
 TriggerProcessingState TransferingWS::ss_ls_str2_interrupted() {
     cout << "TransferingWS: ss_ls_str2_interrupted called" << endl;
+    data->negateFBA1();
+    data->negateFBA2();
     if (!data->checkFBA1()) {
         leavingState();
         new(this) TransferingPseudoEndState;
@@ -24,5 +26,5 @@ TriggerProcessingState TransferingWS::ss_ls_str2_interrupted() {
 }
 
 void TransferingWS::showState() {
-    cout << "Transfering Fsm: TransferingWS State" << endl;;
+    cout << "          TransferingFsm: TransferingWS State" << endl;;
 }

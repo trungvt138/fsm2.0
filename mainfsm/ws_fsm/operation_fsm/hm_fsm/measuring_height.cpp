@@ -48,7 +48,7 @@ TriggerProcessingState Measuring_Height::height_flat(){
 }
 
 void Measuring_Height::showState() {
-    std::cout << "  Height_Measurement Fsm: Measuring_Height State" << std::endl;
+    std::cout << "            Height_Measurement Fsm: Measuring_Height State" << std::endl;
 }
 
 

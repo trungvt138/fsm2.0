@@ -22,13 +22,6 @@ public:
 
     void handleDefaultExit(const TriggerProcessingState &handled) override{};
 
-    //estopp
-    TriggerProcessingState ss_t_est2_pressed() override;
-    TriggerProcessingState ss_t_est2_unpressed() override;
-
-    TriggerProcessingState ss_t_est1_pressed() override;
-    TriggerProcessingState ss_t_est1_unpressed() override;
-
     //TriggerProcessingState connection_back() override;
     //TriggerProcessingState connection_lost() override;
 

@@ -357,3 +357,10 @@ void OrthMainBaseState::ws_sorted_FBA2() {
     cout << "OrthMainBaseState: ws_sorted_FBA2 called" << endl;
     mainsubmachine->ws_sorted_FBA2();
 }
+
+void OrthMainBaseState::showState() {
+    cout << "  OrthMainFSM: OrthMainBaseState" << endl;
+    mainsubmachine->showState();
+    cout << " " << endl;
+    checkslidesubmachine->showState();
+}

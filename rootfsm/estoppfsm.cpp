@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-#include "mainfsm.h"
+#include "orthmainfsm.h"
 
 void EStoppFSM::enterViaPortE1() {
     entry();
@@ -39,7 +39,7 @@ void EStoppFSM::handleDefaultExit(const TriggerProcessingState &processing_state
     if (processing_state == TriggerProcessingState::endstatereached) {
         estoppsubmachine->exit();
         leavingState();
-        new(this) MainFsm;
+        new(this) OrthMainFsm;
         enterByDefaultEntryPoint();
     }
 }

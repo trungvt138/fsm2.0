@@ -38,7 +38,7 @@ TriggerProcessingState Connection_Lost::connection_back() {
 }
 
 void Connection_Lost::showState() {
-    std::cout << "EstFsm: Connection_Lost" << std::endl;
+    std::cout << "  EstFsm: Connection_Lost" << std::endl;
 }
 
 

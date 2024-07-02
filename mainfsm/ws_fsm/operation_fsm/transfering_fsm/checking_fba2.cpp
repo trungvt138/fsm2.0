@@ -23,5 +23,5 @@ TriggerProcessingState Checking_FBA2::ws_sorted() {
 }
 
 void Checking_FBA2::showState() {
-    cout << "Transfering Fsm: Checking_FBA2 State";
+    cout << "          TransferingFsm: Checking_FBA2 State";
 }

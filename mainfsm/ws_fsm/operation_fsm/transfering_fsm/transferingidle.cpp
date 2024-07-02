@@ -37,6 +37,6 @@ TriggerProcessingState TransferingIdle::ss_ls_end2_interrupted() {
 
 
 void TransferingIdle::showState() {
-    cout << "Transfering FSM: Idle State" << endl;
+    cout << "          TransferingFsm: Idle State" << endl;
 }
 

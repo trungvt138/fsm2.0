@@ -11,7 +11,7 @@
 #include "opbasestate.h"
 
 
-class Transfering : public opbasestate {
+class Transfering : public OpBaseState {
 public:
 
     void entry() override;

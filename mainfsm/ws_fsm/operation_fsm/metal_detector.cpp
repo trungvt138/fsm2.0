@@ -17,7 +17,7 @@ void Metal_Detector::entry() {
 
 TriggerProcessingState Metal_Detector::ss_ls_srt1_interrupted(){
 	if (this->data->checkFBA1()){
-		action->ak_fbm1_slow_off();
+		action->ak_fbm1_right_on();
 //		updateWSData(nonmetal);
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
@@ -26,8 +26,8 @@ TriggerProcessingState Metal_Detector::ss_ls_srt1_interrupted(){
 }
 
 TriggerProcessingState Metal_Detector::ss_ls_srt2_interrupted(){
-	if (this->data->checkFBA1() == false){
-		action->ak_fbm2_slow_off();
+	if (!this->data->checkFBA1()){
+		action->ak_fbm2_right_on();
 //		updateWSData(nonmetal);
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
@@ -37,7 +37,7 @@ TriggerProcessingState Metal_Detector::ss_ls_srt2_interrupted(){
 
 TriggerProcessingState Metal_Detector::ss_ms1_erkannt(){
 	if (this->data->checkFBA1()){
-		action->ak_fbm1_slow_off();
+		action->ak_fbm1_right_on();
 //		updateWSData(metal);
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
@@ -46,8 +46,8 @@ TriggerProcessingState Metal_Detector::ss_ms1_erkannt(){
 }
 
 TriggerProcessingState Metal_Detector::ss_ms2_erkannt(){
-	if (this->data->checkFBA1() == false){
-		action->ak_fbm2_slow_off();
+	if (!this->data->checkFBA1()){
+		action->ak_fbm2_right_on();
 //		updateWSData(metal);
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
@@ -56,5 +56,5 @@ TriggerProcessingState Metal_Detector::ss_ms2_erkannt(){
 }
 
 void Metal_Detector::showState() {
-    std::cout << "  Operation_State Fsm: Metal_Detector State" << std::endl;
+    std::cout << "        OperationFsm: Metal_Detector State" << std::endl;
 }

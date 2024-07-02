@@ -27,5 +27,5 @@ void Both_Full::ss_ls_sli2_rise() {
 }
 
 void Both_Full::showState() {
-    cout << "CheckSlideFsm: Both_Full" << endl;
+    cout << "    CheckSlideFsm: Both_Full" << endl;
 }

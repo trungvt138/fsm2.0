@@ -28,7 +28,7 @@ TriggerProcessingState EST1_and_EST2::ss_t_est2_unpressed() {
 }
 
 void EST1_and_EST2::showState() {
-    std::cout << "EstFsm: EST1_and_EST2" << std::endl;
+    std::cout << "  EstFsm: EST1_and_EST2" << std::endl;
 }
 
 

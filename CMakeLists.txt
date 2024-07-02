@@ -11,7 +11,6 @@ add_executable(fsm2_0 main.cpp
         rootfsm/basestate.cpp
         rootfsm/basestate.cpp
         rootfsm/estoppfsm.cpp
-        rootfsm/mainfsm.cpp
         rootfsm/pseudostartstate.cpp
         mainfsm/mainbasestate.cpp
         mainfsm/ws_state.cpp
@@ -121,8 +120,8 @@ add_executable(fsm2_0 main.cpp
         mainfsm/ws_fsm/operation_fsm/Transfering.h
         mainfsm/ws_fsm/operation_fsm/transport.cpp
         mainfsm/ws_fsm/operation_fsm/transport.h
-        mainfsm/ws_fsm/idleWS.cpp
-        mainfsm/ws_fsm/idleWS.h
+        mainfsm/ws_fsm/WSIdle.cpp
+        mainfsm/ws_fsm/WSIdle.h
         mainfsm/ws_fsm/operation_state.cpp
         mainfsm/ws_fsm/operation_state.h
         mainfsm/ws_fsm/wsbasestate.h
@@ -145,7 +144,6 @@ add_executable(fsm2_0 main.cpp
         resetfsm/Wait_For_Reset2.h
         rootfsm/basestate.h
         rootfsm/estoppfsm.h
-        rootfsm/mainfsm.h
         rootfsm/pseudostartstate.h
         subcommon/triggerprocessingstate.h
         actions.h
@@ -232,9 +230,13 @@ add_executable(fsm2_0 main.cpp
         rootfsm/orthmainfsm.h
         orthmainfsm/orthmainbasestate.cpp
         orthmainfsm/orthmainbasestate.h
-        orthmainfsm/orthmainpseudostartstate.h
         workpiece.h
         workpiece.cpp
         workpieceordertracker.cpp
         workpieceordertracker.h
+        mainfsm/ws_fsm_2/wspseudostartstate.h
+        mainfsm/ws_fsm_2/wsbasestate.cpp
+        mainfsm/ws_fsm_2/WSIdle.h
+        mainfsm/ws_fsm_2/WSIdle.cpp
+        mainfsm/ws_fsm_2/wsbasestate.h
 )

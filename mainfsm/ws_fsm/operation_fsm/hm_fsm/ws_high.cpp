@@ -42,6 +42,6 @@ TriggerProcessingState WS_High::height_band(){
 }
 
 void WS_High::showState() {
-    std::cout << "  Height_Measurement Fsm: WS_High State" << std::endl;
+    std::cout << "            Height_Measurement Fsm: WS_High State" << std::endl;
 }
 

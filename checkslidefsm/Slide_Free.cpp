@@ -25,5 +25,5 @@ void Slide_Free::ss_ls_sli2_full() {
 }
 
 void Slide_Free::showState() {
-    cout << "CheckSlideFsm: Slide_Free" << endl;
+    cout << "    CheckSlideFsm: Slide_Free" << endl;
 }

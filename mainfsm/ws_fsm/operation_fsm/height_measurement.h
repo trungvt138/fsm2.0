@@ -9,7 +9,7 @@
 #define SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_HEIGHT_MEASUREMENT_H_
 #include "opbasestate.h"
 
-class Height_Measurement : public opbasestate {
+class Height_Measurement : public OpBaseState {
 public:
     void entry() override;
     //void exit() override;

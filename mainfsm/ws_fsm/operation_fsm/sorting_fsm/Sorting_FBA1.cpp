@@ -22,5 +22,5 @@ TriggerProcessingState Sorting_FBA1::ss_ls_srt1_interrupted() {
 }
 
 void Sorting_FBA1::showState() {
-	std::cout << "SortingFsm: Sorting_FBA1" << std::endl;
+	std::cout << "          SortingFsm: Sorting_FBA1" << std::endl;
 }

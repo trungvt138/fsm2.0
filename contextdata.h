@@ -17,7 +17,8 @@ private:
 
     int ws_count = 0;
     int ws_ID = 0;
-    bool FBA1 = true;
+    bool FBA1 = false;
+    bool FBA2 = false;
 
     bool slide1Full;
     bool slide2Full;
@@ -55,9 +56,12 @@ public:
     void wsCounterUpFBA2();
     void wsCounterDownFBA2();
     void setID(int ws_count);
+    void negateFBA1();
+    void negateFBA2();
     int checkFBA1Counter();
     int checkFBA2Counter();
     bool checkFBA1();
+    bool checkFBA2();
 //    WSData::Type updateWSData() const {return type;}
     bool checkSlide1Full();
     bool checkSlide2Full();

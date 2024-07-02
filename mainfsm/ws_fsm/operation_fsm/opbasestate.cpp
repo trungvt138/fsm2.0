@@ -12,13 +12,13 @@
 #include "sorting_fsm/sortingpseudostartstate.h"
 #include "transfering_fsm/transferingpseudostartstate.h"
 
-void opbasestate::enterViaPseudoStart() {
+void OpBaseState::enterViaPseudoStart() {
     std::cout << "OperationFSM Initial Trasition taken" << std::endl;
-    new(this) transport;
+    new(this) Transport;
     enterByDefaultEntryPoint();
 }
 
-void opbasestate::initSubStateMachines(){
+void OpBaseState::initSubStateMachines(){
     hmstatemachine = new HMPseudoStartState();
     hmstatemachine->initSubStateMachines();
 
@@ -30,7 +30,7 @@ void opbasestate::initSubStateMachines(){
 }
 
 
-void opbasestate::setAction(Actions *action){
+void OpBaseState::setAction(Actions *action){
     this->action = action;
     hmstatemachine->setAction(action);
     sortingstatemachine->setAction(action);
@@ -38,19 +38,19 @@ void opbasestate::setAction(Actions *action){
 }
 
 
-void opbasestate::setData(ContextData *data){
+void OpBaseState::setData(ContextData *data){
     this->data = data;
     hmstatemachine->setData(data);
     sortingstatemachine->setData(data);
     transferingstatemachine->setData(data);
 }
 
-void opbasestate::enterViaDeepHistory() {
+void OpBaseState::enterViaDeepHistory() {
     enterByDeepHistoryEntryPoint();
 }
 
 
-// TriggerProcessingState opbasestate::handleDefaultExit(const TriggerProcessingState &handled) {
+// TriggerProcessingState OpBaseState::handleDefaultExit(const TriggerProcessingState &handled) {
 //     return TriggerProcessingState::pending;
 // };
 

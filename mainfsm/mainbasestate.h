@@ -11,6 +11,8 @@
 #include "../mainfsm/ws_fsm/wsbasestate.h"
 
 #include <iostream>
+
+#include "ws_fsm_2/wsbasestate.h"
 using namespace std;
 
 #include "../calibrationfsm/calibrationbasestate.h"
@@ -22,15 +24,18 @@ protected:
     ContextData *data;
     Actions *action;
 
-    WSBaseState *wsstatemachine;
+    WSBaseState *wsstatemachine1;
+    WSBaseState2 *wsstatemachine2;
+    WSBaseState *wsstatemachine3;
     CalibrationBaseState *calibrationsubmachine;
     ErrorBaseState *errorsubmachine;
 
 
-
 public:
     virtual ~MainBaseState() {
-    	delete wsstatemachine;
+    	delete wsstatemachine1;
+        delete wsstatemachine2;
+        delete wsstatemachine3;
     	delete errorsubmachine;
     	delete calibrationsubmachine;
     }

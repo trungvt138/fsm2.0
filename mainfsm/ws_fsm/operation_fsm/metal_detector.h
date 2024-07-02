@@ -10,7 +10,7 @@
 
 #include "opbasestate.h"
 
-class Metal_Detector : public opbasestate {
+class Metal_Detector : public OpBaseState {
 public:
     void entry() override;
     void exit() override {};

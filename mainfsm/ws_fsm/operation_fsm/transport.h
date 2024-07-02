@@ -1,5 +1,5 @@
 /*
- * transport.h
+ * Transport.h
  *
  *  Created on: 24.06.2024
  *      Author: infwur761
@@ -11,7 +11,7 @@
 #include "opbasestate.h"
 
 
-class transport : public opbasestate {
+class Transport : public OpBaseState {
 public:
 
     void entry() override;

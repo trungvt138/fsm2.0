@@ -80,7 +80,7 @@ TriggerProcessingState Error_State::slide2_free() {
 }
 
 void Error_State::showState() {
-    std::cout << "  MainFsm: Error_State" << std::endl;
+    std::cout << "    MainFsm: Error_State" << std::endl;
 	errorsubmachine->showState();
 }
 

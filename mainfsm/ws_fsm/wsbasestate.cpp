@@ -6,14 +6,14 @@
  */
 
 #include "wsbasestate.h"
-#include "idleWS.h"
+#include "WSIdle.h"
 #include <iostream>
 
 #include "operation_fsm/oppseudostartstate.h"
 
 void WSBaseState::enterViaPseudoStart() {
     std::cout << "WSFsm Initial Trasition taken" << std::endl;
-    new(this) idleWS;
+    new(this) WSIdle;
     enterByDefaultEntryPoint();
 }
 

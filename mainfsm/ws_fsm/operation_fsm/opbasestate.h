@@ -1,5 +1,5 @@
 /*
- * opbasestate.h
+ * OpBaseState.h
  *
  *  Created on: 24.06.2024
  *      Author: infwur761
@@ -17,7 +17,7 @@
 
 using namespace std;
 
-class opbasestate {
+class OpBaseState {
 protected:
     ContextData *data;
     Actions *action;
@@ -27,7 +27,7 @@ protected:
 
 
 public:
-	virtual ~opbasestate() {
+	virtual ~OpBaseState() {
 		delete hmstatemachine;
 		delete sortingstatemachine;
 		delete transferingstatemachine;

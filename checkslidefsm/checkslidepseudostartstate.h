@@ -15,7 +15,7 @@ class CheckSlidePseudoStartState : public CheckSlideBaseState {
 public:
     bool isPseudoStartState() override {return true;};
 
-    void showState() override {cout << "CheckSlideFsm: Pseudo Start State" << endl;};
+    void showState() override {cout << "    CheckSlideFsm: Pseudo Start State" << endl;};
 };
 
 

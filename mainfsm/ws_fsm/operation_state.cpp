@@ -7,7 +7,7 @@
 
 #include "operation_state.h"
 
-#include "idleWS.h"
+#include "WSIdle.h"
 #include "wsbasestate.h"
 #include "../../mainfsm/error_state.h"
 
@@ -27,7 +27,7 @@ void Operation_State::exit() {
 void Operation_State::resetDeepHistory() {
     leavingState();
     opstatemachine->exit();
-    new(this) idleWS;
+    new(this) WSIdle;
     enterByDefaultEntryPoint();
 }
 
@@ -35,7 +35,7 @@ void Operation_State::handleDefaultExit(const TriggerProcessingState &processing
     if (processingstate == TriggerProcessingState::endstatereached) {
         // leavingState();         // not needed, as sub-state machine cannot act anymore.
     	opstatemachine->exit();   // just call own exit.
-        new(this) idleWS;
+        new(this) WSIdle;
         enterByDefaultEntryPoint();
     }
 }
@@ -250,7 +250,7 @@ TriggerProcessingState Operation_State::ss_ls_str2_interrupted() {
 TriggerProcessingState Operation_State::ss_ls_str2_continuous() {
     std::cout << "Operation_State::ss_ls_str2_continuous called" << std::endl;
 
-    TriggerProcessingState processingstate = opstatemachine->ss_ls_str2_interrupted();
+    TriggerProcessingState processingstate = opstatemachine->ss_ls_str2_continuous();
     handleDefaultExit(processingstate);
     return processingstate;
 }
@@ -516,7 +516,7 @@ TriggerProcessingState Operation_State::height_band() {
 
 
 void Operation_State::showState() {
-    std::cout << "  WSFsm: Operation State" << std::endl;
+    std::cout << "      WSFsm: Operation State" << std::endl;
     opstatemachine->showState();
 }
 

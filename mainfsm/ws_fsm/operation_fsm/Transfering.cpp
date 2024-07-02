@@ -64,7 +64,7 @@ void Transfering::enterByDeepHistoryEntryPoint() {
 
 
 void Transfering::showState() {
-    std::cout << "  Operation_State Fsm: Transfering State" << std::endl;
+    std::cout << "        OperationFsm: Transfering State" << std::endl;
     transferingstatemachine->showState();
 }
 

@@ -64,5 +64,5 @@ TriggerProcessingState Check_WS_Data::right_order() {
 }
 
 void Check_WS_Data::showState() {
-	std::cout << "SortingFsm: Check_WS_Data" << std::endl;
+	std::cout << "          SortingFsm: Check_WS_Data" << std::endl;
 }

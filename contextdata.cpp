@@ -131,3 +131,15 @@ int ContextData::setSrtEndTickSlow() {
 void ContextData::addWSToTracker(WorkPiece wp) {
     tracker.addWorkPiece(wp);
 }
+
+void ContextData::negateFBA1() {
+    FBA1 = !FBA1;
+}
+
+void ContextData::negateFBA2() {
+    FBA2 = !FBA2;
+}
+
+bool ContextData::checkFBA2() {
+    return FBA2;
+}

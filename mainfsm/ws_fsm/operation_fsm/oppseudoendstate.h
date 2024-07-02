@@ -11,7 +11,7 @@
 #include "opbasestate.h"
 
 
-class OpPseudoEndState : public opbasestate {
+class OpPseudoEndState : public OpBaseState {
 public:
     bool isPseudoEndState() override {return true;};
 

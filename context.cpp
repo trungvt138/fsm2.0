@@ -47,6 +47,7 @@ void Context::ss_t_est2_unpressed() {
 
 
 void Context::showState() {
+    cout << "--------------------------" << endl;
     state->showState();
 }
 void Context::ss_t_str1_pressed() {

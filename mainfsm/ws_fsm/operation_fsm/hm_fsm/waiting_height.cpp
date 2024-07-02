@@ -23,7 +23,7 @@ TriggerProcessingState Waiting_Height::height_calibration(){
 
 
 void Waiting_Height::showState() {
-    std::cout << "  Height_Measurement Fsm: Waiting_Height State" << std::endl;
+    std::cout << "          Height_Measurement Fsm: Waiting_Height State" << std::endl;
 }
 
 

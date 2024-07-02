@@ -132,7 +132,7 @@ public:
     virtual void right_order() ;
 
 
-    virtual void showState() {};
+    virtual void showState();
 };
 
 

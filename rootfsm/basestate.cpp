@@ -4,7 +4,6 @@
 
 
 #include "../mainfsm/mainpseudostartstate.h"
-#include "mainfsm.h"
 
 #include "../estfsm/estpseudostartstate.h"
 
@@ -14,7 +13,6 @@
 #include "../checkslidefsm/checkslidepseudostartstate.h"
 #include "../mainfsm/idle.h"
 #include "../orthmainfsm/orthmainbasestate.h"
-#include "../orthmainfsm/orthmainpseudostartstate.h"
 
 
 void BaseState::initSubStateMachines() {

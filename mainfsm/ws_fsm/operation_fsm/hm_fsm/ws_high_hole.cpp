@@ -25,6 +25,6 @@ TriggerProcessingState WS_High_Hole::height_band(){
 
 
 void WS_High_Hole::showState() {
-    std::cout << "  Height_Measurement Fsm: WS_High:Hole State" << std::endl;
+    std::cout << "            Height_Measurement Fsm: WS_High:Hole State" << std::endl;
 }
 

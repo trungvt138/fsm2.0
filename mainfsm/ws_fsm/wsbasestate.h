@@ -19,7 +19,7 @@ class WSBaseState {
 protected:
     ContextData *data;
     Actions *action;
-    opbasestate *opstatemachine;
+    OpBaseState *opstatemachine;
 
 public:
 	virtual ~WSBaseState(){

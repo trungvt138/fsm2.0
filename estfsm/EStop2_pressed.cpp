@@ -44,6 +44,6 @@ TriggerProcessingState EStop2_pressed::connection_lost() {
 }
 
 void EStop2_pressed::showState() {
-    std::cout << "EstFsm: EStop2_pressed" << std::endl;
+    std::cout << "  EstFsm: EStop2_pressed" << std::endl;
 }
 

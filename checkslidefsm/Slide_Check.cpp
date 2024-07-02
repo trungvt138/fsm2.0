@@ -32,5 +32,5 @@ void Slide_Check::after1s() {
 }
 
 void Slide_Check::showState() {
-    cout << "CheckSlideFsm: Slide_Check" << endl;
+    cout << "    CheckSlideFsm: Slide_Check" << endl;
 }

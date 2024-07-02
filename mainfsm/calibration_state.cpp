@@ -38,7 +38,7 @@ TriggerProcessingState Calibration_State::ss_t_str2_shortpressed() {
 }
 
 void Calibration_State::showState() {
-    std::cout << "  MainFsm: Calibration_State" << std::endl;
+    std::cout << "    MainFsm: Calibration_State" << std::endl;
 
 }
 
