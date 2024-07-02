@@ -233,4 +233,8 @@ add_executable(fsm2_0 main.cpp
         orthmainfsm/orthmainbasestate.cpp
         orthmainfsm/orthmainbasestate.h
         orthmainfsm/orthmainpseudostartstate.h
+        workpiece.h
+        workpiece.cpp
+        workpieceordertracker.cpp
+        workpieceordertracker.h
 )

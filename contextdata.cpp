@@ -128,3 +128,6 @@ int ContextData::setSrtEndTickSlow() {
     return ls_srt_end_tick_Slow;
 }
 
+void ContextData::addWSToTracker(WorkPiece wp) {
+    tracker.addWorkPiece(wp);
+}

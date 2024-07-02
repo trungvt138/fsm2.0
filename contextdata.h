@@ -6,6 +6,8 @@
 #define CONTEXTDATA_H
 #include <chrono>
 
+#include "workpieceordertracker.h"
+
 class ContextData {
 
 private:
@@ -22,6 +24,8 @@ private:
 
     int ws_FBA1 = 0;
     int ws_FBA2 = 0;
+
+    WorkPieceOrderTracker tracker;
 
     int ls_str_height_tick_Fast = 0;
     int ls_height_srt_tick_Fast = 0;
@@ -73,6 +77,11 @@ public:
     void startStrHeightTickFast();
     void startHeightSrtTickFast();
     void startSrtEndTickFast();
+
+    //for wp
+
+    //for tracker
+    void addWSToTracker(WorkPiece wp);
 
 };
 

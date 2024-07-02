@@ -14,6 +14,8 @@
 void Operation_State::entry() {
     //std::cout << "Operation_State Entry" << std::endl;
     action->entered_Operation_State();
+    WorkPiece wp;
+    data->addWSToTracker(wp);
 }
 
 // TODO exit
