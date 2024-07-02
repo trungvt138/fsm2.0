@@ -10,7 +10,7 @@
 
 #include "wsbasestate.h"
 
-class Operation_State : public wsbasestate {
+class Operation_State : public WSBaseState {
 public:
 
 

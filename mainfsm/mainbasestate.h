@@ -22,7 +22,7 @@ protected:
     ContextData *data;
     Actions *action;
 
-    wsbasestate *wsstatemachine;
+    WSBaseState *wsstatemachine;
     CalibrationBaseState *calibrationsubmachine;
     ErrorBaseState *errorsubmachine;
 

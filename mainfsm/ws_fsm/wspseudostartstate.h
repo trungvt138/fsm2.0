@@ -9,7 +9,7 @@
 #define SRC_FSMSIMPLE_MAINFSM_WS_FSM_WSPSEUDOSTARTSTATE_H_
 #include "wsbasestate.h"
 
-class WSPseudoStartState : public wsbasestate {
+class WSPseudoStartState : public WSBaseState {
 
 public:
 	bool isPseudoStartState() override {return true;};

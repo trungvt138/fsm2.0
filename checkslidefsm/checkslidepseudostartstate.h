@@ -11,7 +11,7 @@ using namespace std;
 
 class Actions;
 
-class CheckSlidePseudoStartState : CheckSlideBaseState {
+class CheckSlidePseudoStartState : public CheckSlideBaseState {
 public:
     bool isPseudoStartState() override {return true;};
 

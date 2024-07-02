@@ -11,34 +11,34 @@
 
 #include "operation_fsm/oppseudostartstate.h"
 
-void wsbasestate::enterViaPseudoStart() {
+void WSBaseState::enterViaPseudoStart() {
     std::cout << "WSFsm Initial Trasition taken" << std::endl;
     new(this) idleWS;
     enterByDefaultEntryPoint();
 }
 
-void wsbasestate::initSubStateMachines(){
+void WSBaseState::initSubStateMachines(){
     opstatemachine = new OpPseudoStartState();
     opstatemachine->initSubStateMachines();
 }
 
 
-void wsbasestate::setAction(Actions *action){
+void WSBaseState::setAction(Actions *action){
     this->action = action;
     opstatemachine->setAction(action);
 }
 
 
-void wsbasestate::setData(ContextData *data){
+void WSBaseState::setData(ContextData *data){
     this->data = data;
     opstatemachine->setData(data);
 }
 
-void wsbasestate::enterViaDeepHistory() {
+void WSBaseState::enterViaDeepHistory() {
     enterByDeepHistoryEntryPoint();
 }
 
-//TriggerProcessingState wsbasestate::handleDefaultExit(const TriggerProcessingState &handled) {
+//TriggerProcessingState WSBaseState::handleDefaultExit(const TriggerProcessingState &handled) {
 //    return TriggerProcessingState::pending;
 //};
 

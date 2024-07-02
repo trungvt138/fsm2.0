@@ -228,4 +228,9 @@ add_executable(fsm2_0 main.cpp
         checkslidefsm/Both_Full.h
         rootfsm/checkslidefsm.cpp
         rootfsm/checkslidefsm.h
+        rootfsm/orthmainfsm.cpp
+        rootfsm/orthmainfsm.h
+        orthmainfsm/orthmainbasestate.cpp
+        orthmainfsm/orthmainbasestate.h
+        orthmainfsm/orthmainpseudostartstate.h
 )

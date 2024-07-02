@@ -24,8 +24,8 @@ public:
 
     virtual void initSubStateMachines();
 
-    void setData(ContextData *data);
-    void setAction(Actions *action);
+    void setData(ContextData *data){this->data = data;};
+    void setAction(Actions *action){this->action = action;};
 
     virtual bool isPseudoStartState(){return false;};
     virtual bool isPseudoEndState(){return false;};

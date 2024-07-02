@@ -6,8 +6,10 @@
 #define BASESTATE_H
 #include "../actions.h"
 #include "../contextdata.h"
+#include "../checkslidefsm/checkslidebasestate.h"
 #include "../mainfsm/mainbasestate.h"
 #include "../estfsm/estbasestate.h"
+#include "../orthmainfsm/orthmainbasestate.h"
 
 
 class BaseState {
@@ -15,11 +17,11 @@ protected:
     ContextData *data;
     Actions *action;
     EstBaseState *estoppsubmachine;
-    MainBaseState *mainsubmachine;
+    OrthMainBaseState *orthmainsubmachine;
 public:
     virtual ~BaseState() {
         delete estoppsubmachine;
-        delete mainsubmachine;
+        delete orthmainsubmachine;
     };
 
     virtual void initSubStateMachines();

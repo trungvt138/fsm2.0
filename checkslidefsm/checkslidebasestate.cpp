@@ -13,3 +13,4 @@ void CheckSlideBaseState::enterViaPseudoStart() {
     new(this) Slide_Free;
     enterByDefaultEntryPoint();
 }
+
