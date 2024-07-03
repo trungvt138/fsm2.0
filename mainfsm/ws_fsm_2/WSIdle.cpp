@@ -7,40 +7,41 @@
 
 #include "WSIdle.h"
 
-#include "../ws_fsm/operation_state.h"
+#include "operation_state.h"
 
 void WSIdle2::entry() {
 //    action->entered_WSIdle();
     //std::cout << "entered WSIdle" << std::endl;
-	data->negateFBA1();
+	std::cout << "\nWSFsm2: WSIdle2\n" << std::endl;
+	data->setFBA1(true);
 }
 
 TriggerProcessingState WSIdle2::ss_ls_str1_interrupted() {
     std::cout << "WSIdle2: ss_ls_str1_interrupted called" << std::endl;
     if (this->data->checkFBA1()){
 
-    		action->ak_fbm1_right_on();
+
 
     		this->data->wsCounterUp();
     		this->data->wsCounterUpFBA1();
     		this->data->setID(2);
 
     		leavingState();
-    		new(this) Operation_State;
+    		new(this) Operation_State2;
     		enterByDefaultEntryPoint();
     		return TriggerProcessingState::consumed;
 
     }
     else {
     	leavingState();
-    	new(this) Operation_State;
+    	new(this) Operation_State2;
     	enterByDefaultEntryPoint();
     	return TriggerProcessingState::consumed;
    }
 }
 
 void WSIdle2::showState() {
-    std::cout << "      WSFsm: WSIdle2" << std::endl;
+    std::cout << "\nWSFsm2: WSIdle2" << std::endl;
 }
 
 

@@ -14,6 +14,9 @@
 #include <iostream>
 
 #include "sortingpseudoendstate.h"
+void Sorting_FBA2::entry() {
+	std::cout << "\nSortingFsm: Sorting_FBA2\n" << std::endl;
+}
 
 TriggerProcessingState Sorting_FBA2::ss_ls_srt2_interrupted() {
 	//TODO: AK_AWF_WCH2_ON
@@ -24,5 +27,5 @@ TriggerProcessingState Sorting_FBA2::ss_ls_srt2_interrupted() {
 }
 
 void Sorting_FBA2::showState() {
-	std::cout << "          SortingFsm: Sorting_FBA1" << std::endl;
+	std::cout << "          SortingFsm: Sorting_FBA2" << std::endl;
 }

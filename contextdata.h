@@ -11,7 +11,7 @@
 class ContextData {
 
 private:
-	enum Type{metal, nonmetal};
+	//enum Type{metal, nonmetal};
 
     int errorCounter = 0;
 
@@ -56,8 +56,8 @@ public:
     void wsCounterUpFBA2();
     void wsCounterDownFBA2();
     void setID(int ws_count);
-    void negateFBA1();
-    void negateFBA2();
+    void setFBA1(bool val) {FBA1 = val;};
+    void setFBA2(bool val) {FBA2 = val;};
     int checkFBA1Counter();
     int checkFBA2Counter();
     bool checkFBA1();
@@ -85,7 +85,10 @@ public:
     //for wp
 
     //for tracker
-    void addWSToTracker(WorkPiece wp);
+    void addWSToTracker(WorkPiece *wp);
+    void removeWSFromTracker();
+    bool checkOrder();
+
 
 };
 

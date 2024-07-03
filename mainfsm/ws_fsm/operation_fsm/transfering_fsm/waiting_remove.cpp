@@ -7,6 +7,7 @@
 #include "transferingpseudoendstate.h"
 
 void Waiting_Remove::entry() {
+    cout << "\nTranfering Fsm: Waiting_Remove State";
     action->ak_fbm2_stop_on();
 }
 

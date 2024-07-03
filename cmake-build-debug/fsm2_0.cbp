@@ -8,756 +8,772 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option working_dir="Z:/profile.V6/fsm2.0/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fsm2_0">
-				<Option output="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/fsm2_0.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option output="Z:/profile.V6/fsm2.0/cmake-build-debug/fsm2_0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="Z:/profile.V6/fsm2.0/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/backward"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 fsm2_0"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 fsm2_0"/>
+					<CompileFile command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fsm2_0/fast">
-				<Option output="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/fsm2_0.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option output="Z:/profile.V6/fsm2.0/cmake-build-debug/fsm2_0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="Z:/profile.V6/fsm2.0/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include/c++/13.2.0/backward"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../include"/>
+					<Add directory="C:/dev/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 fsm2_0/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 fsm2_0/fast"/>
+					<CompileFile command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option working_dir="Z:/profile.V6/fsm2.0/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug"/>
+				<Option working_dir="Z:/profile.V6/fsm2.0/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/trung/CLionProjects/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/dev/msys64/mingw64/bin/mingw32-make.exe -f &quot;Z:/profile.V6/fsm2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/actions.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/actions.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/actions.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/actions.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Height_High.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Height_High.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Height_High.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Height_High.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_ConveyorHeight_FBA1.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_ConveyorHeight_FBA1.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_ConveyorHeight_FBA1.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_ConveyorHeight_FBA1.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT1_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_HEIGHT_LS_SRT2_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END1_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END2_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END2_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END2_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_SRT_END2_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT1_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT2_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_Track_LS_STR_HEIGHT_Ready_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_WS_Flat.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_WS_Flat.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_WS_Flat.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_WS_Flat.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_WS_High.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_WS_High.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_WS_High.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_WS_High.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_WS_Hole.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_WS_Hole.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Measurement_WS_Hole.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Measurement_WS_Hole.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Transport_WS_Flat.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Transport_WS_Flat.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Transport_WS_Flat.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Transport_WS_Flat.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Transport_WS_High.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Transport_WS_High.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Transport_WS_High.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Transport_WS_High.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Transport_WS_Hole.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Transport_WS_Hole.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Transport_WS_Hole.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Transport_WS_Hole.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Calibration.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Calibration.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Calibration.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Calibration.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_FBA2_WS_Flat.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_FBA2_WS_Flat.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_FBA2_WS_Flat.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_FBA2_WS_Flat.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_FBA2_WS_High.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_FBA2_WS_High.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_FBA2_WS_High.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_FBA2_WS_High.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_FBA2_WS_Hole.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_FBA2_WS_Hole.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_FBA2_WS_Hole.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_FBA2_WS_Hole.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_Track_Fast.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_Track_Fast.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_Track_Fast.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_Track_Fast.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_Track_Slow.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_Track_Slow.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_Track_Slow.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_Track_Slow.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_WS_Flat.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_WS_Flat.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_WS_Flat.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_WS_Flat.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_WS_High.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_WS_High.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_WS_High.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_WS_High.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_WS_Hole.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_WS_Hole.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/Wait_Measurement_WS_Hole.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/Wait_Measurement_WS_Hole.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/calibrationbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/calibrationbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/calibrationbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/calibrationbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/calibrationpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/calibrationpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/calibrationfsm/calibrationpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/calibrationfsm/calibrationpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Both_Full.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Both_Full.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Both_Full.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Both_Full.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Slide_Check.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Slide_Check.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Slide_Check.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Slide_Check.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Slide_Free.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Slide_Free.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Slide_Free.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Slide_Free.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Slide_Full.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Slide_Full.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/Slide_Full.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/Slide_Full.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/checkslidebasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/checkslidebasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/checkslidebasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/checkslidebasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/checkslidefsm/checkslidepseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/checkslidefsm/checkslidepseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/context.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/context.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/context.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/context.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/contextdata.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/contextdata.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/contextdata.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/contextdata.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Connection_Lost.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/Connection_Lost.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Connection_Lost.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/Connection_Lost.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_CL.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EST1_and_CL.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_CL.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EST1_and_CL.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_EST2.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EST1_and_EST2.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST1_and_EST2.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EST1_and_EST2.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST2_and_CL.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EST2_and_CL.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EST2_and_CL.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EST2_and_CL.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop1_pressed.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EStop1_pressed.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop1_pressed.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EStop1_pressed.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop2_pressed.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EStop2_pressed.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/EStop2_pressed.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/EStop2_pressed.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Reset.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/Reset.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/Reset.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/Reset.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/estbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/estbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/estpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/estfsm/estpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/estfsm/estpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/main.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/main.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/calibration_state.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/calibration_state.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/calibration_state.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/calibration_state.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Anstehend_Unquittiert.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Anstehend_Unquittiert.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Anstehend_Unquittiert.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Anstehend_Unquittiert.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullpseudoendstate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullpseudoendstate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/anstehend_quittiert.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_quittiert.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/anstehend_quittiert.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_quittiert.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/anstehend_unquittiert_1.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_1.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/anstehend_unquittiert_1.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_1.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/anstehend_unquittiert_2.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_2.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/anstehend_unquittiert_2.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_2.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/errorbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/errorbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/errorbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/errorbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/errorpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/errorpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/gegangen_unquittiert.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/gegangen_unquittiert.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/gegangen_unquittiert.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/gegangen_unquittiert.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/wait_free_slide1.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide1.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/wait_free_slide1.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide1.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/wait_free_slide2.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide2.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/error_state/wait_free_slide2.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide2.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/idle.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/idle.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/idle.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/idle.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/mainbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/mainbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/mainbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/mainbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/mainpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/mainpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/idleWS.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/WSIdle.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/idleWS.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/WSIdle.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/Sorting.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Sorting.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/Sorting.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Sorting.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/Transfering.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Transfering.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/Transfering.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Transfering.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/height_measurement.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/height_measurement.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/height_measurement.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/height_measurement.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/measuring_height.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/measuring_height.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/measuring_height.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/measuring_height.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/waiting_height.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/waiting_height.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/waiting_height.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/waiting_height.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_flat.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_flat.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_flat.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_flat.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high_hole.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high_hole.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high_hole.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high_hole.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_hole.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_hole.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_hole.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_hole.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/metal_detector.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/metal_detector.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/metal_detector.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/metal_detector.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/opbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/opbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/opbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/opbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/oppseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/oppseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/oppseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/oppseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/ws_sorted_port.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/ws_sorted_port.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/ws_transfered_port.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/ws_transfered_port.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/checking_fba2.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/checking_fba2.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/checking_fba2.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/checking_fba2.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingidle.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingidle.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingidle.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingidle.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingws.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingws.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingws.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingws.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/waiting_remove.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/waiting_remove.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/waiting_remove.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/waiting_remove.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transport.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transport.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_fsm/transport.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transport.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_state.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_state.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/operation_state.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_state.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/wsbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/wsbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/wsbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/wsbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_fsm/wspseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/wspseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_state.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/WSIdle.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/mainfsm/ws_state.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/WSIdle.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/orthmainfsm/orthmainbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/operation_state.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/orthmainfsm/orthmainbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/operation_state.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/orthmainfsm/orthmainpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/wsbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset1.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/wsbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset1.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm_2/wspseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset2.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_state.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/Wait_For_Reset2.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_state.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetbasestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/orthmainfsm/orthmainbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetbasestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/orthmainfsm/orthmainbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetidle.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/Wait_For_Reset1.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetidle.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/Wait_For_Reset1.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetpseudoendstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/Wait_For_Reset2.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/resetfsm/resetpseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/Wait_For_Reset2.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/basestate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/resetbasestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/basestate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/resetbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/checkslidefsm.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/resetidle.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/checkslidefsm.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/resetidle.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/estoppfsm.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/resetpseudoendstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/estoppfsm.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/resetfsm/resetpseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/mainfsm.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/basestate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/mainfsm.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/basestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/orthmainfsm.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/estoppfsm.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/orthmainfsm.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/estoppfsm.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/pseudostartstate.cpp">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/orthmainfsm.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/rootfsm/pseudostartstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/orthmainfsm.h">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/subcommon/triggerprocessingstate.h">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/pseudostartstate.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
-		<Unit filename="C:/Users/trung/CLionProjects/fsm2.0/CMakeLists.txt">
+		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/pseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/subcommon/triggerprocessingstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/workpiece.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/workpiece.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/workpieceordertracker.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/workpieceordertracker.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

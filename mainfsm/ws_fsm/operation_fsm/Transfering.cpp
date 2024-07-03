@@ -11,8 +11,8 @@
 
 
 void Transfering::entry() {
-    std::cout << "Transfering Entry" << std::endl;
     //action->entered_Calibration_State();
+    std::cout << "\nOperationFsm: Transfering State\n" << std::endl;
     transferingstatemachine->enterViaPseudoStart();
 }
 
@@ -64,7 +64,7 @@ void Transfering::enterByDeepHistoryEntryPoint() {
 
 
 void Transfering::showState() {
-    std::cout << "        OperationFsm: Transfering State" << std::endl;
+    std::cout << "\n  OperationFsm: Transfering State\n" << std::endl;
     transferingstatemachine->showState();
 }
 

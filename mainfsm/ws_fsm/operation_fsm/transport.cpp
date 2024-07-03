@@ -12,13 +12,12 @@
 #include "oppseudoendstate.h"
 
 void Transport::entry() {
-    std::cout << "Transport Entry" << std::endl;
-//    action->entered_Operation_State();
-    this->data->checkFBA1Counter();
+	std::cout << "\nOperationFsm: Transport\n" << std::endl;;
+	action->ak_fbm1_right_on();
 }
 
-TriggerProcessingState Transport::ss_ls_str1_continuous(){
-	std::cout << "Transport: ss_ls_str1_continuous called" << std::endl;
+TriggerProcessingState Transport::height_ok1_active(){
+	std::cout << "Transport: height_ok1_active called" << std::endl;
 	if (data->checkFBA1()) {
 		leavingState();
 		new(this) Height_Measurement;
@@ -29,8 +28,8 @@ TriggerProcessingState Transport::ss_ls_str1_continuous(){
 }
 
 
-TriggerProcessingState Transport::ss_ls_str2_continuous(){
-	std::cout << "Transport: ss_ls_str2_continuous called" << std::endl;
+TriggerProcessingState Transport::height_ok2_active(){
+	std::cout << "Transport: height_ok1_active called" << std::endl;
 	if (data->checkFBA2()) {
 		if (data->checkFBA1Counter() == 0){
 			this->action->ak_fbm1_right_off();
@@ -71,6 +70,6 @@ TriggerProcessingState Transport::ws_sorted_FBA1(){
 }
 
 void Transport::showState() {
-	std::cout << "        OperationFsm: Transport" << std::endl;;
+	std::cout << "\n  OperationFsm: Transport\n" << std::endl;;
 }
 

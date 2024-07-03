@@ -12,8 +12,8 @@
 #include "Sorting_FBA2.h"
 
 void Check_WS_Data::entry() {
-	std::cout << "Check_WS_Data::entry called" << std::endl;
-	//TODO: /checkWSData() /checkOrder()
+	std::cout << "\nSortingFsm: Check_WS_Data\n" << std::endl;
+	this->data->checkOrder();
 }
 
 //TODO: Make transitions to other states

@@ -12,6 +12,7 @@
 
 class Check_WS_Data : public SortingBaseState {
 public:
+
 	void entry() override;
 	TriggerProcessingState unwanted_ws() override;
 	TriggerProcessingState right_order() override;

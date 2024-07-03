@@ -5,7 +5,6 @@ cout << "Entry: Measurement_ConveyorHeight_FBA1 " << endl;
 cout << "Bandmessung läuft" << endl;
 action->sample_band_start();
 
-    //TODO: remove this before pushing to git
 //usleep(3000000);
 leavingState();
 new (this) Wait_Measurement_WS_High;

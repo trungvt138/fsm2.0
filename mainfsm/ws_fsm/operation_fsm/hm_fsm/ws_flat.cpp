@@ -10,13 +10,12 @@
 #include "hmpseudoendstate.h"
 
 void WS_Flat::entry() {
-    std::cout << "Waiting_Height Entry" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: WS_Flat State\n" << std::endl;
 //    action->entered_Operation_State();
 }
 
 TriggerProcessingState WS_Flat::height_band(){
 	std::cout << "WS_Flat: height_band called" << std::endl;
-//	this->data->UpdateWSData(WS_NRM);
 	leavingState();
 	new(this) HMPseudoEndState;
 	enterByDefaultEntryPoint();

@@ -14,6 +14,7 @@
 
 void OpBaseState::enterViaPseudoStart() {
     std::cout << "OperationFSM Initial Trasition taken" << std::endl;
+    wp = new WorkPiece();
     new(this) Transport;
     enterByDefaultEntryPoint();
 }
@@ -43,6 +44,13 @@ void OpBaseState::setData(ContextData *data){
     hmstatemachine->setData(data);
     sortingstatemachine->setData(data);
     transferingstatemachine->setData(data);
+}
+
+void OpBaseState::setWp(WorkPiece *wp){
+	this->wp = wp;
+    hmstatemachine->setWp(wp);
+    sortingstatemachine->setWp(wp);
+    transferingstatemachine->setWp(wp);
 }
 
 void OpBaseState::enterViaDeepHistory() {

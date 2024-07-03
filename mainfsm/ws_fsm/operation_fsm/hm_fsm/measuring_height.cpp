@@ -12,7 +12,7 @@
 #include "ws_flat.h"
 
 void Measuring_Height::entry() {
-    std::cout << "Measuring_Height Entry" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: Measuring_Height State\n" << std::endl;
     if (this->data->checkFBA1()){
     	action->ak_fbm1_slow_on();
     }

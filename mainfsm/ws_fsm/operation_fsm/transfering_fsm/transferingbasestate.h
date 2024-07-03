@@ -15,9 +15,13 @@ class TransferingBaseState {
 protected:
     ContextData *data;
     Actions *action;
+	WorkPiece *wp;
+
 public:
-    void setData(ContextData *data) {this->data = data;};
-    void setAction(Actions *action) {this->action = action;};
+	virtual ~TransferingBaseState() = default;
+	void setData(ContextData *data) {this->data = data;};
+	void setAction(Actions *action) {this->action = action;};
+	void setWp(WorkPiece *wp) {this->wp = wp;};
 
     virtual void initSubStateMachines() {};
 

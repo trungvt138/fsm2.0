@@ -10,7 +10,9 @@
 #include "../mainfsm/calibration_state.h"
 
 void Idle::entry() {
-    showState();
+    std::cout << "\n MainFsm: Idle\n" << std::endl;
+    action->ak_l_grn1_off();
+    action->ak_l_grn2_off();
 }
 
 
@@ -51,7 +53,11 @@ TriggerProcessingState Idle::ss_t_str2_shortpressed() {
 }
 
 void Idle::showState() {
-    std::cout << "    MainFsm: Idle" << std::endl;
+    std::cout << "  MainFsm: Idle" << std::endl;
 }
 
-
+void Idle::resetDeepHistory() {
+    new(this) WS_State;
+    wsstatemachine1->resetDeepHistory();
+    wsstatemachine2->resetDeepHistory();
+}

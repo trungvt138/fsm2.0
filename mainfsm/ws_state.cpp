@@ -10,8 +10,7 @@
 #include "../mainfsm/error_state.h"
 
 void WS_State::entry() {
-    //std::cout << "WSSate_State Entry" << std::endl;
-    action->entered_WS_State();
+    std::cout << "\nMainFsm: WS State\n" << std::endl;
     action->ak_l_grn1_on();
     action->ak_l_grn2_on();
 
@@ -20,8 +19,10 @@ void WS_State::entry() {
 
 
 void WS_State::exit() {
-    action->ak_l_grn1_off();
-    action->ak_l_grn2_off();
+	action->ak_l_grn1_off();
+	action->ak_l_grn2_off();
+	action->ak_fbm1_right_off();
+	action->ak_fbm2_right_off();
 }
 
 void WS_State::enterByDefaultEntryPoint() {

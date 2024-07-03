@@ -17,8 +17,8 @@ public:
     void entry() override;
     void exit() override {};
 
-    TriggerProcessingState ss_ls_str1_continuous() override;
-    TriggerProcessingState ss_ls_str2_continuous() override;
+    TriggerProcessingState height_ok1_active() override;
+    TriggerProcessingState height_ok2_active() override;
     TriggerProcessingState ws_sorted_FBA1() override;
 
     void leavingState() override {exit();};

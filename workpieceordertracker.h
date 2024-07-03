@@ -20,7 +20,7 @@ public:
     WorkPieceOrderTracker()= default;
 
     // Add a WorkPiece to the order
-    void addWorkPiece(const WorkPiece& wp);
+    void addWorkPiece(const WorkPiece *wp);
 
     void removeWorkPiece();
 

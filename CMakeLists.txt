@@ -123,7 +123,7 @@ add_executable(fsm2_0 main.cpp
         mainfsm/ws_fsm/WSIdle.cpp
         mainfsm/ws_fsm/WSIdle.h
         mainfsm/ws_fsm/operation_state.cpp
-        mainfsm/ws_fsm/operation_state.h
+        mainfsm/ws_fsm/operation_state.cpp
         mainfsm/ws_fsm/wsbasestate.h
         mainfsm/ws_fsm/wspseudostartstate.h
         mainfsm/calibration_state.h
@@ -224,8 +224,6 @@ add_executable(fsm2_0 main.cpp
         checkslidefsm/Slide_Full.h
         checkslidefsm/Both_Full.cpp
         checkslidefsm/Both_Full.h
-        rootfsm/checkslidefsm.cpp
-        rootfsm/checkslidefsm.h
         rootfsm/orthmainfsm.cpp
         rootfsm/orthmainfsm.h
         orthmainfsm/orthmainbasestate.cpp
@@ -239,4 +237,6 @@ add_executable(fsm2_0 main.cpp
         mainfsm/ws_fsm_2/WSIdle.h
         mainfsm/ws_fsm_2/WSIdle.cpp
         mainfsm/ws_fsm_2/wsbasestate.h
+        mainfsm/ws_fsm_2/operation_state.cpp
+        mainfsm/ws_fsm_2/operation_state.h
 )

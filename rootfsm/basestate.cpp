@@ -37,7 +37,7 @@ void BaseState::setAction(Actions *action){
 
 void BaseState::enterViaPseudoStart(){
     // go from pseudo-start state to first state
-    std::cout << "Initial transition taken" << std::endl;
+    std::cout << "\nInitial transition taken" << std::endl;
     data->clearErrorCounter();    // init-transition action
     new(this) OrthMainFsm;
     enterByDefaultEntryPoint();   // Entry of initial state

@@ -16,11 +16,13 @@
 using namespace std;
 
 void OrthMainFsm::entry() {
-    showState();
+    std::cout << "\nState: OrthMainFsm" << std::endl;
 }
 
 void OrthMainFsm::exit() {
     cout << "Leaving OrthMainFsm" << endl;
+    action->ak_l_grn1_off();
+    action->ak_l_grn2_off();
 }
 
 void OrthMainFsm::ss_t_str1_longpressed() {

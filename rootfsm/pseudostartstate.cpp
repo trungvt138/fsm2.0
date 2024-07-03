@@ -10,5 +10,5 @@ bool PseudoStartState::isPseudoStartState(){
 }
 
 void PseudoStartState::showState(){
-    std::cout << "State: Pseudo Start State" << std::endl;
+    std::cout << "\nState: Pseudo Start State" << std::endl;
 }

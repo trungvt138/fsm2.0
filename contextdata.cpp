@@ -128,17 +128,22 @@ int ContextData::setSrtEndTickSlow() {
     return ls_srt_end_tick_Slow;
 }
 
-void ContextData::addWSToTracker(WorkPiece wp) {
+
+// tracker
+
+void ContextData::addWSToTracker(WorkPiece *wp) {
     tracker.addWorkPiece(wp);
 }
 
-void ContextData::negateFBA1() {
-    FBA1 = !FBA1;
+void ContextData::removeWSFromTracker() {
+    tracker.removeWorkPiece();
 }
 
-void ContextData::negateFBA2() {
-    FBA2 = !FBA2;
+bool ContextData::checkOrder() {
+    return tracker.isInCorrectOrder();
 }
+
+
 
 bool ContextData::checkFBA2() {
     return FBA2;

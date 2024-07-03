@@ -21,7 +21,7 @@ public:
     enum class WorkPieceType {
         Unknown,
         WP_Flat,
-        WP_High,
+		WP_High,
         WP_High_Hole,
         WP_High_Hole_Metal,
         WP_Binary

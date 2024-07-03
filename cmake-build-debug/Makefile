@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\trung\CLionProjects\fsm2.0
+CMAKE_SOURCE_DIR = Z:\profile.V6\fsm2.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug
+CMAKE_BINARY_DIR = Z:\profile.V6\fsm2.0\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug\CMakeFiles C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start Z:\profile.V6\fsm2.0\cmake-build-debug\CMakeFiles Z:\profile.V6\fsm2.0\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\trung\CLionProjects\fsm2.0\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start Z:\profile.V6\fsm2.0\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1688,29 +1688,29 @@ mainfsm/mainbasestate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/mainbasestate.cpp.s
 .PHONY : mainfsm/mainbasestate.cpp.s
 
-mainfsm/ws_fsm/idleWS.obj: mainfsm/ws_fsm/idleWS.cpp.obj
-.PHONY : mainfsm/ws_fsm/idleWS.obj
+mainfsm/ws_fsm/WSIdle.obj: mainfsm/ws_fsm/WSIdle.cpp.obj
+.PHONY : mainfsm/ws_fsm/WSIdle.obj
 
 # target to build an object file
-mainfsm/ws_fsm/idleWS.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/idleWS.cpp.obj
-.PHONY : mainfsm/ws_fsm/idleWS.cpp.obj
+mainfsm/ws_fsm/WSIdle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/WSIdle.cpp.obj
+.PHONY : mainfsm/ws_fsm/WSIdle.cpp.obj
 
-mainfsm/ws_fsm/idleWS.i: mainfsm/ws_fsm/idleWS.cpp.i
-.PHONY : mainfsm/ws_fsm/idleWS.i
+mainfsm/ws_fsm/WSIdle.i: mainfsm/ws_fsm/WSIdle.cpp.i
+.PHONY : mainfsm/ws_fsm/WSIdle.i
 
 # target to preprocess a source file
-mainfsm/ws_fsm/idleWS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/idleWS.cpp.i
-.PHONY : mainfsm/ws_fsm/idleWS.cpp.i
+mainfsm/ws_fsm/WSIdle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/WSIdle.cpp.i
+.PHONY : mainfsm/ws_fsm/WSIdle.cpp.i
 
-mainfsm/ws_fsm/idleWS.s: mainfsm/ws_fsm/idleWS.cpp.s
-.PHONY : mainfsm/ws_fsm/idleWS.s
+mainfsm/ws_fsm/WSIdle.s: mainfsm/ws_fsm/WSIdle.cpp.s
+.PHONY : mainfsm/ws_fsm/WSIdle.s
 
 # target to generate assembly for a file
-mainfsm/ws_fsm/idleWS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/idleWS.cpp.s
-.PHONY : mainfsm/ws_fsm/idleWS.cpp.s
+mainfsm/ws_fsm/WSIdle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/WSIdle.cpp.s
+.PHONY : mainfsm/ws_fsm/WSIdle.cpp.s
 
 mainfsm/ws_fsm/operation_fsm/Sorting.obj: mainfsm/ws_fsm/operation_fsm/Sorting.cpp.obj
 .PHONY : mainfsm/ws_fsm/operation_fsm/Sorting.obj
@@ -2288,6 +2288,78 @@ mainfsm/ws_fsm/wsbasestate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm/wsbasestate.cpp.s
 .PHONY : mainfsm/ws_fsm/wsbasestate.cpp.s
 
+mainfsm/ws_fsm_2/WSIdle.obj: mainfsm/ws_fsm_2/WSIdle.cpp.obj
+.PHONY : mainfsm/ws_fsm_2/WSIdle.obj
+
+# target to build an object file
+mainfsm/ws_fsm_2/WSIdle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/WSIdle.cpp.obj
+.PHONY : mainfsm/ws_fsm_2/WSIdle.cpp.obj
+
+mainfsm/ws_fsm_2/WSIdle.i: mainfsm/ws_fsm_2/WSIdle.cpp.i
+.PHONY : mainfsm/ws_fsm_2/WSIdle.i
+
+# target to preprocess a source file
+mainfsm/ws_fsm_2/WSIdle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/WSIdle.cpp.i
+.PHONY : mainfsm/ws_fsm_2/WSIdle.cpp.i
+
+mainfsm/ws_fsm_2/WSIdle.s: mainfsm/ws_fsm_2/WSIdle.cpp.s
+.PHONY : mainfsm/ws_fsm_2/WSIdle.s
+
+# target to generate assembly for a file
+mainfsm/ws_fsm_2/WSIdle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/WSIdle.cpp.s
+.PHONY : mainfsm/ws_fsm_2/WSIdle.cpp.s
+
+mainfsm/ws_fsm_2/operation_state.obj: mainfsm/ws_fsm_2/operation_state.cpp.obj
+.PHONY : mainfsm/ws_fsm_2/operation_state.obj
+
+# target to build an object file
+mainfsm/ws_fsm_2/operation_state.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/operation_state.cpp.obj
+.PHONY : mainfsm/ws_fsm_2/operation_state.cpp.obj
+
+mainfsm/ws_fsm_2/operation_state.i: mainfsm/ws_fsm_2/operation_state.cpp.i
+.PHONY : mainfsm/ws_fsm_2/operation_state.i
+
+# target to preprocess a source file
+mainfsm/ws_fsm_2/operation_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/operation_state.cpp.i
+.PHONY : mainfsm/ws_fsm_2/operation_state.cpp.i
+
+mainfsm/ws_fsm_2/operation_state.s: mainfsm/ws_fsm_2/operation_state.cpp.s
+.PHONY : mainfsm/ws_fsm_2/operation_state.s
+
+# target to generate assembly for a file
+mainfsm/ws_fsm_2/operation_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/operation_state.cpp.s
+.PHONY : mainfsm/ws_fsm_2/operation_state.cpp.s
+
+mainfsm/ws_fsm_2/wsbasestate.obj: mainfsm/ws_fsm_2/wsbasestate.cpp.obj
+.PHONY : mainfsm/ws_fsm_2/wsbasestate.obj
+
+# target to build an object file
+mainfsm/ws_fsm_2/wsbasestate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/wsbasestate.cpp.obj
+.PHONY : mainfsm/ws_fsm_2/wsbasestate.cpp.obj
+
+mainfsm/ws_fsm_2/wsbasestate.i: mainfsm/ws_fsm_2/wsbasestate.cpp.i
+.PHONY : mainfsm/ws_fsm_2/wsbasestate.i
+
+# target to preprocess a source file
+mainfsm/ws_fsm_2/wsbasestate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/wsbasestate.cpp.i
+.PHONY : mainfsm/ws_fsm_2/wsbasestate.cpp.i
+
+mainfsm/ws_fsm_2/wsbasestate.s: mainfsm/ws_fsm_2/wsbasestate.cpp.s
+.PHONY : mainfsm/ws_fsm_2/wsbasestate.s
+
+# target to generate assembly for a file
+mainfsm/ws_fsm_2/wsbasestate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/mainfsm/ws_fsm_2/wsbasestate.cpp.s
+.PHONY : mainfsm/ws_fsm_2/wsbasestate.cpp.s
+
 mainfsm/ws_state.obj: mainfsm/ws_state.cpp.obj
 .PHONY : mainfsm/ws_state.obj
 
@@ -2456,30 +2528,6 @@ rootfsm/basestate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/basestate.cpp.s
 .PHONY : rootfsm/basestate.cpp.s
 
-rootfsm/checkslidefsm.obj: rootfsm/checkslidefsm.cpp.obj
-.PHONY : rootfsm/checkslidefsm.obj
-
-# target to build an object file
-rootfsm/checkslidefsm.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/checkslidefsm.cpp.obj
-.PHONY : rootfsm/checkslidefsm.cpp.obj
-
-rootfsm/checkslidefsm.i: rootfsm/checkslidefsm.cpp.i
-.PHONY : rootfsm/checkslidefsm.i
-
-# target to preprocess a source file
-rootfsm/checkslidefsm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/checkslidefsm.cpp.i
-.PHONY : rootfsm/checkslidefsm.cpp.i
-
-rootfsm/checkslidefsm.s: rootfsm/checkslidefsm.cpp.s
-.PHONY : rootfsm/checkslidefsm.s
-
-# target to generate assembly for a file
-rootfsm/checkslidefsm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/checkslidefsm.cpp.s
-.PHONY : rootfsm/checkslidefsm.cpp.s
-
 rootfsm/estoppfsm.obj: rootfsm/estoppfsm.cpp.obj
 .PHONY : rootfsm/estoppfsm.obj
 
@@ -2503,30 +2551,6 @@ rootfsm/estoppfsm.s: rootfsm/estoppfsm.cpp.s
 rootfsm/estoppfsm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/estoppfsm.cpp.s
 .PHONY : rootfsm/estoppfsm.cpp.s
-
-rootfsm/mainfsm.obj: rootfsm/mainfsm.cpp.obj
-.PHONY : rootfsm/mainfsm.obj
-
-# target to build an object file
-rootfsm/mainfsm.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/mainfsm.cpp.obj
-.PHONY : rootfsm/mainfsm.cpp.obj
-
-rootfsm/mainfsm.i: rootfsm/mainfsm.cpp.i
-.PHONY : rootfsm/mainfsm.i
-
-# target to preprocess a source file
-rootfsm/mainfsm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/mainfsm.cpp.i
-.PHONY : rootfsm/mainfsm.cpp.i
-
-rootfsm/mainfsm.s: rootfsm/mainfsm.cpp.s
-.PHONY : rootfsm/mainfsm.s
-
-# target to generate assembly for a file
-rootfsm/mainfsm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/mainfsm.cpp.s
-.PHONY : rootfsm/mainfsm.cpp.s
 
 rootfsm/orthmainfsm.obj: rootfsm/orthmainfsm.cpp.obj
 .PHONY : rootfsm/orthmainfsm.obj
@@ -2575,6 +2599,54 @@ rootfsm/pseudostartstate.s: rootfsm/pseudostartstate.cpp.s
 rootfsm/pseudostartstate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/rootfsm/pseudostartstate.cpp.s
 .PHONY : rootfsm/pseudostartstate.cpp.s
+
+workpiece.obj: workpiece.cpp.obj
+.PHONY : workpiece.obj
+
+# target to build an object file
+workpiece.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/workpiece.cpp.obj
+.PHONY : workpiece.cpp.obj
+
+workpiece.i: workpiece.cpp.i
+.PHONY : workpiece.i
+
+# target to preprocess a source file
+workpiece.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/workpiece.cpp.i
+.PHONY : workpiece.cpp.i
+
+workpiece.s: workpiece.cpp.s
+.PHONY : workpiece.s
+
+# target to generate assembly for a file
+workpiece.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/workpiece.cpp.s
+.PHONY : workpiece.cpp.s
+
+workpieceordertracker.obj: workpieceordertracker.cpp.obj
+.PHONY : workpieceordertracker.obj
+
+# target to build an object file
+workpieceordertracker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/workpieceordertracker.cpp.obj
+.PHONY : workpieceordertracker.cpp.obj
+
+workpieceordertracker.i: workpieceordertracker.cpp.i
+.PHONY : workpieceordertracker.i
+
+# target to preprocess a source file
+workpieceordertracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/workpieceordertracker.cpp.i
+.PHONY : workpieceordertracker.cpp.i
+
+workpieceordertracker.s: workpieceordertracker.cpp.s
+.PHONY : workpieceordertracker.s
+
+# target to generate assembly for a file
+workpieceordertracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsm2_0.dir\build.make CMakeFiles/fsm2_0.dir/workpieceordertracker.cpp.s
+.PHONY : workpieceordertracker.cpp.s
 
 # Help Target
 help:
@@ -2780,9 +2852,9 @@ help:
 	@echo ... mainfsm/mainbasestate.obj
 	@echo ... mainfsm/mainbasestate.i
 	@echo ... mainfsm/mainbasestate.s
-	@echo ... mainfsm/ws_fsm/idleWS.obj
-	@echo ... mainfsm/ws_fsm/idleWS.i
-	@echo ... mainfsm/ws_fsm/idleWS.s
+	@echo ... mainfsm/ws_fsm/WSIdle.obj
+	@echo ... mainfsm/ws_fsm/WSIdle.i
+	@echo ... mainfsm/ws_fsm/WSIdle.s
 	@echo ... mainfsm/ws_fsm/operation_fsm/Sorting.obj
 	@echo ... mainfsm/ws_fsm/operation_fsm/Sorting.i
 	@echo ... mainfsm/ws_fsm/operation_fsm/Sorting.s
@@ -2855,6 +2927,15 @@ help:
 	@echo ... mainfsm/ws_fsm/wsbasestate.obj
 	@echo ... mainfsm/ws_fsm/wsbasestate.i
 	@echo ... mainfsm/ws_fsm/wsbasestate.s
+	@echo ... mainfsm/ws_fsm_2/WSIdle.obj
+	@echo ... mainfsm/ws_fsm_2/WSIdle.i
+	@echo ... mainfsm/ws_fsm_2/WSIdle.s
+	@echo ... mainfsm/ws_fsm_2/operation_state.obj
+	@echo ... mainfsm/ws_fsm_2/operation_state.i
+	@echo ... mainfsm/ws_fsm_2/operation_state.s
+	@echo ... mainfsm/ws_fsm_2/wsbasestate.obj
+	@echo ... mainfsm/ws_fsm_2/wsbasestate.i
+	@echo ... mainfsm/ws_fsm_2/wsbasestate.s
 	@echo ... mainfsm/ws_state.obj
 	@echo ... mainfsm/ws_state.i
 	@echo ... mainfsm/ws_state.s
@@ -2876,21 +2957,21 @@ help:
 	@echo ... rootfsm/basestate.obj
 	@echo ... rootfsm/basestate.i
 	@echo ... rootfsm/basestate.s
-	@echo ... rootfsm/checkslidefsm.obj
-	@echo ... rootfsm/checkslidefsm.i
-	@echo ... rootfsm/checkslidefsm.s
 	@echo ... rootfsm/estoppfsm.obj
 	@echo ... rootfsm/estoppfsm.i
 	@echo ... rootfsm/estoppfsm.s
-	@echo ... rootfsm/mainfsm.obj
-	@echo ... rootfsm/mainfsm.i
-	@echo ... rootfsm/mainfsm.s
 	@echo ... rootfsm/orthmainfsm.obj
 	@echo ... rootfsm/orthmainfsm.i
 	@echo ... rootfsm/orthmainfsm.s
 	@echo ... rootfsm/pseudostartstate.obj
 	@echo ... rootfsm/pseudostartstate.i
 	@echo ... rootfsm/pseudostartstate.s
+	@echo ... workpiece.obj
+	@echo ... workpiece.i
+	@echo ... workpiece.s
+	@echo ... workpieceordertracker.obj
+	@echo ... workpieceordertracker.i
+	@echo ... workpieceordertracker.s
 .PHONY : help
 
 

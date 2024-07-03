@@ -20,7 +20,7 @@ public:
     virtual void enteredMainFSM(){};
     virtual void enteredEStoppFSM(){};
     virtual void entered_Error_State(){};
-    virtual void entered_Operation_State(){};
+    virtual void entered_Operation_State2(){};
     virtual void entered_Calibration_State(){};
     virtual void entered_WS_State(){};
     virtual void entered_Idle(){};

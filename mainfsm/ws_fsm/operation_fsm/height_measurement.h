@@ -12,11 +12,12 @@
 class Height_Measurement : public OpBaseState {
 public:
     void entry() override;
-    //void exit() override;
+    void exit() override;
     void showState() override;
     void handleDefaultExit(const TriggerProcessingState &handled) override;
 	void enterByDeepHistoryEntryPoint() override;
 
+	TriggerProcessingState height_ok1_unactive()override;
 	TriggerProcessingState height_calibration()override;
 	TriggerProcessingState height_band() override;
 	TriggerProcessingState height_flat()override;
