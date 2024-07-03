@@ -164,6 +164,87 @@
 		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state.h">
 			<Option target="fsm2_0"/>
 		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Anstehend_Unquittiert.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Anstehend_Unquittiert.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide1_Emptied.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/Slide2_Emptied.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullpseudoendstate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/Both_Slide_Full_State/bothslidefullpseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_quittiert.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_quittiert.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_1.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_1.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_2.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/anstehend_unquittiert_2.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/errorbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/errorbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/errorpseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/gegangen_unquittiert.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/gegangen_unquittiert.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide1.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide1.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide2.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/error_state/wait_free_slide2.h">
+			<Option target="fsm2_0"/>
+		</Unit>
 		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/idle.cpp">
 			<Option target="fsm2_0"/>
 		</Unit>
@@ -174,6 +255,183 @@
 			<Option target="fsm2_0"/>
 		</Unit>
 		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/mainbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/idleWS.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/idleWS.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Sorting.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Sorting.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Transfering.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/Transfering.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/height_measurement.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/height_measurement.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmpseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/hmpseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/measuring_height.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/measuring_height.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/waiting_height.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/waiting_height.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_flat.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_flat.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high_hole.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_high_hole.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_hole.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/hm_fsm/ws_hole.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/metal_detector.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/metal_detector.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/opbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/opbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/oppseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/oppseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Check_WS_Data.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA1.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/Sorting_FBA2.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/checking_fba2.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/checking_fba2.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingidle.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingidle.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingpseudoendstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingpseudostartstate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingws.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/transferingws.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/waiting_remove.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transfering_fsm/waiting_remove.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transport.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_fsm/transport.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_state.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/operation_state.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/wsbasestate.cpp">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/wsbasestate.h">
+			<Option target="fsm2_0"/>
+		</Unit>
+		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_fsm/wspseudostartstate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
 		<Unit filename="Z:/profile.V6/fsm2.0/mainfsm/ws_state.cpp">
@@ -234,12 +492,6 @@
 			<Option target="fsm2_0"/>
 		</Unit>
 		<Unit filename="Z:/profile.V6/fsm2.0/rootfsm/pseudostartstate.h">
-			<Option target="fsm2_0"/>
-		</Unit>
-		<Unit filename="Z:/profile.V6/fsm2.0/ws_fsm/wsbasestate.cpp">
-			<Option target="fsm2_0"/>
-		</Unit>
-		<Unit filename="Z:/profile.V6/fsm2.0/ws_fsm/wsbasestate.h">
 			<Option target="fsm2_0"/>
 		</Unit>
 		<Unit filename="Z:/profile.V6/fsm2.0/CMakeLists.txt">
