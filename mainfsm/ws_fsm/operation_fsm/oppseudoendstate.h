@@ -17,7 +17,9 @@ public:
 
     void enterViaDeepHistory() override { enterViaPseudoStart();};
 
-    void showState() override {std::cout << "State: OP End State" << std::endl;}; // Just for illustration!
+    void exit() override {action->ak_fbm1_right_off();};
+
+    void showState() override {std::cout << "\nState: OP End State\n" << std::endl;}; // Just for illustration!
 };
 
 #endif /* SRC_FSMSIMPLE_MAINFSM_WS_FSM_OPERATION_FSM_OPPSEUDOENDSTATE_H_ */

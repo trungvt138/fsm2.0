@@ -18,14 +18,7 @@ int main(int argc, char** argv) {
 
     //Enter 1st WS Operation FBA1
     fsmA.ss_ls_str1_interrupted();
-    fsmA.ss_ls_str1_continuous();
-    fsmA.showState();
-    fsmA.height_calibration();
-    fsmA.height_calibration();
-    fsmA.ss_ls_srt1_interrupted();
-    fsmA.right_order();
-    fsmA.ss_ls_end1_interrupted();
-    fsmA.ss_ls_str2_interrupted(); //Operation End State Reached FBA1
+
 
     //1st WS now enters FBA2
     //Enter 1st WS Operation FBA2

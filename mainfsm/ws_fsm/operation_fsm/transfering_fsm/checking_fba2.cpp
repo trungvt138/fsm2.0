@@ -7,6 +7,7 @@
 #include "transferingws.h"
 
 void Checking_FBA2::entry() {
+    cout << "\nTransferingFsm: Checking_FBA2 State\n" << endl;
     action->ak_fbm1_stop_on();
 }
 
@@ -23,5 +24,5 @@ TriggerProcessingState Checking_FBA2::ws_sorted() {
 }
 
 void Checking_FBA2::showState() {
-    cout << "          TransferingFsm: Checking_FBA2 State";
+    cout << "          TransferingFsm: Checking_FBA2 State" << endl;
 }

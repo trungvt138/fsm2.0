@@ -9,6 +9,7 @@
 #include "../actions.h"
 #include "../subcommon/triggerprocessingstate.h"
 #include "../mainfsm/ws_fsm/wsbasestate.h"
+#include "ws_fsm_3/wsbasestate.h"
 
 #include <iostream>
 
@@ -26,7 +27,7 @@ protected:
 
     WSBaseState *wsstatemachine1;
     WSBaseState2 *wsstatemachine2;
-    WSBaseState *wsstatemachine3;
+    WSBaseState3 *wsstatemachine3;
     CalibrationBaseState *calibrationsubmachine;
     ErrorBaseState *errorsubmachine;
 

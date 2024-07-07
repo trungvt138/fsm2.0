@@ -9,6 +9,7 @@
 
 class Wait_For_Reset2 : public ResetBaseState {
 public:
+    void entry() override;
     TriggerProcessingState ss_t_rst2_pressed() override;
     void showState() override;
 };

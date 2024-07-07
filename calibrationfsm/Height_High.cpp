@@ -2,8 +2,12 @@
 
 void Height_High::entry() {
 cout << "Entry: Height_High " << endl;
+if(data->checkFBA1()){
+    action->ak_fbm1_slow_on();
+}else{
+    action->ak_fbm2_slow_on();
+}
 
-action->ak_fbm1_slow_on();
 }
 
 void Height_High::exit(){

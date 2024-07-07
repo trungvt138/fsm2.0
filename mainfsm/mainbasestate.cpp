@@ -6,8 +6,7 @@
 #include "idle.h"
 #include "ws_fsm/wspseudostartstate.h"
 #include "ws_fsm_2/wspseudostartstate.h"
-
-
+#include "ws_fsm_3/wspseudostartstate.h"
 
 
 void MainBaseState::enterViaPseudoStart() {
@@ -26,7 +25,7 @@ void MainBaseState::initSubStateMachines() {
 	wsstatemachine2 = new WSPseudoStartState2();
 	wsstatemachine2->initSubStateMachines();
 
-	wsstatemachine3 = new WSPseudoStartState();
+	wsstatemachine3 = new WSPseudoStartState3();
 	wsstatemachine3->initSubStateMachines();
 
     calibrationsubmachine = new CalibrationBaseState();

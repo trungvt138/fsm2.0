@@ -10,6 +10,8 @@ using namespace std;
 
 class TransferingIdle : public TransferingBaseState {
 public:
+    void entry() override;
+
     TriggerProcessingState ss_ls_end1_interrupted() override;
 
     TriggerProcessingState ss_ls_end2_interrupted() override;

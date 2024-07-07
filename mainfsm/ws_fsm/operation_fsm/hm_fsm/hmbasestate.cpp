@@ -23,6 +23,10 @@ void HMBaseState::setAction(Actions *action){
     this->action = action;
 }
 
+void HMBaseState::setWp(WorkPiece *wp){
+    this->wp = wp;
+}
+
 void HMBaseState::enterViaDeepHistory() {
     enterByDeepHistoryEntryPoint();
 }

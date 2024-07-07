@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include "EST2_and_CL.h"
+#include "EStop2_pressed.h"
 #include "Connection_Lost.h"
 
 
@@ -15,6 +16,14 @@ TriggerProcessingState EST2_and_CL::ss_t_est2_unpressed() {
     new(this) Connection_Lost;
     enterByDefaultEntryPoint();
     return TriggerProcessingState::consumed;
+}
+
+TriggerProcessingState EST2_and_CL::connection_back() {
+	std::cout << "EST2_and_CL: connection_back called" << std::endl;
+	leavingState();
+	new(this) EStop2_pressed;
+	enterByDefaultEntryPoint();
+	return TriggerProcessingState::consumed;;
 }
 
 void EST2_and_CL::showState() {

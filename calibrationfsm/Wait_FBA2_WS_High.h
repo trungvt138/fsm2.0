@@ -10,8 +10,8 @@ public:
     void entry() override;
     void exit() override;
 
-	TriggerProcessingState ws_gone() override;
 	TriggerProcessingState ss_ls_end1_interrupted() override;
+    TriggerProcessingState ss_ls_end2_interrupted() override;
 };
 
 

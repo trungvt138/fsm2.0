@@ -24,10 +24,18 @@ void EStoppFSM::enterViaPortCL() {
 }
 
 void EStoppFSM::entry() {
+
+
+    std::cout << "\nState: EStoppFsm" << std::endl;
+
     action->ak_fbm1_right_off();
     action->ak_fbm2_right_off();
     action->ak_l_rot1_on();
     action->ak_l_rot2_on();
+    action->ak_l_glb1_off();
+    action->ak_l_grn1_off();
+    action->ak_l_glb2_off();
+    action->ak_l_grn2_off();
 }
 
 void EStoppFSM::exit() {
@@ -93,7 +101,7 @@ void EStoppFSM::ss_t_rst2_pressed() {
 }
 
 void EStoppFSM::showState() {
-    std::cout << "State: EStoppFsm" << std::endl;
+    std::cout << "\nState: EStoppFsm" << std::endl;
     estoppsubmachine->showState();
 }
 

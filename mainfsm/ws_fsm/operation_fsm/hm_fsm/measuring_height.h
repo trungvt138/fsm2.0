@@ -17,7 +17,7 @@ public:
     void exit() override{};
     TriggerProcessingState height_high() override;
     TriggerProcessingState height_flat() override;
-    TriggerProcessingState height_calibration() override;
+
 
     void leavingState() override {exit();};
     void showState() override;

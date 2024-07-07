@@ -15,7 +15,7 @@ public:
     void entry() override;
     void exit() override {};
 
-    TriggerProcessingState height_calibration() override;
+    
     TriggerProcessingState height_hole() override;
     TriggerProcessingState height_band() override;
 

@@ -18,7 +18,7 @@ TriggerProcessingState Slide1_Emptied::slide2_free() {
 }
 
 void Slide1_Emptied::showState() {
-	std::cout << "BothSlideFsm: Slide1_Emptied" << std::endl;
+	std::cout << "\nBothSlideFsm: Slide1_Emptied" << std::endl;
 }
 
 

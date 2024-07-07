@@ -6,14 +6,15 @@
  */
 
 #include "Check_WS_Data.h"
-
+#include <thread>
+#include <chrono>
 #include <iostream>
 #include "Sorting_FBA1.h"
 #include "Sorting_FBA2.h"
 
 void Check_WS_Data::entry() {
-	std::cout << "Check_WS_Data::entry called" << std::endl;
-	//TODO: /checkWSData() /checkOrder()
+
+	std::cout << "\nSortingFsm: Check_WS_Data\n" << std::endl;
 }
 
 //TODO: Make transitions to other states
@@ -58,6 +59,10 @@ TriggerProcessingState Check_WS_Data::unwanted_ws() {
 TriggerProcessingState Check_WS_Data::right_order() {
 	std::cout << "Check_WS_Data::right_order called" << std::endl;
 	//TODO: send transferWSData()
+	action->ak_awf_wch1_on();
+	std::this_thread::sleep_for(std::chrono::milliseconds(800));
+	action->ak_awf_wch1_off();
+
 	leavingState();
 	return TriggerProcessingState::ws_transfered_reached;
 

@@ -11,6 +11,7 @@ public:
     void exit() override;
 
 	TriggerProcessingState ss_ls_str1_continuous() override;
+    TriggerProcessingState ss_ls_str2_continuous() override;
 };
 
 

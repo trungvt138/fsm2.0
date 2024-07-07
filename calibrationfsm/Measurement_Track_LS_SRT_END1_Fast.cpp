@@ -10,10 +10,33 @@ void Measurement_Track_LS_SRT_END1_Fast::exit(){
 }
 
 TriggerProcessingState Measurement_Track_LS_SRT_END1_Fast::ss_ls_end1_interrupted(){
-    leavingState();
 
-    new(this) Measurement_Track_LS_SRT_END2_Fast;
-    enterByDefaultEntryPoint();
-    return TriggerProcessingState::consumed;
+
+    if(data->checkFBA1()){
+        leavingState();
+        new(this) Measurement_Track_LS_SRT_END2_Fast;
+        enterByDefaultEntryPoint();
+        return TriggerProcessingState::consumed;
+    }else{
+        return TriggerProcessingState::pending;
+
+    }
+    
+    
+}
+
+TriggerProcessingState Measurement_Track_LS_SRT_END1_Fast::ss_ls_end2_interrupted(){
+
+
+    if(!data->checkFBA1()){
+        leavingState();
+        new(this) Measurement_Track_LS_SRT_END2_Fast;
+        enterByDefaultEntryPoint();
+        return TriggerProcessingState::consumed;
+    }else{
+        return TriggerProcessingState::pending;
+
+    }
+    
     
 }

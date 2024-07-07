@@ -8,6 +8,13 @@
 
 #include "Wait_For_Reset1.h"
 #include "Wait_For_Reset2.h"
+#include "resetpseudoendstate.h"
+
+void ResetIdle::entry() {
+    std::cout << "\n    State: Reset Idle" << std::endl;
+}
+
+
 
 TriggerProcessingState ResetIdle::ss_t_rst1_pressed() {
     std::cout << "ResetIdle: ss_t_rst1_pressed called" << std::endl;
@@ -17,6 +24,7 @@ TriggerProcessingState ResetIdle::ss_t_rst1_pressed() {
     new(this) Wait_For_Reset2;
     enterByDefaultEntryPoint();
     return TriggerProcessingState::consumed;
+
 }
 
 TriggerProcessingState ResetIdle::ss_t_rst2_pressed() {
@@ -30,5 +38,5 @@ TriggerProcessingState ResetIdle::ss_t_rst2_pressed() {
 }
 
 void ResetIdle::showState() {
-    std::cout << "State: Reset Idle" << std::endl;
+    std::cout << "\n    State: Reset Idle" << std::endl;
 }

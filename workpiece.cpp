@@ -39,6 +39,10 @@ void WorkPiece::setIsFlat(bool flat) {
     isFlat = flat;
 }
 
+WorkPiece::StateType WorkPiece::getStateType() const {
+    return statetype;
+}
+
 bool WorkPiece::getContainsMetal() const {
     return containsMetal;
 }
@@ -61,6 +65,10 @@ WorkPiece::WorkPieceType WorkPiece::getType() const {
 
 void WorkPiece::setType(WorkPieceType type) {
     this->type = type;
+}
+
+void WorkPiece::setStateType(StateType type) {
+    this->statetype = type;
 }
 
 // Display method

@@ -10,6 +10,7 @@
 
 
 #include "../../../../contextdata.h"
+#include "../../../../workpiece.h"
 #include "../../../../actions.h"
 #include "../../../../subcommon/triggerprocessingstate.h"
 #include <iostream>
@@ -20,12 +21,14 @@ class HMBaseState {
 protected:
     ContextData *data;
     Actions *action;
+    WorkPiece *wp;
 
 public:
     virtual ~HMBaseState()= default;
 	void initSubStateMachines(){};
 	void setData(ContextData *data);
 	void setAction(Actions *action);
+	void setWp(WorkPiece *wp);
 
 	virtual void leavingState(){exit();};
 

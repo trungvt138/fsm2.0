@@ -11,10 +11,16 @@
 
 #include "sortingpseudoendstate.h"
 #include "ws_sorted_port.h"
+void Sorting_FBA1::entry() {
+	std::cout << "\nSortingFsm: Sorting_FBA1\n" << std::endl;
+}
 
 TriggerProcessingState Sorting_FBA1::ss_ls_srt1_interrupted() {
 	std::cout << "Sorting_FBA1: ss_ls_srt1_interrupted" << std::endl;
-	//TODO: AK_AWF_WCH1_ON
+	action->ak_awf_wch1_on();
+	//time(3000);
+	action->ak_awf_wch1_off();
+	data->removeWSFromTracker();
 	//		WS_SORTED_FBA1
 	leavingState();
 	new(this) WS_Sorted_Port;

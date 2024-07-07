@@ -16,6 +16,8 @@ public:
     TriggerProcessingState ss_t_str2_longpressed() override;
     TriggerProcessingState ss_t_str2_shortpressed() override;
 
+    void resetDeepHistory() override;
+
     void showState() override;
 };
 

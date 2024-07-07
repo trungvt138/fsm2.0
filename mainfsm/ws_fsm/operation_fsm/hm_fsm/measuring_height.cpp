@@ -12,7 +12,7 @@
 #include "ws_flat.h"
 
 void Measuring_Height::entry() {
-    std::cout << "Measuring_Height Entry" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: Measuring_Height State\n" << std::endl;
     if (this->data->checkFBA1()){
     	action->ak_fbm1_slow_on();
     }
@@ -22,14 +22,6 @@ void Measuring_Height::entry() {
 //    action->entered_Operation_State();
 }
 
-TriggerProcessingState Measuring_Height::height_calibration(){
-	std::cout << "Measuring_Height: height_calibration called" << std::endl;
-//	this->data->UpdateWSData(WS_U);
-	leavingState();
-	new(this) HMPseudoEndState;
-	enterByDefaultEntryPoint();
-	return TriggerProcessingState::endstatereached;
-}
 
 TriggerProcessingState Measuring_Height::height_high(){
 	std::cout << "Measuring_Height: height_high called" << std::endl;

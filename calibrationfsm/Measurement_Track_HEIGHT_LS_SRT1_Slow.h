@@ -11,6 +11,7 @@ public:
     void exit() override;
 
 	TriggerProcessingState ss_ls_srt1_interrupted() override;
+    TriggerProcessingState ss_ls_srt2_interrupted() override;
 };
 
 

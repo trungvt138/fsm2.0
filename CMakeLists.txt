@@ -239,4 +239,12 @@ add_executable(fsm2_0 main.cpp
         mainfsm/ws_fsm_2/WSIdle.h
         mainfsm/ws_fsm_2/WSIdle.cpp
         mainfsm/ws_fsm_2/wsbasestate.h
+        mainfsm/ws_fsm_2/operation_state.cpp
+        mainfsm/ws_fsm_3/WSIdle.cpp
+        mainfsm/ws_fsm_3/operation_state.cpp
+        mainfsm/ws_fsm_3/operation_state.h
+        mainfsm/ws_fsm_3/wsbasestate.cpp
+        mainfsm/ws_fsm_3/wsbasestate.h
+        mainfsm/ws_fsm_3/WSIdle.h
+        mainfsm/ws_fsm_3/wspseudostartstate.h
 )

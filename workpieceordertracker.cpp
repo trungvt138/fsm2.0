@@ -1,10 +1,10 @@
 #include "workpieceordertracker.h"
 
-void WorkPieceOrderTracker::addWorkPiece(const WorkPiece& wp) {
+void WorkPieceOrderTracker::addWorkPiece(const WorkPiece *wp) {
     if (isOrderCompleted()) {
         resetTracker();
     }
-    order.push_back(wp);
+    order.push_back(*wp);
 }
 
 bool WorkPieceOrderTracker::isInCorrectOrder() {

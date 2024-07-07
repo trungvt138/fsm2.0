@@ -11,7 +11,6 @@ using namespace std;
 class TransferingWS : public TransferingBaseState {
 public:
     void entry() override;
-    void enterByDefaultEntryPoint() override {};
     TriggerProcessingState ss_ls_str2_interrupted() override;
 
     void showState() override;

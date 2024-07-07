@@ -2,7 +2,12 @@
 
 void Measurement_WS_Flat::entry() {
 cout << "Entry: Measurement_WS_Flat " <<endl;
-action->ak_fbm1_slow_on();
+
+if(data->checkFBA1()){
+    action->ak_fbm1_slow_on();
+}else{
+    action->ak_fbm2_slow_on();
+}
 action->sample_flat_start();
 }
 

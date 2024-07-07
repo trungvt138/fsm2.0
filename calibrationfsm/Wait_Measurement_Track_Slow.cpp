@@ -2,7 +2,14 @@
 
 void Wait_Measurement_Track_Slow::entry() {
     cout << "Entry: Wait_Measurement_Track_Slow"<< endl;
-action->ak_fbm1_right_off();
+
+if(data->checkFBA1()){
+    action->ak_fbm1_right_off();
+}else{
+    action->ak_fbm2_right_off();    
+}
+
+
 cout << "Streckenmessung Flaches Werkstück runterlegen" << endl;
 cout << "Reset drücken zum Starten" << endl;
 }

@@ -9,8 +9,9 @@
 #include "measuring_height.h"
 
 void Waiting_Height::entry() {
-    //std::cout << "Waiting_Height Entry" << std::endl;
+    std::cout << "Waiting_Height Entry" << std::endl;
 //    action->entered_Operation_State();
+	std::cout << "\nHeight_Measurement Fsm: Waiting_Height State\n" << std::endl;
 }
 
 TriggerProcessingState Waiting_Height::height_calibration(){

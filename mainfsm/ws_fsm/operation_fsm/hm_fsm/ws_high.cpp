@@ -11,18 +11,11 @@
 #include "ws_hole.h"
 
 void WS_High::entry() {
-    std::cout << "Waiting_Height Entry" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: WS_High State\n" << std::endl;
+
 //    action->entered_Operation_State();
 }
 
-TriggerProcessingState WS_High::height_calibration(){
-	std::cout << "Waiting_Height: height_calibration called" << std::endl;
-//	this->data->UpdateWSData(WS_BNR);
-	leavingState();
-	new(this) HMPseudoEndState;
-	enterByDefaultEntryPoint();
-	return TriggerProcessingState::endstatereached;
-}
 
 TriggerProcessingState WS_High::height_hole(){
 	std::cout << "Waiting_Height: height_hole called" << std::endl;
@@ -34,7 +27,7 @@ TriggerProcessingState WS_High::height_hole(){
 
 TriggerProcessingState WS_High::height_band(){
 	std::cout << "Waiting_Height: height_band called" << std::endl;
-//	this->data->UpdateWSData(WS_HOB);
+	this->wp->setIsTall(true);
 	leavingState();
 	new(this) HMPseudoEndState;
 	enterByDefaultEntryPoint();

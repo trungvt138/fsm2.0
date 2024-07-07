@@ -9,9 +9,14 @@
 
 
 void OrthMainBaseState::enterViaPseudoStart() {
+    cout << "\n  OrthMainFSM: OrthMainBaseState" << endl;
     entry();
     mainsubmachine->enterViaPseudoStart();
     checkslidesubmachine->enterViaPseudoStart();
+}
+
+void OrthMainBaseState::resetDeepHistory() {
+	mainsubmachine->resetDeepHistory();
 }
 
 void OrthMainBaseState::initSubStateMachines() {
@@ -359,7 +364,7 @@ void OrthMainBaseState::ws_sorted_FBA2() {
 }
 
 void OrthMainBaseState::showState() {
-    cout << "  OrthMainFSM: OrthMainBaseState" << endl;
+    cout << "\n  OrthMainFSM: OrthMainBaseState" << endl;
     mainsubmachine->showState();
     cout << " " << endl;
     checkslidesubmachine->showState();

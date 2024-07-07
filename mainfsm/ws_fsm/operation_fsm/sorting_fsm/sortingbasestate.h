@@ -10,15 +10,20 @@
 
 #include "../../../../actions.h"
 #include "../../../../contextdata.h"
+#include "../../../../WorkPiece.h"
 #include "../../../../subcommon/triggerprocessingstate.h"
 
 class SortingBaseState {
 protected:
 	ContextData *data;
 	Actions *action;
+	WorkPiece *wp;
+
 public:
+	virtual ~SortingBaseState() = default;
 	void setData(ContextData *data) {this->data = data;};
 	void setAction(Actions *action) {this->action = action;};
+	void setWp(WorkPiece *wp) {this->wp = wp;};
 
 	virtual void initSubStateMachines() {};
 

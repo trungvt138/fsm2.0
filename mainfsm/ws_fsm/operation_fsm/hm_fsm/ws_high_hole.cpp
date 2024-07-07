@@ -10,13 +10,12 @@
 #include "hmpseudoendstate.h"
 
 void WS_High_Hole::entry() {
-    std::cout << "WS_High_Hole Entry" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: WS_High:Hole State\n" << std::endl;
 //    action->entered_Operation_State();
 }
 
 TriggerProcessingState WS_High_Hole::height_band(){
 	std::cout << "WS_High_Hole: height_band called" << std::endl;
-//	this->data->UpdateWSData(WS_HB);
 	leavingState();
 	new(this) HMPseudoEndState;
 	enterByDefaultEntryPoint();

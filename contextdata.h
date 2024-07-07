@@ -4,15 +4,16 @@
 
 #ifndef CONTEXTDATA_H
 #define CONTEXTDATA_H
-#include <chrono>
 
+#include "workpiece.h"
 #include "workpieceordertracker.h"
+#include <vector>
 
-class ContextData {
-
+class ContextData{
 private:
-	enum Type{metal, nonmetal};
+	//enum Type{metal, nonmetal};
 
+    std::vector<WorkPiece*> wsList;
     int errorCounter = 0;
 
     int ws_count = 0;
@@ -36,17 +37,19 @@ private:
     int ls_height_srt_tick_Slow = 0;
     int ls_srt_end_tick_Slow = 0;
 
-    std::chrono::high_resolution_clock::time_point start_str_height_time_Fast;
+/*     std::chrono::high_resolution_clock::time_point start_str_height_time_Fast;
     std::chrono::high_resolution_clock::time_point start_height_srt_time_Fast;
     std::chrono::high_resolution_clock::time_point start_srt_end_time_Fast;
 
     std::chrono::high_resolution_clock::time_point start_str_height_time_Slow;
     std::chrono::high_resolution_clock::time_point start_height_srt_time_Slow;
-    std::chrono::high_resolution_clock::time_point start_srt_end_time_Slow;
+    std::chrono::high_resolution_clock::time_point start_srt_end_time_Slow; */
     
 
 public:
     void incErrorCounter();
+    void setFBA2();
+    void setFBA1();
     void clearErrorCounter();
     void show() const;
 
@@ -55,9 +58,8 @@ public:
     void wsCounterDownFBA1();
     void wsCounterUpFBA2();
     void wsCounterDownFBA2();
-    void setID(int ws_count);
-    void negateFBA1();
-    void negateFBA2();
+    void setFBA1(bool val) {FBA1 = val;};
+    void setFBA2(bool val) {FBA2 = val;};
     int checkFBA1Counter();
     int checkFBA2Counter();
     bool checkFBA1();
@@ -81,11 +83,26 @@ public:
     void startStrHeightTickFast();
     void startHeightSrtTickFast();
     void startSrtEndTickFast();
-
+    // Remove the duplicate declaration of the function
     //for wp
 
     //for tracker
-    void addWSToTracker(WorkPiece wp);
+    void addWSToTracker(WorkPiece *wp);
+    void removeWSFromTracker();
+    bool checkOrder();
+
+    void setIdWs1(int wert);
+    void setIdWs2(int wert);
+    void setIdWs3(int wert);
+    void setIdWs4(int wert);
+    void setIdWs5(int wert);
+
+    void addWorkpiece(WorkPiece::StateType typ);
+    WorkPiece::StateType sortWsListDescendingById();
+    WorkPiece::StateType getHighestIDWorkPieceState();
+    WorkPiece::StateType getSecondHighestIDWorkPieceState();
+    WorkPiece::StateType getThirdHighestIDWorkPieceState();
+    WorkPiece::StateType getFourthHighestIDWorkPieceState();
 
 };
 

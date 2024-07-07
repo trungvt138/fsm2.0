@@ -13,7 +13,13 @@
 void Sorting::entry() {
     //std::cout << "Sorting Entry" << std::endl;
     //action->entered_Calibration_State();
+    std::cout << "\nOperationFsm: Sorting State\n" << std::endl;
     sortingstatemachine->enterViaPseudoStart();
+    if (!this->data->checkOrder()) {
+    	unwanted_ws();
+    } else {
+    	right_order();
+    }
 }
 
 //No default exit given. Checking whether ports are reached

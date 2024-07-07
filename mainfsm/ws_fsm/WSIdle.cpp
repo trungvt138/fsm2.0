@@ -10,21 +10,18 @@
 #include "operation_state.h"
 
 void WSIdle::entry() {
-//    action->entered_WSIdle();
-    //std::cout << "entered WSIdle" << std::endl;
-	data->negateFBA1();
+//  showState();
+	std::cout << "\nWSFsm: WSIdle\n" << std::endl;
+	data->setFBA1(true);
 }
 
 TriggerProcessingState WSIdle::ss_ls_str1_interrupted() {
     std::cout << "WSIdle: ss_ls_str1_interrupted called" << std::endl;
     if (this->data->checkFBA1()) {
 
-    		action->ak_fbm1_right_on();
-
     		this->data->wsCounterUp();
     		this->data->wsCounterUpFBA1();
-    		this->data->setID(1);
-
+    		this->data->addWorkpiece(WorkPiece::StateType::WsState1);
     		leavingState();
     		new(this) Operation_State;
     		enterByDefaultEntryPoint();
@@ -36,6 +33,7 @@ TriggerProcessingState WSIdle::ss_ls_str1_interrupted() {
     	enterByDefaultEntryPoint();
     	return TriggerProcessingState::consumed;
    }
+	return TriggerProcessingState::pending;
 }
 
 void WSIdle::showState() {

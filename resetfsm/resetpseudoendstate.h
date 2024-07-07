@@ -14,7 +14,7 @@ public:
     bool isPseudoEndState() override {return true;};
 
     void showState() override {
-        std::cout << "State : Reset Pseudo End State" << std::endl;
+        std::cout << "\nState : Reset Pseudo End State" << std::endl;
     }
 };
 

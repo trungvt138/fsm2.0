@@ -12,16 +12,12 @@
 #include "../../mainfsm/error_state.h"
 
 void Operation_State::entry() {
-    //std::cout << "Operation_State Entry" << std::endl;
-    action->entered_Operation_State();
-    WorkPiece wp;
-    data->addWSToTracker(wp);
+    std::cout << "\nWSFsm: Operation State\n" << std::endl;
 }
 
 // TODO exit
 void Operation_State::exit() {
-    action->ak_l_grn1_off();
-    action->ak_l_grn2_off();
+
 }
 
 void Operation_State::resetDeepHistory() {

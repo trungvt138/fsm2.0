@@ -7,6 +7,10 @@
 #include "checking_fba2.h"
 #include "transferingws.h"
 #include "waiting_remove.h"
+void TransferingIdle::entry() {
+    cout << "\nTransferingFsm: Idle State\n" << endl;
+}
+
 
 TriggerProcessingState TransferingIdle::ss_ls_end1_interrupted() {
     cout << "TranfseringIdle: ss_ls_end1_interrupted called" << endl;

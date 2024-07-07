@@ -14,7 +14,7 @@ public:
     bool isPseudoStartState() override {return true;};
 
     void showState() override {
-        std::cout << "State : Reset Pseudo Start State" << std::endl;
+        std::cout << "\nState : Reset Pseudo Start State" << std::endl;
     }
 };
 

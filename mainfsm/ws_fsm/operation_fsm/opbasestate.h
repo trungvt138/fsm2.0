@@ -9,6 +9,7 @@
 #define SRC_FSMSIMPLE_MAINFSM_OPERATION_FSM_OPBASESTATE_H_
 #include "../../../contextdata.h"
 #include "../../../actions.h"
+#include "../../../WorkPiece.h"
 #include "../../../subcommon/triggerprocessingstate.h"
 #include "hm_fsm/hmbasestate.h"
 #include "sorting_fsm/sortingbasestate.h"
@@ -21,6 +22,7 @@ class OpBaseState {
 protected:
     ContextData *data;
     Actions *action;
+    WorkPiece *wp;
     HMBaseState *hmstatemachine;
     SortingBaseState *sortingstatemachine;
     TransferingBaseState *transferingstatemachine;
@@ -38,6 +40,7 @@ public:
 
 	void setData(ContextData *data);
 	void setAction(Actions *action);
+	void setWp(WorkPiece *wp);
 
 	virtual void initSubStateMachines();
 

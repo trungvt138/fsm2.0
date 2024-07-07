@@ -15,6 +15,7 @@
 class EST1_and_CL : public EstBaseState {
 public:
     TriggerProcessingState ss_t_est1_unpressed() override;
+    TriggerProcessingState connection_back() override;
     void showState() override;
 };
 

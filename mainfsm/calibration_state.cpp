@@ -35,10 +35,11 @@ TriggerProcessingState Calibration_State::ss_t_str2_shortpressed() {
     new(this) Idle;
     enterByDefaultEntryPoint();
     return TriggerProcessingState::consumed;
+
 }
 
 void Calibration_State::showState() {
-    std::cout << "    MainFsm: Calibration_State" << std::endl;
+    std::cout << "  MainFsm: Calibration_State" << std::endl;
 
 }
 

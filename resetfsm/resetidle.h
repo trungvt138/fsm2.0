@@ -9,6 +9,7 @@
 
 class ResetIdle : public ResetBaseState {
 public:
+    void entry() override;
     TriggerProcessingState ss_t_rst1_pressed() override;
     TriggerProcessingState ss_t_rst2_pressed() override;
 

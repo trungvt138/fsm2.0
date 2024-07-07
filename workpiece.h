@@ -21,12 +21,20 @@ public:
     enum class WorkPieceType {
         Unknown,
         WP_Flat,
-        WP_High,
+		WP_High,
         WP_High_Hole,
         WP_High_Hole_Metal,
         WP_Binary
     };
 
+    enum class StateType {
+        WsState1,
+        WsState2,
+        WsState3,
+        WsState4,
+        noWsState
+        
+    };
 private:
     bool isTall;
     bool hasHole;
@@ -34,6 +42,7 @@ private:
     bool containsMetal;
     HoleType holeType;
     WorkPieceType type;
+    StateType statetype;
     int id;
     static int nextId;
 public:
@@ -53,11 +62,15 @@ public:
     bool getIsFlat() const;
     void setIsFlat(bool flat);
 
+    StateType getStateType() const;
+
     bool getContainsMetal() const;
     void setContainsMetal(bool metal);
 
     HoleType getHoleType() const;
     void setHoleType(HoleType holeType);
+
+    void setStateType(StateType type);
 
     WorkPieceType getType() const;
     void setType(WorkPieceType type);
@@ -68,6 +81,7 @@ public:
 private:
     std::string getHoleTypeString(HoleType holeType) const;
     std::string getTypeString(WorkPieceType type) const;
+    int wsState;
 };
 
 #endif // WORKPIECE_H

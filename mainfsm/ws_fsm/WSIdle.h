@@ -9,6 +9,7 @@
 #define SRC_FSMSIMPLE_MAINFSM_WS_FSM_IDLEWS_H_
 
 #include "wsbasestate.h"
+#include "operation_state.h"
 
 class WSIdle : public WSBaseState  {
 public:

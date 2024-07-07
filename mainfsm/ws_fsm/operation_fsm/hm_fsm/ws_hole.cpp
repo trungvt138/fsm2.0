@@ -9,7 +9,7 @@
 #include "ws_high_hole.h"
 
 void WS_Hole::entry() {
-    std::cout << "WS_Hole Entry" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: WS_Hole State\n" << std::endl;
 //    action->entered_Operation_State();
 }
 

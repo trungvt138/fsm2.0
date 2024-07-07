@@ -9,7 +9,7 @@
 #include "resetidle.h"
 
 void ResetBaseState::enterViaPseudoStart() {
-    std::cout << "Reset Fsm Initial Transition taken" << std::endl;
+    std::cout << "\nReset Fsm Initial Transition taken" << std::endl;
     new(this) ResetIdle;
     enterByDefaultEntryPoint();
 }
