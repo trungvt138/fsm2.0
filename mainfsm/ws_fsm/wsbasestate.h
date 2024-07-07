@@ -47,7 +47,7 @@ public:
 	virtual void exit(){};
 
 
-    virtual void handleDefaultExit(const TriggerProcessingState &handled) {};
+	virtual TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled) {return TriggerProcessingState::pending;};
 
     virtual TriggerProcessingState ss_ls_str1_continuous() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState ss_ls_str1_interrupted() { return TriggerProcessingState::pending; }
@@ -122,6 +122,8 @@ public:
 	virtual TriggerProcessingState slide2_free() { return TriggerProcessingState::pending;};
 	virtual TriggerProcessingState right_order() { return TriggerProcessingState::pending;};
 	virtual TriggerProcessingState unwanted_ws() { return TriggerProcessingState::pending;};
+
+	virtual TriggerProcessingState error_gone() { return TriggerProcessingState::pending;}
 
     virtual void showState() {};
 };

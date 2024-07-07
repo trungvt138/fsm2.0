@@ -10,7 +10,7 @@
 #include "hmpseudoendstate.h"
 
 void WS_High_Hole::entry() {
-	std::cout << "\nHeight_Measurement Fsm: WS_High:Hole State\n" << std::endl;
+	std::cout << "\nHeight_Measurement Fsm: WS_High_Hole State\n" << std::endl;
 //    action->entered_Operation_State();
 }
 
@@ -24,6 +24,6 @@ TriggerProcessingState WS_High_Hole::height_band(){
 
 
 void WS_High_Hole::showState() {
-    std::cout << "            Height_Measurement Fsm: WS_High:Hole State" << std::endl;
+    std::cout << "          Height_Measurement Fsm: WS_High_Hole State" << std::endl;
 }
 

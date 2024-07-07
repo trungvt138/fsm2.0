@@ -10,7 +10,8 @@ enum class TriggerProcessingState {
     pending,
     endstatereached,
     ws_transfered_reached,
-    ws_sorted_reached
+    ws_sorted_reached,
+    both_slide_full
 };
 
 #endif //TRIGGERPROCESSINGSTATE_H

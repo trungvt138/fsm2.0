@@ -26,7 +26,7 @@ public:
     TriggerProcessingState ws_sorted(); //override;
     TriggerProcessingState ss_ls_end2_continuous() override;
 
-    void handleDefaultExit(const TriggerProcessingState &handled) override;
+    TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled) override;
     void enterByDeepHistoryEntryPoint() override;
 
     void leavingState() override {exit();};

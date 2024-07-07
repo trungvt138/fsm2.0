@@ -5,6 +5,7 @@
 #include "transferingidle.h"
 
 #include "checking_fba2.h"
+#include "transferingpseudoendstate.h"
 #include "transferingws.h"
 #include "waiting_remove.h"
 void TransferingIdle::entry() {
@@ -17,11 +18,14 @@ TriggerProcessingState TransferingIdle::ss_ls_end1_interrupted() {
     if (data->checkFBA1()) {
         leavingState();
         if (data->checkFBA2Counter() == 0) {
-            new(this) TransferingWS;
+            data->setFBA2();
+            data->wsCounterUpFBA2();
+            data->wsCounterDownFBA1();
+            new(this) TransferingPseudoEndState;
+            enterByDefaultEntryPoint();
+            return TriggerProcessingState::endstatereached;
         }
-        else {
-            new(this) Checking_FBA2;
-        }
+        new(this) Checking_FBA2;
         enterByDefaultEntryPoint();
         return TriggerProcessingState::consumed;
     }

@@ -20,7 +20,8 @@ public:
 
     void resetDeepHistory() override;
 
-    void handleDefaultExit(const TriggerProcessingState &handled) override{};
+    void handleDefaultExit(const TriggerProcessingState &handled) override {};
+    void handleExitError(const TriggerProcessingState &handled);
 
     //FBA1
     TriggerProcessingState ss_ls_str1_continuous() override;

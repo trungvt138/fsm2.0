@@ -42,10 +42,11 @@ public:
 
 	virtual void handleDefaultExit(const TriggerProcessingState &handled) {};
 
-	virtual TriggerProcessingState ss_ls_srt1_interrupted() { return TriggerProcessingState::pending; }
-	virtual TriggerProcessingState ss_ls_srt2_interrupted() { return TriggerProcessingState::pending; }
+	virtual TriggerProcessingState ss_ls_sli1_full() { return TriggerProcessingState::pending; }
+	virtual TriggerProcessingState ss_ls_sli2_full() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState unwanted_ws() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState right_order() { return TriggerProcessingState::pending; }
+	virtual TriggerProcessingState error_gone() { return TriggerProcessingState::pending; }
 
 	virtual void showState() {};
 };

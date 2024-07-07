@@ -187,7 +187,7 @@ TriggerProcessingState WS_State::ss_ls_srt1_interrupted() {
     }else if (state2== WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
     }else if (state2 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_srt1_interrupted();
     }
 
     if (state3 == WorkPiece::StateType::WsState1) {
@@ -321,7 +321,7 @@ TriggerProcessingState WS_State::ss_ms1_fall() {
     }else if (state1== WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
     }else if (state1 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_srt1_interrupted();
     }
 
     if (state2 == WorkPiece::StateType::WsState1) {
@@ -329,7 +329,7 @@ TriggerProcessingState WS_State::ss_ms1_fall() {
     }else if (state2== WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
     }else if (state2 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_srt1_interrupted();
     }
 
     if (state3 == WorkPiece::StateType::WsState1) {
@@ -337,7 +337,7 @@ TriggerProcessingState WS_State::ss_ms1_fall() {
     }else if (state3 == WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
     }else if (state3 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_srt1_interrupted();
     }
 
     
@@ -458,27 +458,27 @@ TriggerProcessingState processingstate1;
     WorkPiece::StateType state3 =data->getThirdHighestIDWorkPieceState();
     
     if (state1 == WorkPiece::StateType::WsState1) {
-        processingstate1 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate1 = wsstatemachine1->ss_ls_end1_continuous();
     }else if (state1== WorkPiece::StateType::WsState2) {
-        processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
+        processingstate2 = wsstatemachine2->ss_ls_end1_continuous();
     }else if (state1 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_end1_continuous();
     }
 
     if (state2 == WorkPiece::StateType::WsState1) {
-        processingstate1 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate1 = wsstatemachine1->ss_ls_end1_continuous();
     }else if (state2== WorkPiece::StateType::WsState2) {
-        processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
+        processingstate2 = wsstatemachine2->ss_ls_end1_continuous();
     }else if (state2 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_end1_continuous();
     }
 
     if (state3 == WorkPiece::StateType::WsState1) {
-        processingstate1 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate1 = wsstatemachine1->ss_ls_end1_continuous();
     }else if (state3 == WorkPiece::StateType::WsState2) {
-        processingstate2 = wsstatemachine2->ss_ls_srt1_interrupted();
+        processingstate2 = wsstatemachine2->ss_ls_end1_continuous();
     }else if (state3 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_srt1_interrupted();
+        processingstate3 = wsstatemachine3->ss_ls_end1_continuous();
     }
 
     
@@ -986,7 +986,7 @@ TriggerProcessingState WS_State::ss_ls_sli2_full() {
     }else if (state2== WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ss_ls_sli2_full();
     }else if (state2 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_sli2_full();
+        processingstate3 = wsstatemachine3->ss_ls_sli2_full();
     }
 
     if (state3 == WorkPiece::StateType::WsState1) {
@@ -994,10 +994,12 @@ TriggerProcessingState WS_State::ss_ls_sli2_full() {
     }else if (state3 == WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ss_ls_sli2_full();
     }else if (state3 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ss_ls_sli2_full();
+        processingstate3 = wsstatemachine3->ss_ls_sli2_full();
     }
 
-    
+    if (processingstate1 == TriggerProcessingState::both_slide_full || processingstate2 == TriggerProcessingState::both_slide_full || processingstate3 == TriggerProcessingState::both_slide_full) {
+        return both_slide_full();
+    }
 
     if (processingstate1 == TriggerProcessingState::consumed || processingstate2 ==TriggerProcessingState::consumed|| processingstate3 ==TriggerProcessingState::consumed) {
         return TriggerProcessingState::consumed;
@@ -1174,7 +1176,7 @@ TriggerProcessingState processingstate1;
     }else if (state2== WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ws_sorted_FBA2();
     }else if (state2 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ws_sorted_FBA2();
+        processingstate3 = wsstatemachine3->ws_sorted_FBA2();
     }
 
     if (state3 == WorkPiece::StateType::WsState1) {
@@ -1182,7 +1184,7 @@ TriggerProcessingState processingstate1;
     }else if (state3 == WorkPiece::StateType::WsState2) {
         processingstate2 = wsstatemachine2->ws_sorted_FBA2();
     }else if (state3 == WorkPiece::StateType::WsState3) {
-        processingstate3 = wsstatemachine1->ws_sorted_FBA2();
+        processingstate3 = wsstatemachine3->ws_sorted_FBA2();
     }
 
     
@@ -1639,8 +1641,9 @@ TriggerProcessingState WS_State::both_slide_full() {
         leavingState();
         new(this) Error_State;
         enterByBothSlideFullPoint();
+        return TriggerProcessingState::consumed;
     }
-    return TriggerProcessingState::consumed;
+    return TriggerProcessingState::pending;
 }
 TriggerProcessingState WS_State::ws_missing() {
     std::cout << "WS_State: ws_missing_received called" << std::endl;
@@ -1654,8 +1657,9 @@ TriggerProcessingState WS_State::ws_missing() {
         leavingState();
         new(this) Error_State;
         enterByBothSlideFullPoint();
+        return TriggerProcessingState::consumed;
     }
-    return TriggerProcessingState::consumed;
+    return TriggerProcessingState::pending;
 }
 
 TriggerProcessingState WS_State::ws_false_placement() {
@@ -1670,8 +1674,9 @@ TriggerProcessingState WS_State::ws_false_placement() {
         leavingState();
         new(this) Error_State;
         enterByBothSlideFullPoint();
+        return TriggerProcessingState::consumed;
     }
-    return TriggerProcessingState::consumed;
+    return TriggerProcessingState::pending;
 }
 
 void WS_State::showState() {
@@ -1682,6 +1687,7 @@ void WS_State::showState() {
     cout << " " << endl;
     std::cout << "----Second WS State----" << std::endl;
     wsstatemachine2->showState();
+    cout << " " << endl;
     std::cout << "----Third WS State-----" << std::endl;
     wsstatemachine3->showState();
 }

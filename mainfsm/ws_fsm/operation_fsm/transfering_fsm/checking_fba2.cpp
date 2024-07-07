@@ -4,6 +4,7 @@
 
 #include "checking_fba2.h"
 
+#include "transferingpseudoendstate.h"
 #include "transferingws.h"
 
 void Checking_FBA2::entry() {
@@ -18,9 +19,9 @@ void Checking_FBA2::exit() {
 TriggerProcessingState Checking_FBA2::ws_sorted() {
     cout << "Checking_FBA2: ws_sorted called" << endl;
     leavingState();
-    new(this) TransferingWS;
+    new(this) TransferingPseudoEndState;
     enterByDefaultEntryPoint();
-    return TriggerProcessingState::consumed;
+    return TriggerProcessingState::endstatereached;
 }
 
 void Checking_FBA2::showState() {

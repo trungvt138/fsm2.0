@@ -23,58 +23,68 @@ void Sorting::entry() {
 }
 
 //No default exit given. Checking whether ports are reached
-void Sorting::handleDefaultExit(const TriggerProcessingState &processingstate) {
+TriggerProcessingState Sorting::handleDefaultExit(const TriggerProcessingState &processingstate) {
     // Alternative: Check sub state machine is in endstate, maybe saver.
     if (processingstate == TriggerProcessingState::ws_sorted_reached) {
         //leavingState();         // not needed, as sub-state machine cannot act anymore.
     	sortingstatemachine->exit();   // just call own exit.
         new(this) OpPseudoEndState;
         enterByDefaultEntryPoint();
+        return TriggerProcessingState::endstatereached;
     }
     else if (processingstate == TriggerProcessingState::ws_transfered_reached) {
         leavingState();
-        sortingstatemachine->exit();   // just call own exit.
+        sortingstatemachine->exit();
+        if (data->checkFBA1()) {
+            action->ak_awf_wch1_on();
+            //std::this_thread::sleep_for(std::chrono::milliseconds(800));
+            action->ak_awf_wch1_off();
+        }
+        else if (data->checkFBA2()) {
+            action->ak_awf_wch2_on();
+            //std::this_thread::sleep_for(std::chrono::milliseconds(800));
+            action->ak_awf_wch2_off();
+        }// just call own exit.
         new(this) Transfering;
         enterByDefaultEntryPoint();
+        return TriggerProcessingState::consumed;
     }
+    else if (processingstate == TriggerProcessingState::both_slide_full) {
+        leavingState();
+        sortingstatemachine->exit();
+        return TriggerProcessingState::both_slide_full;
+    }
+    return TriggerProcessingState::pending;
 }
 
-TriggerProcessingState Sorting::ss_ls_srt1_interrupted() {
+TriggerProcessingState Sorting::error_gone() {
+    std::cout << "Sorting: error_gone caled" << std::endl;;
+    TriggerProcessingState processingstate = sortingstatemachine->error_gone();
+    return handleDefaultExit(processingstate);
+}
+
+TriggerProcessingState Sorting::ss_ls_sli1_full() {
     std::cout << "Sorting: ss_ls_srt1_interrupted caled" << std::endl;;
-    TriggerProcessingState processingstate = sortingstatemachine->ss_ls_srt1_interrupted();
-    handleDefaultExit(processingstate);
-    return processingstate;
-    return TriggerProcessingState::consumed;
+    TriggerProcessingState processingstate = sortingstatemachine->ss_ls_sli1_full();
+    return handleDefaultExit(processingstate);
 }
 
-TriggerProcessingState Sorting::ss_ls_srt2_interrupted() {
+TriggerProcessingState Sorting::ss_ls_sli2_full() {
     std::cout << "Sorting: ss_ls_srt2_interrupted caled" << std::endl;;
-    TriggerProcessingState processingstate = sortingstatemachine->ss_ls_srt2_interrupted();
-    handleDefaultExit(processingstate);
-    return processingstate;
-    return TriggerProcessingState::consumed;
+    TriggerProcessingState processingstate = sortingstatemachine->ss_ls_sli2_full();
+    return handleDefaultExit(processingstate);
 }
 
 TriggerProcessingState Sorting::right_order() {
     std::cout << "Sorting: right_order caled" << std::endl;;
     TriggerProcessingState processingstate = sortingstatemachine->right_order();
-    if (processingstate == TriggerProcessingState::ws_transfered_reached) {
-        leavingState();
-        new(this) Transfering;
-        enterByDefaultEntryPoint();
-    }
-    //TriggerProcessingState processingstate = TriggerProcessingState::pending;
-    handleDefaultExit(processingstate);
-//    return processingstate;
-    return TriggerProcessingState::consumed;
+    return handleDefaultExit(processingstate);
 }
 
 TriggerProcessingState Sorting::unwanted_ws() {
     std::cout << "Sorting: unwanted_ws caled" << std::endl;;
     TriggerProcessingState processingstate = sortingstatemachine->unwanted_ws();
-    handleDefaultExit(processingstate);
-//    return processingstate;
-    return TriggerProcessingState::consumed;
+    return handleDefaultExit(processingstate);
 }
 
 // TriggerProcessingState Sorting::both_slide_full() {

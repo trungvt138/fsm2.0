@@ -57,8 +57,9 @@ public:
 	virtual void exit(){};
 
 
-    virtual void handleDefaultExit(const TriggerProcessingState &handled) {};
+    virtual TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled) {return TriggerProcessingState::pending;};
 
+	virtual TriggerProcessingState error_gone() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState ss_ls_str1_continuous() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState ss_ls_str1_interrupted() { return TriggerProcessingState::pending; }
     virtual TriggerProcessingState lightbarrier_height1_continuous() { return TriggerProcessingState::pending; }

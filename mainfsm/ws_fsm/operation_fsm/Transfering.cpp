@@ -14,47 +14,50 @@ void Transfering::entry() {
     //action->entered_Calibration_State();
     std::cout << "\nOperationFsm: Transfering State\n" << std::endl;
     transferingstatemachine->enterViaPseudoStart();
+
 }
 
 
-void Transfering::handleDefaultExit(const TriggerProcessingState &processingstate) {
+TriggerProcessingState Transfering::handleDefaultExit(const TriggerProcessingState &processingstate) {
     // Alternative: Check sub state machine is in endstate, maybe saver.
     if (processingstate == TriggerProcessingState::endstatereached) {
         //leavingState();         // not needed, as sub-state machine cannot act anymore.
         transferingstatemachine->exit();   // just call own exit.
         new(this) OpPseudoEndState;
         enterByDefaultEntryPoint();
+        return TriggerProcessingState::consumed;
     }
+    return TriggerProcessingState::pending;
 }
 
 TriggerProcessingState Transfering::ss_ls_end1_interrupted() {
     TriggerProcessingState processingstate = transferingstatemachine->ss_ls_end1_interrupted();
-    handleDefaultExit(processingstate);
-    return processingstate;
+    return handleDefaultExit(processingstate);
+
 }
 
 TriggerProcessingState Transfering::ss_ls_end2_interrupted() {
     TriggerProcessingState processingstate = transferingstatemachine->ss_ls_end2_interrupted();
-    handleDefaultExit(processingstate);
-    return processingstate;
+    return handleDefaultExit(processingstate);
+
 }
 
 TriggerProcessingState Transfering::ss_ls_str2_interrupted() {
     TriggerProcessingState processingstate = transferingstatemachine->ss_ls_str2_interrupted();
-    handleDefaultExit(processingstate);
-    return processingstate;
+    return handleDefaultExit(processingstate);
+
 }
 
 TriggerProcessingState Transfering::ws_sorted() {
     TriggerProcessingState processingstate = transferingstatemachine->ws_sorted();
-    handleDefaultExit(processingstate);
-    return processingstate;
+    return handleDefaultExit(processingstate);
+
 }
 
 TriggerProcessingState Transfering::ss_ls_end2_continuous() {
     TriggerProcessingState processingstate = transferingstatemachine->ss_ls_end2_continuous();
-    handleDefaultExit(processingstate);
-    return processingstate;
+    return handleDefaultExit(processingstate);
+
 }
 
 void Transfering::enterByDeepHistoryEntryPoint() {

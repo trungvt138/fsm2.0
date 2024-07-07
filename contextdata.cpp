@@ -201,7 +201,9 @@ bool ContextData::checkOrder() {
     return tracker.isInCorrectOrder();
 }
 
-
+void ContextData::displayOrder() {
+    tracker.displayOrder();
+}
 
 bool ContextData::checkFBA2() {
     return FBA2;

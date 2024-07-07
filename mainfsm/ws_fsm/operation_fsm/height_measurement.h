@@ -14,7 +14,7 @@ public:
     void entry() override;
     void exit() override;
     void showState() override;
-    void handleDefaultExit(const TriggerProcessingState &handled) override;
+    TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled) override;
 	void enterByDeepHistoryEntryPoint() override;
 
 //	TriggerProcessingState height_ok1_unactive()override;

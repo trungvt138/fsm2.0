@@ -11,6 +11,7 @@
 #include <iostream>
 #include "Sorting_FBA1.h"
 #include "Sorting_FBA2.h"
+#include "Wait_Slide_Free.h"
 
 void Check_WS_Data::entry() {
 
@@ -36,13 +37,14 @@ TriggerProcessingState Check_WS_Data::unwanted_ws() {
 		}
 	}
 	//if FBA 2
-	else {
+	if(data->checkFBA2()) {
 		if(data->checkSlide2Full()) {
 			//TODO:  BOTH_SLIDE_FULL
+			//TODO: Send event message both_slide_full to context
 			leavingState();
-			new(this)Sorting_FBA2;
+			new(this) Wait_Slide_Free;
 			enterByDefaultEntryPoint();
-			return TriggerProcessingState::consumed;
+			return TriggerProcessingState::both_slide_full;
 		}
 		//if slide 2 not full
 		else {
@@ -59,11 +61,7 @@ TriggerProcessingState Check_WS_Data::unwanted_ws() {
 TriggerProcessingState Check_WS_Data::right_order() {
 	std::cout << "Check_WS_Data::right_order called" << std::endl;
 	//TODO: send transferWSData()
-	action->ak_awf_wch1_on();
-	std::this_thread::sleep_for(std::chrono::milliseconds(800));
-	action->ak_awf_wch1_off();
 
-	leavingState();
 	return TriggerProcessingState::ws_transfered_reached;
 
 }

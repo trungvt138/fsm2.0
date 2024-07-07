@@ -13,7 +13,7 @@
 class Sorting_FBA1 : public SortingBaseState {
 public:
     void entry() override;
-	TriggerProcessingState ss_ls_srt1_interrupted() override;
+    TriggerProcessingState ss_ls_sli1_full() override;
     void showState() override;
 };
 

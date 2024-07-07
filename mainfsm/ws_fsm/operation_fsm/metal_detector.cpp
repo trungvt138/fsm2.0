@@ -14,7 +14,6 @@ void Metal_Detector::entry() {
     //std::cout << "Metal_Detector Entry" << std::endl;
 //    action->entered_Operation_State();
 	std::cout << "\nOperationFsm: Metal_Detector State\n" << std::endl;
-	action->ak_fbm1_right_on();
 }
 
 TriggerProcessingState Metal_Detector::ss_ls_srt1_interrupted(){
@@ -23,21 +22,19 @@ TriggerProcessingState Metal_Detector::ss_ls_srt1_interrupted(){
 		this->wp->setContainsMetal(false);
 		if (this->wp->getIsFlat()){
 			this->wp->setType(WorkPiece::WorkPieceType::WP_Flat);
-			data->addWSToTracker(this->wp);
-		}
-		else if (this->wp->getIsTall()){
-			this->wp->setType(WorkPiece::WorkPieceType::WP_High);
-			this->data->addWSToTracker(this->wp);
 		}
 		else if (this->wp->getHasHole()){
 			this->wp->setType(WorkPiece::WorkPieceType::WP_High_Hole);
-			this->data->addWSToTracker(this->wp);
+		}
+		else if (this->wp->getIsTall()){
+			this->wp->setType(WorkPiece::WorkPieceType::WP_High);
 		}
 		else {
 			this->wp->setType(WorkPiece::WorkPieceType::Unknown);
-			this->data->addWSToTracker(this->wp);
 		}
-		//this->data->displayOrder();
+		this->data->addWSToTracker(this->wp);
+		this->data->displayOrder();
+		leavingState();
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
 	}
@@ -45,26 +42,24 @@ TriggerProcessingState Metal_Detector::ss_ls_srt1_interrupted(){
 }
 
 TriggerProcessingState Metal_Detector::ss_ls_srt2_interrupted(){
-	if (!this->data->checkFBA1()){
+	if (this->data->checkFBA2()){
 		action->ak_fbm2_right_on();
 		this->wp->setContainsMetal(false);
 		if (this->wp->getIsFlat()){
 			this->wp->setType(WorkPiece::WorkPieceType::WP_Flat);
-			this->data->addWSToTracker(this->wp);
-		}
-		else if (this->wp->getIsTall()){
-			this->wp->setType(WorkPiece::WorkPieceType::WP_High);
-			this->data->addWSToTracker(this->wp);
 		}
 		else if (this->wp->getHasHole()){
 			this->wp->setType(WorkPiece::WorkPieceType::WP_High_Hole);
-			this->data->addWSToTracker(this->wp);
+		}
+		else if (this->wp->getIsTall()){
+			this->wp->setType(WorkPiece::WorkPieceType::WP_High);
 		}
 		else {
 			this->wp->setType(WorkPiece::WorkPieceType::Unknown);
-			this->data->addWSToTracker(this->wp);
 		}
-
+		this->data->addWSToTracker(this->wp);
+		this->data->displayOrder();
+		leavingState();
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
 	}
@@ -77,12 +72,12 @@ TriggerProcessingState Metal_Detector::ss_ms1_erkannt(){
 		this->wp->setContainsMetal(true);
 		if (this->wp->getHasHole()){
 			this->wp->setType(WorkPiece::WorkPieceType::WP_High_Hole_Metal);
-			this->data->addWSToTracker(this->wp);
 		}
 		else {
 			this->wp->setType(WorkPiece::WorkPieceType::Unknown);
-			this->data->addWSToTracker(this->wp);
+
 		}
+		this->data->addWSToTracker(this->wp);
 		new(this) Sorting;
 		enterByDefaultEntryPoint();
 	}
@@ -108,5 +103,5 @@ TriggerProcessingState Metal_Detector::ss_ms2_erkannt(){
 }
 
 void Metal_Detector::showState() {
-    std::cout << "\n  OperationFsm: Metal_Detector State\n" << std::endl;
+    std::cout << "\n        OperationFsm: Metal_Detector State\n" << std::endl;
 }

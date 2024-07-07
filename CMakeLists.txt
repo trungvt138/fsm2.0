@@ -247,4 +247,7 @@ add_executable(fsm2_0 main.cpp
         mainfsm/ws_fsm_3/wsbasestate.h
         mainfsm/ws_fsm_3/WSIdle.h
         mainfsm/ws_fsm_3/wspseudostartstate.h
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Wait_Slide_Free.cpp
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/Wait_Slide_Free.h
+        mainfsm/ws_fsm/operation_fsm/sorting_fsm/sortingpseudoendstate.cpp
 )

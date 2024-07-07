@@ -90,6 +90,7 @@ public:
     void addWSToTracker(WorkPiece *wp);
     void removeWSFromTracker();
     bool checkOrder();
+    void displayOrder();
 
     void setIdWs1(int wert);
     void setIdWs2(int wert);

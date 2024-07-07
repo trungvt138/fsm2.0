@@ -18,6 +18,19 @@ int main(int argc, char** argv) {
 
     //Enter 1st WS Operation FBA1
     fsmA.ss_ls_str1_interrupted();
+    fsmA.ss_ls_str1_continuous();
+    fsmA.height_calibration();
+
+    //High_Hole
+    fsmA.height_high();
+    fsmA.height_hole();
+    fsmA.height_high();
+    fsmA.height_band();
+    fsmA.ss_ls_srt1_interrupted();
+    fsmA.ss_ls_sli1_full();
+
+    fsmA.ss_ls_str1_interrupted();
+    fsmA.ss_ls_str1_interrupted();
 
 
     //1st WS now enters FBA2

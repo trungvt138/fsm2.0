@@ -14,12 +14,14 @@ void Slide_Free::entry() {
 
 void Slide_Free::ss_ls_sli1_full() {
     cout << "Slide_Free: ss_ls_sli1_full called" << endl;
+    leavingState();
     new(this) Slide_Check;
     enterByDefaultEntryPoint();
 }
 
 void Slide_Free::ss_ls_sli2_full() {
     cout << "Slide_Free: ss_ls_sli2_full called" << endl;
+    leavingState();
     new(this) Slide_Check;
     enterByDefaultEntryPoint();
 }

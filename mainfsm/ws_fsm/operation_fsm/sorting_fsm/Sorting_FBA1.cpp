@@ -15,13 +15,11 @@ void Sorting_FBA1::entry() {
 	std::cout << "\nSortingFsm: Sorting_FBA1\n" << std::endl;
 }
 
-TriggerProcessingState Sorting_FBA1::ss_ls_srt1_interrupted() {
-	std::cout << "Sorting_FBA1: ss_ls_srt1_interrupted" << std::endl;
-	action->ak_awf_wch1_on();
-	//time(3000);
-	action->ak_awf_wch1_off();
+TriggerProcessingState Sorting_FBA1::ss_ls_sli1_full() {
+	std::cout << "Sorting_FBA1: ss_ls_sli1_full called" << std::endl;
+
 	data->removeWSFromTracker();
-	//		WS_SORTED_FBA1
+	data->wsCounterDownFBA1();
 	leavingState();
 	new(this) WS_Sorted_Port;
 	return TriggerProcessingState::ws_sorted_reached;

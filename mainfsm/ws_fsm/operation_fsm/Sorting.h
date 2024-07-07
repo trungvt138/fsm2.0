@@ -15,12 +15,11 @@ public:
     void exit() override {};
     void showState() override;
 
-    void handleDefaultExit(const TriggerProcessingState &handled) override;
+    TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled) override;
 
-
-
-	TriggerProcessingState ss_ls_srt1_interrupted()override;
-	TriggerProcessingState ss_ls_srt2_interrupted()override;
+	TriggerProcessingState error_gone() override;
+	TriggerProcessingState ss_ls_sli1_full()override;
+	TriggerProcessingState ss_ls_sli2_full()override;
 	TriggerProcessingState right_order() override;
 	TriggerProcessingState unwanted_ws() override;
 	//TriggerProcessingState both_slide_full()override;

@@ -12,28 +12,30 @@
 void WSIdle::entry() {
 //  showState();
 	std::cout << "\nWSFsm: WSIdle\n" << std::endl;
-	data->setFBA1(true);
+
 }
 
 TriggerProcessingState WSIdle::ss_ls_str1_interrupted() {
     std::cout << "WSIdle: ss_ls_str1_interrupted called" << std::endl;
-    if (this->data->checkFBA1()) {
+	data->setFBA1();
+	this->data->wsCounterUp();
+	this->data->wsCounterUpFBA1();
+	this->data->addWorkpiece(WorkPiece::StateType::WsState1);
+	leavingState();
+	new(this) Operation_State;
+	enterByDefaultEntryPoint();
+	return TriggerProcessingState::consumed;
+}
 
-    		this->data->wsCounterUp();
-    		this->data->wsCounterUpFBA1();
-    		this->data->addWorkpiece(WorkPiece::StateType::WsState1);
-    		leavingState();
-    		new(this) Operation_State;
-    		enterByDefaultEntryPoint();
-    		return TriggerProcessingState::consumed;
-    }
-    if (this->data->checkFBA2()) {
-    	leavingState();
-    	new(this) Operation_State;
-    	enterByDefaultEntryPoint();
-    	return TriggerProcessingState::consumed;
-   }
-	return TriggerProcessingState::pending;
+TriggerProcessingState WSIdle::ss_ls_str2_interrupted() {
+	std::cout << "WSIdle: ss_ls_str2_interrupted called" << std::endl;
+	data->setFBA2();
+	data->wsCounterUpFBA2();
+	data->wsCounterDownFBA1();
+	leavingState();
+	new(this) Operation_State;
+	enterByDefaultEntryPoint();
+	return TriggerProcessingState::consumed;
 }
 
 void WSIdle::showState() {

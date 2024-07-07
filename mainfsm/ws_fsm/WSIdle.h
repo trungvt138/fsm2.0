@@ -16,7 +16,7 @@ public:
 	void entry() override;
 
 	TriggerProcessingState ss_ls_str1_interrupted() override;
-
+	TriggerProcessingState ss_ls_str2_interrupted() override;
     void showState() override;
 
 };

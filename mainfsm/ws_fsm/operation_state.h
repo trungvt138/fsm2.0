@@ -27,7 +27,7 @@ public:
 	void exit() override;
 
 
-	void handleDefaultExit(const TriggerProcessingState &handled) override;
+	TriggerProcessingState handleDefaultExit(const TriggerProcessingState &handled) override;
 	void showState() override;
 
 	//estopp
@@ -98,6 +98,7 @@ public:
 	TriggerProcessingState slide2_free() override;
 	TriggerProcessingState right_order() override;
 	TriggerProcessingState unwanted_ws() override;
+	TriggerProcessingState error_gone() override;
 
 	TriggerProcessingState height_calibration() override;
 	TriggerProcessingState height_high() override;

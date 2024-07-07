@@ -17,7 +17,7 @@ void WSIdle3::entry() {
 }
 
 TriggerProcessingState WSIdle3::ss_ls_str1_interrupted() {
-    std::cout << "WSIdle2: ss_ls_str1_interrupted called" << std::endl;
+    std::cout << "WSIdle3: ss_ls_str1_interrupted called" << std::endl;
     if (this->data->checkFBA1()){
 
 
